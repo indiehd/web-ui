@@ -48,7 +48,4 @@
     }
   };
 </script>
-<style lang="scss" scoped>
-  @import "~@/assets/sass/now-ui-kit/variables";
-  @import "~@/assets/sass/now-ui-kit/checkboxes-radio";
-</style>
+<style lang="scss" scoped></style>

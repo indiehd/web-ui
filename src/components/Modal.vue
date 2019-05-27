@@ -94,8 +94,4 @@
     background-color: rgba(0, 0, 0, 0.3)
   }
 </style>
-<style lang="scss">
-  @import "~@/assets/sass/now-ui-kit/variables";
-  @import "~@/assets/sass/now-ui-kit/mixins";
-  @import "~@/assets/sass/now-ui-kit/modals";
-</style>
+<style lang="scss" scoped></style>
