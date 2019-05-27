@@ -26,14 +26,19 @@
               password
             />
 
-
             <template slot="raw-content">
               <div class="card-footer text-center">
-                <a
-                  @click.prevent="submit()"
-                  href="#"
-                  class="btn btn-primary btn-round btn-lg btn-block"
-                >Login</a>
+                <Button
+                  @click.native="submit()"
+                  type="primary"
+                  size="lg"
+                  :loading="loading"
+                  block
+                  round
+                  :disabled="loading"
+                >
+                  {{ loading ? 'Loading ... ' : 'Login' }}
+                </Button>
               </div>
               <div class="pull-left">
                 <h6>
@@ -59,7 +64,7 @@
     FormGroupInput,
   } from '@/components';
 
-  import {mapActions} from 'vuex';
+  import { mapActions } from 'vuex';
 
   export default {
     name: 'login',
@@ -70,6 +75,7 @@
     },
     data () {
       return {
+        loading: false,
         frmData: {},
       };
     },
@@ -78,10 +84,14 @@
         'Login',
       ]),
       submit () {
-        this.Login(this.frmData)
-            .then(() => {
-              this.$router.push('/dashboard');
-            });
+        this.loading = true;
+        this.Login(this.frmData).then(() => {
+          this.loading = false;
+          this.$router.push('/dashboard');
+        }).catch(err => {
+          this.loading = false;
+          console.log(err);
+        });
       },
     },
   };

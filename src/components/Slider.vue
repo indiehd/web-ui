@@ -83,7 +83,4 @@
     }
   };
 </script>
-<style lang="scss">
-  @import "~@/assets/sass/now-ui-kit/variables";
-  @import "~@/assets/sass/now-ui-kit/plugins/plugin-nouislider";
-</style>
+<style lang="scss" scoped></style>
