@@ -82,6 +82,13 @@
       </drop-down>
 
       <li class="nav-item">
+        <a class="nav-link" href="#" @click.prevent="$router.push('/login')">
+          <i class="now-ui-icons users_circle-08"></i>
+          <p>Login / Register</p>
+        </a>
+      </li>
+
+      <li class="nav-item">
         <a
           class="nav-link"
           rel="tooltip"

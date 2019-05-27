@@ -1,3 +1,2 @@
-export const API_URL = process.env.VUE_API_URL;
-export const API_CLIENT_ID = process.env.VUE_API_CLIENT_ID;
-export const API_CLIENT_SECRET = process.env.VUE_API_CLIENT_SECRET;
+export const API_URL = process.env.VUE_APP_API_URL;
+export const API_AUTH_URL = API_URL + '/auth/login';
