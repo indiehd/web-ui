@@ -35,8 +35,8 @@
     color: $white-color;
   }
 
-  &[filter-color="orange"] {
-    @include linear-gradient(rgba($black-color, .20), rgba(224, 23, 3, 0.6));
+  &[filter-color="secondary"] {
+    @include linear-gradient(rgba($black-color, .20), rgba(255, 10, 210, 0.6));
   }
 
   &[filter-color="black"] {

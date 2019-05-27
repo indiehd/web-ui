@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer footer-big" data-background-color="primary">
+  <footer class="footer footer-big" :data-background-color="backgroundColor">
     <div class="container">
       <div class="content">
         <div class="row">

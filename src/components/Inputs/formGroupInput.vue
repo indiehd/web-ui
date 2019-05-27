@@ -19,6 +19,7 @@
     </slot>
     <slot>
       <input
+        :type="password ? 'password' : 'text'"
         :value="value"
         v-on="listeners"
         v-bind="$attrs"
@@ -45,6 +46,10 @@
     inheritAttrs: false,
     name: 'fg-input',
     props: {
+      password: {
+        type: Boolean,
+        default: false
+      },
       required: Boolean,
       label: String,
       error: String,
