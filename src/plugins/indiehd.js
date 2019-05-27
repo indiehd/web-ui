@@ -1,4 +1,3 @@
-import '@/assets/sass/now-ui-kit.scss';
 import '@/assets/sass/indiehd.scss';
 import globalDirectives from './globalDirectives';
 import globalMixins from './globalMixins';

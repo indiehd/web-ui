@@ -1,2 +1,84 @@
+/*!
+
+ =========================================================
+ * Vue Now UI Kit Pro - v1.0.0
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/vue-now-ui-kit-pro
+ * Copyright 2018 Creative Tim (http://www.creative-tim.com)
+
+ * Designed by www.invisionapp.com Coded by www.creative-tim.com
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
 @import 'indiehd/variables';
+@import 'indiehd/mixins';
+// Plugins CSS
+@import 'indiehd/plugins/plugin-bootstrap-switch';
+@import 'indiehd/plugins/plugin-nouislider';
+@import 'indiehd/plugins/plugin-bootstrap-select';
+@import 'indiehd/plugins/plugin-tagsinput';
+@import 'indiehd/plugins/plugin-fileupload';
+@import 'indiehd/plugins/plugin-datetimepicker';
+// Core CSS
+@import 'indiehd/nucleo-outline';
+@import 'indiehd/alerts';
+@import 'indiehd/checkboxes-radio';
+@import 'indiehd/badges';
+@import 'indiehd/pagination';
+@import 'indiehd/typography';
+@import 'indiehd/misc';
+@import 'indiehd/buttons';
+@import 'indiehd/social-buttons';
+@import 'indiehd/inputs';
+@import 'indiehd/progress';
+@import 'indiehd/pills';
+@import 'indiehd/pills-extend';
 @import 'indiehd/spinners';
+// components
+@import 'indiehd/tabs';
+@import 'indiehd/navbar';
+@import 'indiehd/navbar-extend';
+@import 'indiehd/dropdown';
+@import 'indiehd/dropdown-extend';
+@import 'indiehd/images';
+@import 'indiehd/popups';
+@import 'indiehd/tables';
+@import 'indiehd/info-areas';
+@import 'indiehd/media';
+@import 'indiehd/modals';
+@import 'indiehd/modals-extend';
+@import 'indiehd/carousel';
+@import 'indiehd/footers';
+// cards
+@import 'indiehd/cards';
+@import 'indiehd/cards/card-extend';
+@import 'indiehd/cards/card-background';
+@import 'indiehd/cards/card-blog';
+@import 'indiehd/cards/card-contact';
+@import 'indiehd/cards/card-fashion';
+@import 'indiehd/cards/card-form-horizontal';
+@import 'indiehd/cards/card-no-shadow';
+@import 'indiehd/cards/card-plain';
+@import 'indiehd/cards/card-pricing';
+@import 'indiehd/cards/card-profile';
+@import 'indiehd/cards/card-product';
+@import 'indiehd/cards/card-raised';
+@import 'indiehd/cards/card-signup';
+@import 'indiehd/cards/card-testimonials';
+// element-ui
+@import 'indiehd/element-ui-plugins/carousel';
+@import 'indiehd/element-ui-plugins/date_picker';
+@import 'indiehd/element-ui-plugins/input';
+@import 'indiehd/element-ui-plugins/select';
+@import 'indiehd/element-ui-plugins/tables';
+@import 'indiehd/element-ui-plugins/tags';
+@import 'indiehd/element-ui-plugins/tooltip';
+// example pages and sections
+@import 'indiehd/example-pages';
+@import 'indiehd/sections';
+@import 'indiehd/sections-extend';
+@import 'indiehd/responsive';
