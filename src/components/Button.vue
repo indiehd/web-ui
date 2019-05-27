@@ -1,8 +1,11 @@
 <template>
-  <component :is="tag"
-             :type="nativeType"
-             class="btn"
-             :class="classes">
+  <component
+    :is="tag"
+    :type="nativeType"
+    class="btn"
+    :class="classes"
+    :disabled="disabled"
+  >
     <span class="btn-label" v-if="$slots.label">
       <slot name="label"></slot>
     </span>
@@ -10,6 +13,10 @@
     <span class="btn-label btn-label-right" v-if="$slots.labelRight">
       <slot name="labelRight"></slot>
     </span>
+    <div v-if="loading">
+      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+      <span class="sr-only">Loading...</span>
+    </div>
   </component>
 </template>
 <script>
@@ -28,6 +35,10 @@
         type: String,
         default: 'button'
       },
+      loading: {
+        type: Boolean,
+        default: false
+      },
       round: Boolean,
       simple: Boolean,
       block: Boolean,
@@ -35,7 +46,8 @@
       link: Boolean,
       icon: Boolean,
       wide: Boolean,
-      size: String
+      size: String,
+      disabled: Boolean,
     },
     computed: {
       classes () {
