@@ -1,9 +1,4 @@
-import axios from 'axios';
-
-import {
-  API_URL,
-  API_AUTH_URL,
-} from '../../constants';
+import axios from './axios';
 
 function Login ({commit, state}, frmData) {
   const data = {
@@ -12,7 +7,7 @@ function Login ({commit, state}, frmData) {
   };
 
   return new Promise((resolve, reject) => {
-    axios.post(API_AUTH_URL, data)
+    axios.post('/auth/login', data)
       .then(resp => {
         const user = JSON.stringify(resp.data.user, ' ');
         commit('SET_TOKEN', resp.data.access_token);
@@ -27,34 +22,22 @@ function Login ({commit, state}, frmData) {
 
 function ValidateAuth ({commit, state}) {
   /* todo: Setup api route on web-api */
-  let url = API_URL + 'api/auth/validate';
-  let options = {
-    headers: {
-      Authorization: `Bearer ${state.token}`,
-    },
-  };
+  let url = '/auth/validate';
 
   return new Promise((resolve, reject) => {
-    axios.get(url, options)
+    axios.get(url)
       .then(response => {
         resolve(response.data);
       })
-      .catch((error) => {
+      .catch(err => {
         commit('SET_TOKEN', null);
         localStorage.clear();
-        reject(error.response.data);
+        reject(err);
       });
   });
-}
-
-function StoreToken ({commit}, token) {
-  axios.defaults.headers.common.Authorization = `Bearer ${token}`;
-  localStorage.setItem('token', token);
-  commit('SET_TOKEN', token);
 }
 
 export default {
   Login,
   ValidateAuth,
-  StoreToken,
 };
