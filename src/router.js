@@ -62,7 +62,7 @@ const router = new Router({
       },
       meta: {
         secure: true,
-        admin : true
+        admin: true
       }
     },
   ],
@@ -81,27 +81,27 @@ router.beforeEach((to, from, next) => {
       next({
         path: '/login',
         params: {nextUrl: to.fullPath}
-      })
+      });
     } else {
       if (to.matched.some(route => route.meta.admin)) {
         let user = JSON.parse(localStorage.getItem('user'));
         if (user && user.admin === 1) {
-          next()
+          next();
         } else {
-          next({name: 'userboard'})
+          next({name: 'userboard'});
         }
       } else {
-        next()
+        next();
       }
     }
   } else if (to.matched.some(route => route.meta.guest)) {
     if (localStorage.getItem('token') == null) {
-      next()
+      next();
     } else {
-      next({name: 'userboard'})
+      next({name: 'userboard'});
     }
   } else {
-    next()
+    next();
   }
 });
 
