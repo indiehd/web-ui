@@ -6,7 +6,6 @@ import {
 } from '../../constants';
 
 function Login ({commit, state}, frmData) {
-
   const data = {
     'email': frmData.email,
     'password': frmData.password,
@@ -14,15 +13,15 @@ function Login ({commit, state}, frmData) {
 
   return new Promise((resolve, reject) => {
     axios.post(API_AUTH_URL, data)
-        .then(resp => {
-          const user = JSON.stringify(resp.data.user, ' ');
-          commit('SET_TOKEN', resp.data.access_token);
-          commit('SET_USER', user);
-          resolve(resp.data.user);
-        })
-        .catch(err => {
-          reject(err);
-        });
+      .then(resp => {
+        const user = JSON.stringify(resp.data.user, ' ');
+        commit('SET_TOKEN', resp.data.access_token);
+        commit('SET_USER', user);
+        resolve(resp.data.user);
+      })
+      .catch(err => {
+        reject(err);
+      });
   });
 }
 
@@ -37,14 +36,14 @@ function ValidateAuth ({commit, state}) {
 
   return new Promise((resolve, reject) => {
     axios.get(url, options)
-        .then(response => {
-          resolve(response.data);
-        })
-        .catch((error) => {
-          commit('SET_TOKEN', null);
-          localStorage.clear();
-          reject(error.response.data);
-        });
+      .then(response => {
+        resolve(response.data);
+      })
+      .catch((error) => {
+        commit('SET_TOKEN', null);
+        localStorage.clear();
+        reject(error.response.data);
+      });
   });
 }
 

@@ -6,7 +6,7 @@
 <script>
   export default {
     name: 'userboard',
-  }
+  };
 </script>
 <style lang="scss" scoped>
   .userboard {
