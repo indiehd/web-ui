@@ -7,17 +7,20 @@
     </parallax>
     <div class="container">
       <FeaturedArtists/>
+      <Intro/>
     </div>
   </div>
 </template>
 
 <script>
   import FeaturedArtists from '../sections/FeaturedArtists';
+  import Intro from '../home/Intro';
 
   export default {
     name: 'index-header',
     components: {
-      FeaturedArtists
+      FeaturedArtists,
+      Intro
     },
   };
 </script>
