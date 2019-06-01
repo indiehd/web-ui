@@ -53,18 +53,6 @@
 
 <style lang="scss" scoped>
   .featured-artists {
-    .card {
-      .card-title {
-        margin: 10px 0 0;
-      }
 
-      h6 {
-        margin-top: 5px;
-      }
-    }
-
-    [class*="col-md-"]:nth-child(2) {
-      margin-top: 45px;
-    }
   }
 </style>

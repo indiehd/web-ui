@@ -1,6 +1,6 @@
 <template>
   <div class="artist-card">
-    <Card type="profile">
+    <Card type="profile" plain>
       <!-- todo: Get an image from the artist somehow -->
       <img
         slot="image"
@@ -9,8 +9,8 @@
         alt=""
       />
 
-      <h4 class="card-title">{{ artist.moniker }}</h4>
-      <h6 class="category">Albums: {{ artist.albums_count }} | Songs: {{ artist.songs_count }}</h6>
+      <h4 class="card-title">{{ artist.profile.moniker }}</h4>
+      <h6 class="category">Albums: {{ artist.albums.length }} | Songs: {{ artist.songs.length }}</h6>
       <div class="card-footer">
         <!-- todo: @click.native="$route.push(artist profile route)" -->
         <Button type="primary">
@@ -23,11 +23,13 @@
 
 <script>
   import Card from './Card';
+  import Button from '../Button';
 
   export default {
     name: 'artist-card',
     components: {
-      Card
+      Card,
+      Button
     },
     props: {
       artist: {type: Object, required: true}
@@ -35,7 +37,7 @@
   };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .artist-card {
 
   }
