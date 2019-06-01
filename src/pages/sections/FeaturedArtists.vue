@@ -15,7 +15,7 @@
           class="col-md-4"
           :key="artist.id"
         >
-          <ArtistCard :artist="artist"/>
+          <ArtistCard :artist="artist" plain/>
         </div>
       </div>
     </div>

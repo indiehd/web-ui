@@ -1,6 +1,5 @@
 <template>
-  <div class="artist-card">
-    <Card type="profile" plain>
+    <Card type="profile" v-bind="$attrs">
       <!-- todo: Get an image from the artist somehow -->
       <img
         slot="image"
@@ -18,7 +17,6 @@
         </Button>
       </div>
     </Card>
-  </div>
 </template>
 
 <script>
@@ -31,14 +29,15 @@
       Card,
       Button
     },
+    inheritAttrs: true,
     props: {
-      artist: {type: Object, required: true}
+      artist: {type: Object, required: true},
     }
   };
 </script>
 
 <style lang="scss" scoped>
-  .artist-card {
+  .card {
 
   }
 </style>
