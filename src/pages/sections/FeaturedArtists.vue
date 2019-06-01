@@ -15,23 +15,7 @@
           class="col-md-4"
           :key="artist.id"
         >
-          <Card type="profile" plain>
-            <img
-              slot="image"
-              class="img img-raised rounded"
-              :src="require(`@/assets/img/temp/card-profile1.jpg`)"
-              alt=""
-            />
-
-            <h4 class="card-title">{{ artist.moniker }}</h4>
-            <h6 class="category">Albums: {{ artist.albums_count }} | Songs: {{ artist.songs_count }}</h6>
-            <div class="card-footer">
-              <Button type="info">
-                Visit Profile
-              </Button>
-            </div>
-
-          </Card>
+          <ArtistCard :artist="artist"/>
         </div>
       </div>
     </div>
@@ -39,18 +23,13 @@
 </template>
 
 <script>
-  import {
-    Button,
-    Card
-  } from '@/components';
-
   import { mapActions } from 'vuex';
+  import ArtistCard from '@/components/Cards/ArtistCard';
 
   export default {
     name: 'featured-artists',
     components: {
-      Card,
-      Button,
+      ArtistCard,
     },
     data () {
       return {
