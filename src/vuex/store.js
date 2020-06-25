@@ -14,7 +14,12 @@ export default new Vuex.Store({
       artists: [],
       albums: [],
       songs: [],
-    }
+    },
+    top: {
+      artists: [],
+      albums: [],
+      songs: [],
+    },
   },
   getters: {
     user (state) {
