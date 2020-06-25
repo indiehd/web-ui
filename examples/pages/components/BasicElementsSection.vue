@@ -7,22 +7,22 @@
       <div class="row">
         <div class="col-md-10">
           <n-button type="primary">Default</n-button>
-          <n-button type="primary" round>Round</n-button>
-          <n-button type="primary" round>
+          <n-button round type="primary">Round</n-button>
+          <n-button round type="primary">
             <i class="now-ui-icons ui-2_favourite-28"></i> With Icon
           </n-button>
-          <n-button type="primary" round icon>
+          <n-button icon round type="primary">
             <i class="now-ui-icons ui-2_favourite-28"></i>
           </n-button>
-          <n-button type="primary" round simple>Simple</n-button>
+          <n-button round simple type="primary">Simple</n-button>
         </div>
       </div>
       <p class="category">Pick your size</p>
       <div class="row">
         <div class="col-md-10">
-          <n-button type="primary" size="sm">Small</n-button>
+          <n-button size="sm" type="primary">Small</n-button>
           <n-button type="primary">Regular</n-button>
-          <n-button type="primary" size="lg">Large</n-button>
+          <n-button size="lg" type="primary">Large</n-button>
         </div>
       </div>
       <p class="category">Pick your color</p>
@@ -40,13 +40,13 @@
       <h4>Links</h4>
       <div class="row">
         <div class="col-md-8">
-          <n-button type="default" link>Default</n-button>
-          <n-button type="primary" link>Primary</n-button>
-          <n-button type="info" link>Info</n-button>
-          <n-button type="success" link>Success</n-button>
-          <n-button type="warning" link>Warning</n-button>
-          <n-button type="danger" link>Danger</n-button>
-          <n-button type="neutral" link>Neutral</n-button>
+          <n-button link type="default">Default</n-button>
+          <n-button link type="primary">Primary</n-button>
+          <n-button link type="info">Info</n-button>
+          <n-button link type="success">Success</n-button>
+          <n-button link type="warning">Warning</n-button>
+          <n-button link type="danger">Danger</n-button>
+          <n-button link type="neutral">Neutral</n-button>
         </div>
       </div>
       <!--                 social n-buttons		         -->
@@ -365,10 +365,10 @@
             <fg-input placeholder="Regular"></fg-input>
           </div>
           <div class="col-sm-6 col-lg-3">
-            <fg-input value="Success" class="has-success"></fg-input>
+            <fg-input class="has-success" value="Success"></fg-input>
           </div>
           <div class="col-sm-6 col-lg-3">
-            <fg-input value="Error Input" class="has-danger"></fg-input>
+            <fg-input class="has-danger" value="Error Input"></fg-input>
           </div>
           <div class="col-sm-6 col-lg-3">
             <fg-input addon-left-icon="now-ui-icons users_single-02"
@@ -394,27 +394,27 @@
             <div class="row">
               <div class="col-lg-6 col-md-8 col-sm-5">
                 <el-select class="select-primary"
-                           v-model="singleSelect.value"
-                           placeholder="Single Option">
-                  <el-option v-for="option in singleSelect.options"
-                             class="select-primary"
-                             :key="option.label"
+                           placeholder="Single Option"
+                           v-model="singleSelect.value">
+                  <el-option :key="option.label"
+                             :label="option.label"
                              :value="option.value"
-                             :label="option.label">
+                             class="select-primary"
+                             v-for="option in singleSelect.options">
                   </el-option>
                 </el-select>
               </div>
               <div class="col-lg-6 col-md-8 col-sm-5">
                 <el-select class="select-info"
-                           multiple
                            collapse-tags
+                           multiple
                            placeholder="Multiple Options"
                            v-model="multiSelect.value">
-                  <el-option v-for="option in multiSelect.options"
-                             class="select-info"
-                             :key="option.value"
+                  <el-option :key="option.value"
+                             :label="option.label"
                              :value="option.value"
-                             :label="option.label">
+                             class="select-info"
+                             v-for="option in multiSelect.options">
                   </el-option>
                 </el-select>
               </div>
@@ -427,11 +427,11 @@
             <div class="row">
               <div class="col-lg-5 col-md-8">
                 <drop-down>
-                  <n-button slot="title"
-                            class="dropdown-toggle"
-                            type="primary"
+                  <n-button class="dropdown-toggle"
                             data-toggle="dropdown"
-                            round>
+                            round
+                            slot="title"
+                            type="primary">
                     Dropdown
                   </n-button>
                   <a class="dropdown-item" href="#">Action</a>
@@ -441,11 +441,11 @@
               </div>
               <div class="col-lg-5 col-md-8">
                 <drop-down direction="up">
-                  <n-button slot="title"
-                            class="dropdown-toggle"
-                            type="primary"
+                  <n-button class="dropdown-toggle"
                             data-toggle="dropdown"
-                            round>
+                            round
+                            slot="title"
+                            type="primary">
                     Dropdown
                   </n-button>
                   <a class="dropdown-item" href="#">Action</a>
@@ -466,32 +466,32 @@
             <div class="title">
               <h4>Textarea</h4>
             </div>
-            <textarea class="form-control" name="name" rows="4" cols="80"
-                      placeholder="You can write your text here..."></textarea>
+            <textarea class="form-control" cols="80" name="name" placeholder="You can write your text here..."
+                      rows="4"></textarea>
           </div>
           <div class="col-md-6">
             <div class="title">
               <h4>Tags</h4>
             </div>
             <el-tag
-              :key="tag"
-              v-for="tag in tags.dynamicTags"
-              size="small"
-              type="danger"
-              :closable="true"
-              :close-transition="false"
-              @close="handleClose(tag)"
+                :closable="true"
+                :close-transition="false"
+                :key="tag"
+                @close="handleClose(tag)"
+                size="small"
+                type="danger"
+                v-for="tag in tags.dynamicTags"
             >
               {{tag}}
             </el-tag>
 
-            <input type="text" placeholder="New Tag"
+            <input @blur="handleInputConfirm" @keyup.enter="handleInputConfirm"
                    class="form-control input-new-tag"
-                   v-model="tags.inputValue"
+                   placeholder="New Tag"
                    ref="saveTagInput"
                    size="mini"
-                   @keyup.enter="handleInputConfirm"
-                   @blur="handleInputConfirm"/>
+                   type="text"
+                   v-model="tags.inputValue" />
           </div>
         </div>
       </div>
@@ -501,22 +501,22 @@
           <p class="category">Checkboxes</p>
           <n-checkbox v-model="checkboxes.unchecked">Unchecked</n-checkbox>
           <n-checkbox v-model="checkboxes.checked">Checked</n-checkbox>
-          <n-checkbox v-model="checkboxes.disabledUnchecked" disabled>Disabled Unchecked</n-checkbox>
-          <n-checkbox v-model="checkboxes.disabledChecked" disabled>Disabled Checked</n-checkbox>
+          <n-checkbox disabled v-model="checkboxes.disabledUnchecked">Disabled Unchecked</n-checkbox>
+          <n-checkbox disabled v-model="checkboxes.disabledChecked">Disabled Checked</n-checkbox>
         </div>
         <div class="col-sm-6 col-lg-3">
           <p class="category">Radios</p>
-          <n-radio v-model="radios.radioOn" label="1">Radio is On</n-radio>
-          <n-radio v-model="radios.radioOn" label="2">Radio is Off</n-radio>
+          <n-radio label="1" v-model="radios.radioOn">Radio is On</n-radio>
+          <n-radio label="2" v-model="radios.radioOn">Radio is Off</n-radio>
 
-          <n-radio v-model="radios.radioOff" label="1" disabled>Disabled radio is on</n-radio>
-          <n-radio v-model="radios.radioOff" label="2" disabled>Disabled radio is off</n-radio>
+          <n-radio disabled label="1" v-model="radios.radioOff">Disabled radio is on</n-radio>
+          <n-radio disabled label="2" v-model="radios.radioOff">Disabled radio is off</n-radio>
         </div>
         <div class="col-sm-6 col-lg-3">
           <p class="category">Toggle buttons</p>
           <n-switch v-model="switches.defaultOn"></n-switch>
           <br>
-          <n-switch v-model="switches.defaultOff" on-text="ON" off-text="OFF"></n-switch>
+          <n-switch off-text="OFF" on-text="ON" v-model="switches.defaultOff"></n-switch>
 
         </div>
         <div class="col-sm-6 col-lg-3">
@@ -524,9 +524,9 @@
           <slider v-model="sliders.simple">
           </slider>
           <br>
-          <slider v-model="sliders.rangeSlider"
+          <slider :connect="true"
                   type="primary"
-                  :connect="true">
+                  v-model="sliders.rangeSlider">
           </slider>
         </div>
       </div>
@@ -534,8 +534,8 @@
   </div>
 </template>
 <script>
-  import { Button, Checkbox, Radio, FormGroupInput, DropDown, Slider, Switch } from '@/components';
-  import { Select, Option, Tag } from 'element-ui/types';
+  import { Button, Checkbox, DropDown, FormGroupInput, Radio, Slider, Switch } from '@/components';
+  import { Option, Select, Tag } from 'element-ui/types';
 
   export default {
     components: {
@@ -640,7 +640,7 @@
             {
               value: '19',
               label: 'Piatra Neamt'
-            },
+            }
 
           ]
         },

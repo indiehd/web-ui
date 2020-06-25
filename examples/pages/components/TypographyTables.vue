@@ -7,27 +7,39 @@
           <div class="col-md-12">
             <div class="typography-line">
               <h1>
-                <span>Header 1</span>The Life of Now UI Kit </h1>
+                <span>Header 1</span>
+                The Life of Now UI Kit
+              </h1>
             </div>
             <div class="typography-line">
               <h2>
-                <span>Header 2</span>The Life of Now UI Kit</h2>
+                <span>Header 2</span>
+                The Life of Now UI Kit
+              </h2>
             </div>
             <div class="typography-line">
               <h3>
-                <span>Header 3</span>The Life of Now UI Kit</h3>
+                <span>Header 3</span>
+                The Life of Now UI Kit
+              </h3>
             </div>
             <div class="typography-line">
               <h4>
-                <span>Header 4</span>The Life of Now UI Kit</h4>
+                <span>Header 4</span>
+                The Life of Now UI Kit
+              </h4>
             </div>
             <div class="typography-line">
               <h5>
-                <span>Header 5</span>The Life of Now UI Kit</h5>
+                <span>Header 5</span>
+                The Life of Now UI Kit
+              </h5>
             </div>
             <div class="typography-line">
               <h6>
-                <span>Header 6</span>The Life of Now UI Kit</h6>
+                <span>Header 6</span>
+                The Life of Now UI Kit
+              </h6>
             </div>
             <div class="typography-line">
               <p>
@@ -109,24 +121,24 @@
         <div class="row">
           <div class="col-sm-2">
             <p class="category">Image</p>
-            <img v-lazy="'img/julie.jpg'" alt="Rounded Image" class="rounded">
+            <img alt="Rounded Image" class="rounded" v-lazy="'img/julie.jpg'">
           </div>
           <div class="col-sm-2">
             <p class="category">Circle Image</p>
-            <img v-lazy="'img/julie.jpg'" alt="Circle Image" class="rounded-circle">
+            <img alt="Circle Image" class="rounded-circle" v-lazy="'img/julie.jpg'">
           </div>
           <div class="col-sm-2">
             <p class="category">Raised</p>
-            <img v-lazy="'img/julie.jpg'" alt="Raised Image" class="rounded img-raised">
+            <img alt="Raised Image" class="rounded img-raised" v-lazy="'img/julie.jpg'">
           </div>
           <div class="col-sm-2">
             <p class="category">Circle Raised</p>
-            <img v-lazy="'img/julie.jpg'" alt="Thumbnail Image" class="rounded-circle img-raised">
+            <img alt="Thumbnail Image" class="rounded-circle img-raised" v-lazy="'img/julie.jpg'">
           </div>
         </div>
       </div>
       <div class="space-70"></div>
-      <div id="contentAreas" class="cd-section">
+      <div class="cd-section" id="contentAreas">
         <h3 class="title">Content Areas</h3>
         <!--                 tables -->
         <div id="tables">
@@ -147,46 +159,46 @@
                   <div class="col-sm-12">
                     <el-table :data="tableData">
                       <el-table-column min-width="50" type="index"></el-table-column>
-                      <el-table-column min-width="150"
-                                       align="left"
-                                       prop="name"
-                                       label="Name">
+                      <el-table-column align="left"
+                                       label="Name"
+                                       min-width="150"
+                                       prop="name">
                       </el-table-column>
-                      <el-table-column min-width="200"
-                                       prop="job"
-                                       align="left"
-                                       label="Job Position">
+                      <el-table-column align="left"
+                                       label="Job Position"
+                                       min-width="200"
+                                       prop="job">
                       </el-table-column>
-                      <el-table-column min-width="150"
-                                       prop="salary"
-                                       align="left"
-                                       label="Salary">
+                      <el-table-column align="left"
+                                       label="Salary"
+                                       min-width="150"
+                                       prop="salary">
                       </el-table-column>
-                      <el-table-column min-width="150"
-                                       header-align="right"
-                                       label="Actions">
-                        <div slot-scope="{row}" class="text-right table-actions">
-                          <el-tooltip content="Info"
-                                      :open-delay="300"
+                      <el-table-column header-align="right"
+                                       label="Actions"
+                                       min-width="150">
+                        <div class="text-right table-actions" slot-scope="{row}">
+                          <el-tooltip :open-delay="300"
+                                      content="Info"
                                       placement="top">
-                            <n-button type="info" size="sm" icon>
+                            <n-button icon size="sm" type="info">
                               <i class="now-ui-icons users_single-02"></i>
                             </n-button>
                           </el-tooltip>
 
 
-                          <el-tooltip content="Settings"
-                                      :open-delay="300"
+                          <el-tooltip :open-delay="300"
+                                      content="Settings"
                                       placement="top">
-                            <n-button type="success" size="sm" icon>
+                            <n-button icon size="sm" type="success">
                               <i class="now-ui-icons ui-2_settings-90"></i>
                             </n-button>
                           </el-tooltip>
 
-                          <el-tooltip content="Delete"
-                                      :open-delay="300"
+                          <el-tooltip :open-delay="300"
+                                      content="Delete"
                                       placement="top">
-                            <n-button type="danger" size="sm" icon>
+                            <n-button icon size="sm" type="danger">
                               <i class="now-ui-icons ui-1_simple-remove"></i>
                             </n-button>
                           </el-tooltip>
@@ -206,27 +218,27 @@
               </div>
               <h6>Striped With Checkboxes</h6>
               <card plain>
-                <el-table stripe
-                          :data="tableData">
+                <el-table :data="tableData"
+                          stripe>
                   <el-table-column type="index">
 
                   </el-table-column>
                   <el-table-column width="60">
-                    <div slot-scope="{row}" class="checkbox-cell">
+                    <div class="checkbox-cell" slot-scope="{row}">
                       <n-checkbox v-model="row.active"></n-checkbox>
                     </div>
                   </el-table-column>
-                  <el-table-column prop="name"
-                                   align="left"
-                                   label="Name">
+                  <el-table-column align="left"
+                                   label="Name"
+                                   prop="name">
                   </el-table-column>
-                  <el-table-column prop="job"
-                                   align="left"
-                                   label="Job Position">
+                  <el-table-column align="left"
+                                   label="Job Position"
+                                   prop="job">
                   </el-table-column>
-                  <el-table-column prop="salary"
-                                   align="left"
-                                   label="Salary">
+                  <el-table-column align="left"
+                                   label="Salary"
+                                   prop="salary">
                   </el-table-column>
 
                 </el-table>
@@ -261,21 +273,21 @@
                 <h3 class="title text-center">
                   <small>10 Comments</small>
                 </h3>
-                <comment v-for="(comment, index) in comments"
-                         :key="comment.author + index"
-                         :author="comment.author"
-                         :date="comment.date"
+                <comment :author="comment.author"
                          :avatar="comment.avatar"
                          :comment="comment.comment"
-                         :replies="comment.replies">
+                         :date="comment.date"
+                         :key="comment.author + index"
+                         :replies="comment.replies"
+                         v-for="(comment, index) in comments">
                   <template slot="actions">
                     <el-tooltip content="Reply To Comment" placement="top">
-                      <a href="#pablo" class="btn btn-primary btn-neutral pull-right">
+                      <a class="btn btn-primary btn-neutral pull-right" href="#pablo">
                         <i class="now-ui-icons ui-1_send"></i> Reply
                       </a>
                     </el-tooltip>
-                    <a href="#pablo" :class="{'btn-default': !comment.liked}"
-                       class="btn btn-neutral pull-right">
+                    <a :class="{'btn-default': !comment.liked}" class="btn btn-neutral pull-right"
+                       href="#pablo">
                       <i class="now-ui-icons ui-2_favourite-28"></i>
                       {{comment.likes}}
                     </a>
@@ -294,14 +306,14 @@
               <div class="media media-post">
                 <a class="pull-left author" href="#pablo">
                   <div class="avatar">
-                    <img class="media-object img-raised" alt="64x64" src="img/james.jpg">
+                    <img alt="64x64" class="media-object img-raised" src="img/james.jpg">
                   </div>
                 </a>
                 <div class="media-body">
                                     <textarea class="form-control" placeholder="Write some nice stuff or nothing..."
                                               rows="6"></textarea>
                   <div class="media-footer">
-                    <n-button type="primary" class="pull-right" wide>
+                    <n-button class="pull-right" type="primary" wide>
                       Post Comment
                     </n-button>
                   </div>
@@ -315,8 +327,8 @@
               <div class="media media-post">
                 <a class="pull-left author" href="#pablo">
                   <div class="avatar">
-                    <img class="media-object img-raised" alt="64x64"
-                         src="img/placeholder.jpg"/>
+                    <img alt="64x64" class="media-object img-raised"
+                         src="img/placeholder.jpg" />
                   </div>
                 </a>
                 <div class="media-body">
@@ -335,16 +347,16 @@
                               rows="6"></textarea>
                     <div class="media-footer">
                       <h6 class="text-muted">Sign in with</h6>
-                      <n-button icon round class="btn-twitter">
+                      <n-button class="btn-twitter" icon round>
                         <i class="fab fa-twitter"></i>
                       </n-button>
-                      <n-button icon round class="btn-facebook">
+                      <n-button class="btn-facebook" icon round>
                         <i class="fab fa-facebook-square"></i>
                       </n-button>
-                      <n-button icon round class="btn-google">
+                      <n-button class="btn-google" icon round>
                         <i class="fab fa-google-plus-square"></i>
                       </n-button>
-                      <n-button type="primary" class="pull-right">
+                      <n-button class="pull-right" type="primary">
                         Post Comment
                       </n-button>
                     </div>
@@ -362,7 +374,7 @@
   </div>
 </template>
 <script>
-  import { Card, Button, Checkbox, Comment, FormGroupInput, Pagination } from '@/components';
+  import { Button, Card, Checkbox, Comment, FormGroupInput, Pagination } from '@/components';
   import { Table, TableColumn, Tooltip } from 'element-ui/types';
   import ShoppingTable from './TypographyTables/ShoppingTable';
 
@@ -439,7 +451,7 @@
                 likes: 243,
                 liked: true,
                 replies: []
-              },
+              }
             ]
           },
           {

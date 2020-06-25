@@ -1,7 +1,7 @@
 <template>
-  <div class="slider"
-       :class="[`slider-${type}`]"
-       :disabled="disabled">
+  <div :class="[`slider-${type}`]"
+       :disabled="disabled"
+       class="slider">
 
   </div>
 </template>
@@ -83,4 +83,7 @@
     }
   };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss">
+  @import "~@/assets/sass/indiehd/variables";
+  @import "~@/assets/sass/indiehd/plugins/plugin-nouislider";
+</style>

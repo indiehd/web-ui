@@ -12,44 +12,44 @@
               <tab-pane label="Profile">
                 Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
                 procrastinate B2C users after installed base benefits.
-                <br/>
-                <br/> Dramatically visualize customer directed convergence without revolutionary ROI.
+                <br />
+                <br /> Dramatically visualize customer directed convergence without revolutionary ROI.
               </tab-pane>
               <tab-pane label="Settings">
                 Efficiently unleash cross-media information without cross-media value. Quickly maximize
                 timely deliverables for real-time schemas.
-                <br/>
-                <br/>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                <br />
+                <br />Dramatically maintain clicks-and-mortar solutions without functional solutions.
               </tab-pane>
               <tab-pane label="Options">
                 Completely synergize resource taxing relationships via premier niche markets.
                 Professionally cultivate one-to-one customer service with robust ideas.
-                <br/>
-                <br/>Dynamically innovate resource-leveling customer service for state of the art
+                <br />
+                <br />Dynamically innovate resource-leveling customer service for state of the art
                 customer service.
               </tab-pane>
             </tabs>
           </div>
           <div class="col-md-6">
             <p class="category">Vertical tabs</p>
-            <tabs pills type="primary" vertical class="row">
+            <tabs class="row" pills type="primary" vertical>
               <tab-pane label="Profile">
                 Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
                 procrastinate B2C users after installed base benefits.
-                <br/>
-                <br/> Dramatically visualize customer directed convergence without revolutionary ROI.
+                <br />
+                <br /> Dramatically visualize customer directed convergence without revolutionary ROI.
               </tab-pane>
               <tab-pane label="Settings">
                 Efficiently unleash cross-media information without cross-media value. Quickly maximize
                 timely deliverables for real-time schemas.
-                <br/>
-                <br/>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                <br />
+                <br />Dramatically maintain clicks-and-mortar solutions without functional solutions.
               </tab-pane>
               <tab-pane label="Options">
                 Completely synergize resource taxing relationships via premier niche markets.
                 Professionally cultivate one-to-one customer service with robust ideas.
-                <br/>
-                <br/>Dynamically innovate resource-leveling customer service for state of the art
+                <br />
+                <br />Dynamically innovate resource-leveling customer service for state of the art
                 customer service.
               </tab-pane>
             </tabs>
@@ -60,15 +60,15 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <tabs pills type="primary" icons>
+            <tabs icons pills type="primary">
               <tab-pane label="Profile">
                 <template slot="label">
                   <i class="now-ui-icons objects_umbrella-13"></i> Home
                 </template>
                 Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
                 procrastinate B2C users after installed base benefits.
-                <br/>
-                <br/> Dramatically visualize customer directed convergence without revolutionary ROI.
+                <br />
+                <br /> Dramatically visualize customer directed convergence without revolutionary ROI.
               </tab-pane>
               <tab-pane label="Settings">
                 <template slot="label">
@@ -76,8 +76,8 @@
                 </template>
                 Efficiently unleash cross-media information without cross-media value. Quickly maximize
                 timely deliverables for real-time schemas.
-                <br/>
-                <br/>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                <br />
+                <br />Dramatically maintain clicks-and-mortar solutions without functional solutions.
               </tab-pane>
               <tab-pane label="Options">
                 <template slot="label">
@@ -85,19 +85,19 @@
                 </template>
                 Completely synergize resource taxing relationships via premier niche markets.
                 Professionally cultivate one-to-one customer service with robust ideas.
-                <br/>
-                <br/>Dynamically innovate resource-leveling customer service for state of the art
+                <br />
+                <br />Dynamically innovate resource-leveling customer service for state of the art
                 customer service.
               </tab-pane>
             </tabs>
           </div>
           <div class="col-md-6">
             <tabs class="row"
-                  pills
-                  type="primary"
                   icons
-                  tab-nav-wrapper-classes="col-md-3"
+                  pills
                   tab-content-classes="col-md-8"
+                  tab-nav-wrapper-classes="col-md-3"
+                  type="primary"
                   vertical>
               <tab-pane label="Profile">
                 <template slot="label">
@@ -105,8 +105,8 @@
                 </template>
                 Collaboratively administrate empowered markets via plug-and-play networks.
                 Dynamically procrastinate B2C users after installed base benefits.
-                <br/>
-                <br/> Dramatically visualize customer directed convergence without revolutionary
+                <br />
+                <br /> Dramatically visualize customer directed convergence without revolutionary
                 ROI.
               </tab-pane>
               <tab-pane label="Settings">
@@ -115,8 +115,8 @@
                 </template>
                 Efficiently unleash cross-media information without cross-media value. Quickly
                 maximize timely deliverables for real-time schemas.
-                <br/>
-                <br/>Dramatically maintain clicks-and-mortar solutions without functional
+                <br />
+                <br />Dramatically maintain clicks-and-mortar solutions without functional
                 solutions.
               </tab-pane>
             </tabs>
@@ -129,19 +129,19 @@
           <div class="col-md-6">
             <tabs class="row"
                   pills
-                  type="info"
-                  vertical
+                  tab-nav-classes="nav-pills-just-icons"
                   tab-nav-wrapper-classes="col-md-3"
-                  tab-nav-classes="nav-pills-just-icons">
+                  type="info"
+                  vertical>
               <tab-pane>
-                <i slot="label" class="now-ui-icons objects_umbrella-13"></i>
+                <i class="now-ui-icons objects_umbrella-13" slot="label"></i>
                 Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
                 users after installed base benefits.
                 <br>
                 <br> Dramatically visualize customer directed convergence without revolutionary ROI.
               </tab-pane>
               <tab-pane>
-                <i slot="label" class="now-ui-icons ui-2_settings-90"></i>
+                <i class="now-ui-icons ui-2_settings-90" slot="label"></i>
                 Efficiently unleash cross-media information without cross-media value. Quickly maximize timely
                 deliverables for real-time schemas.
                 <br>
@@ -151,24 +151,24 @@
           </div>
           <div class="col-md-6">
             <tabs pills
-                  type="info"
-                  tab-nav-classes="nav-pills-just-icons">
+                  tab-nav-classes="nav-pills-just-icons"
+                  type="info">
               <tab-pane label="Profile">
-                <i slot="label" class="now-ui-icons objects_umbrella-13"></i>
+                <i class="now-ui-icons objects_umbrella-13" slot="label"></i>
                 Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
                 users after installed base benefits.
                 <br>
                 <br> Dramatically visualize customer directed convergence without revolutionary ROI.
               </tab-pane>
               <tab-pane label="Settings">
-                <i slot="label" class="now-ui-icons shopping_shop"></i>
+                <i class="now-ui-icons shopping_shop" slot="label"></i>
                 Efficiently unleash cross-media information without cross-media value. Quickly maximize timely
                 deliverables for real-time schemas.
                 <br>
                 <br>Dramatically maintain clicks-and-mortar solutions without functional solutions.
               </tab-pane>
               <tab-pane label="Settings">
-                <i slot="label" class="now-ui-icons ui-2_settings-90"></i>
+                <i class="now-ui-icons ui-2_settings-90" slot="label"></i>
                 Completely synergize resource taxing relationships via premier niche markets.
                 Professionally cultivate one-to-one customer service with robust ideas.
                 <br>
@@ -184,7 +184,7 @@
   </div>
 </template>
 <script>
-  import { Card, Tabs, TabPane } from '@/components';
+  import { Card, TabPane, Tabs } from '@/components';
 
   export default {
     components: {

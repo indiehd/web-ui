@@ -1,14 +1,14 @@
 <template>
   <fade-transition>
-    <div class="alert" :class="[`alert-${type}`]" role="alert" v-if="visible">
+    <div :class="[`alert-${type}`]" class="alert" role="alert" v-if="visible">
       <slot v-if="!dismissible"></slot>
-      <div v-else class="container">
+      <div class="container" v-else>
         <slot></slot>
         <slot name="dismiss-icon">
-          <button type="button" class="close" aria-label="Close" @click="dismissAlert">
-                  <span aria-hidden="true">
-                    <i class="now-ui-icons ui-1_simple-remove"></i>
-                  </span>
+          <button @click="dismissAlert" aria-label="Close" class="close" type="button">
+            <span aria-hidden="true">
+              <i class="now-ui-icons ui-1_simple-remove"></i>
+            </span>
           </button>
         </slot>
       </div>

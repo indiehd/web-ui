@@ -12,42 +12,42 @@
           <a class="footer-brand" href="https:///www.creative-tim.com">Now Ui Kit PRO</a>
           <ul class="pull-center">
             <li>
-              <a href="#pablo" class="nav-link">
+              <a class="nav-link" href="#pablo">
                 Creative Tim
               </a>
             </li>
             <li>
-              <a href="#pablo" class="nav-link">
+              <a class="nav-link" href="#pablo">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#pablo" class="nav-link">
+              <a class="nav-link" href="#pablo">
                 Blog
               </a>
             </li>
             <li>
-              <a href="#pablo" class="nav-link">
+              <a class="nav-link" href="#pablo">
                 Licenses
               </a>
             </li>
           </ul>
           <ul class="social-buttons pull-right">
             <li>
-              <a href="https://twitter.com/CreativeTim" target="_blank"
-                 class="btn btn-icon btn-neutral btn-twitter">
+              <a class="btn btn-icon btn-neutral btn-twitter" href="https://twitter.com/CreativeTim"
+                 target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/CreativeTim" target="_blank"
-                 class="btn btn-icon btn-neutral btn-dribbble">
+              <a class="btn btn-icon btn-neutral btn-dribbble" href="https://www.facebook.com/CreativeTim"
+                 target="_blank">
                 <i class="fab fa-dribbble"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/CreativeTimOfficial" target="_blank"
-                 class="btn btn-icon btn-neutral btn-google">
+              <a class="btn btn-icon btn-neutral btn-google" href="https://www.instagram.com/CreativeTimOfficial"
+                 target="_blank">
                 <i class="fab fa-google-plus"></i>
               </a>
             </li>
@@ -55,30 +55,30 @@
         </div>
       </footer>
       <!--     *********   END SIMPLE FOOTER WITH SOCIAL AND BRAND     *********      -->
-      <br/>
-      <br/>
+      <br />
+      <br />
       <!--     *********    SIMPLE FOOTER     *********      -->
       <footer class="footer">
         <div class="container">
           <nav>
             <ul>
               <li>
-                <a href="https://www.creative-tim.com" class="nav-link">
+                <a class="nav-link" href="https://www.creative-tim.com">
                   Creative Tim
                 </a>
               </li>
               <li>
-                <a href="https:///presentation.creative-tim.com" class="nav-link">
+                <a class="nav-link" href="https:///presentation.creative-tim.com">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="https:///blog.creative-tim.com" class="nav-link">
+                <a class="nav-link" href="https:///blog.creative-tim.com">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="https://www.creative-tim.com/license" target="_blank" class="nav-link">
+                <a class="nav-link" href="https://www.creative-tim.com/license" target="_blank">
                   License
                 </a>
               </li>
@@ -88,15 +88,15 @@
             &copy;
             {{year}}
             , Designed by
-            <a href="https:///www.invisionapp.com" target="_blank" class="copyright-link">Invision</a>. Coded
+            <a class="copyright-link" href="https:///www.invisionapp.com" target="_blank">Invision</a>. Coded
             by
-            <a href="https://www.creative-tim.com" target="_blank" class="copyright-link">Creative Tim</a>.
+            <a class="copyright-link" href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
           </div>
         </div>
       </footer>
       <!--     *********   END SIMPLE FOOTER     *********      -->
-      <br/>
-      <br/>
+      <br />
+      <br />
       <!--     *********    BLACK SIMPLE FOOTER WITH SOCIAL AND BRAND     *********      -->
       <footer class="footer" data-background-color="black">
         <div class="container">
@@ -130,20 +130,20 @@
           </ul>
           <ul class="social-buttons pull-right">
             <li>
-              <a href="https://twitter.com/CreativeTim" target="_blank"
-                 class="btn btn-icon btn-link btn-neutral">
+              <a class="btn btn-icon btn-link btn-neutral" href="https://twitter.com/CreativeTim"
+                 target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/CreativeTim" target="_blank"
-                 class="btn btn-icon btn-neutral btn-link">
+              <a class="btn btn-icon btn-neutral btn-link" href="https://www.facebook.com/CreativeTim"
+                 target="_blank">
                 <i class="fab fa-facebook-square"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/CreativeTimOfficial" target="_blank"
-                 class="btn btn-icon btn-neutral btn-link">
+              <a class="btn btn-icon btn-neutral btn-link" href="https://www.instagram.com/CreativeTimOfficial"
+                 target="_blank">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
@@ -151,8 +151,8 @@
         </div>
       </footer>
       <!--     *********   END BLACK SIMPLE FOOTER WITH SOCIAL AND BRAND     *********      -->
-      <br/>
-      <br/>
+      <br />
+      <br />
       <!--     *********    BIG FOOTER     *********      -->
       <footer class="footer footer-big footer-white">
         <div class="container">
@@ -186,19 +186,19 @@
               <div class="col-md-4">
                 <h5>Instagram Feed</h5>
                 <div class="gallery-feed">
-                  <img v-lazy="'img/olivia.jpg'" class="img img-raised rounded" alt=""/>
-                  <img v-lazy="'img/james.jpg'" class="img img-raised rounded" alt=""/>
-                  <img v-lazy="'img/michael.jpg'" class="img img-raised rounded" alt=""/>
-                  <img v-lazy="'img/emily.jpg'" class="img img-raised rounded" alt=""/>
-                  <img v-lazy="'img/marie.jpg'" class="img img-raised rounded" alt=""/>
-                  <img v-lazy="'img/usher.jpg'" class="img img-raised rounded" alt=""/>
-                  <img v-lazy="'img/mike.jpg'" class="img img-raised rounded" alt=""/>
-                  <img v-lazy="'img/julie.jpg'" class="img img-raised rounded" alt=""/>
+                  <img alt="" class="img img-raised rounded" v-lazy="'img/olivia.jpg'" />
+                  <img alt="" class="img img-raised rounded" v-lazy="'img/james.jpg'" />
+                  <img alt="" class="img img-raised rounded" v-lazy="'img/michael.jpg'" />
+                  <img alt="" class="img img-raised rounded" v-lazy="'img/emily.jpg'" />
+                  <img alt="" class="img img-raised rounded" v-lazy="'img/marie.jpg'" />
+                  <img alt="" class="img img-raised rounded" v-lazy="'img/usher.jpg'" />
+                  <img alt="" class="img img-raised rounded" v-lazy="'img/mike.jpg'" />
+                  <img alt="" class="img img-raised rounded" v-lazy="'img/julie.jpg'" />
                 </div>
               </div>
             </div>
           </div>
-          <hr/>
+          <hr />
           <ul class="pull-left">
             <li>
               <a href="#pablo">
@@ -234,8 +234,8 @@
         </div>
       </footer>
       <!--     *********   END BIG FOOTER     *********      -->
-      <br/>
-      <br/>
+      <br />
+      <br />
       <!--     *********    BIG BlACK FOOTER     *********      -->
       <footer class="footer footer-big" data-background-color="black">
         <div class="container">
@@ -245,22 +245,22 @@
                 <h5>About Us</h5>
                 <ul class="links-vertical">
                   <li>
-                    <a href="#pablo" class="text-muted">
+                    <a class="text-muted" href="#pablo">
                       Blog
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="text-muted">
+                    <a class="text-muted" href="#pablo">
                       About Us
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="text-muted">
+                    <a class="text-muted" href="#pablo">
                       Presentation
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="text-muted">
+                    <a class="text-muted" href="#pablo">
                       Contact Us
                     </a>
                   </li>
@@ -270,32 +270,32 @@
                 <h5>Market</h5>
                 <ul class="links-vertical">
                   <li>
-                    <a href="#pablo" class="text-muted">
+                    <a class="text-muted" href="#pablo">
                       Sales FAQ
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="text-muted">
+                    <a class="text-muted" href="#pablo">
                       How to Register
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="text-muted">
+                    <a class="text-muted" href="#pablo">
                       Sell Goods
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="text-muted">
+                    <a class="text-muted" href="#pablo">
                       Receive Payment
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="text-muted">
+                    <a class="text-muted" href="#pablo">
                       Transactions Issues
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="text-muted">
+                    <a class="text-muted" href="#pablo">
                       Affiliates Program
                     </a>
                   </li>
@@ -322,27 +322,27 @@
                 <h5>Follow Us</h5>
                 <ul class="social-buttons">
                   <li>
-                    <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter btn-round">
+                    <a class="btn btn-icon btn-neutral btn-twitter btn-round" href="#pablo">
                       <i class="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook btn-round">
+                    <a class="btn btn-icon btn-neutral btn-facebook btn-round" href="#pablo">
                       <i class="fab fa-facebook-square"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="btn btn-icon btn-neutral btn-dribbble btn-round">
+                    <a class="btn btn-icon btn-neutral btn-dribbble btn-round" href="#pablo">
                       <i class="fab fa-dribbble"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="btn btn-icon btn-neutral btn-google btn-round">
+                    <a class="btn btn-icon btn-neutral btn-google btn-round" href="#pablo">
                       <i class="fab fa-google-plus"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#pablo" class="btn btn-icon btn-neutral btn-instagram btn-round">
+                    <a class="btn btn-icon btn-neutral btn-instagram btn-round" href="#pablo">
                       <i class="fab fa-instagram"></i>
                     </a>
                   </li>
@@ -359,7 +359,7 @@
               </div>
             </div>
           </div>
-          <hr/>
+          <hr />
           <div class="copyright">
             Copyright &copy;
             {{year}}
@@ -368,8 +368,8 @@
         </div>
       </footer>
       <!--     *********   END BIG WHITE FOOTER     *********      -->
-      <br/>
-      <br/>
+      <br />
+      <br />
       <!--     *********    BIG WHITE FOOTER V2     *********      -->
       <footer class="footer footer-white footer-big">
         <div class="container">
@@ -463,40 +463,40 @@
                   Join our newsletter and get news in your inbox every week! We hate spam too, so no
                   worries about this.
                 </p>
-                <form class="form form-newsletter" method="" action="">
+                <form action="" class="form form-newsletter" method="">
                   <fg-input placeholder="Your Email...">
                   </fg-input>
-                  <n-button round icon type="primary">
+                  <n-button icon round type="primary">
                     <i class="now-ui-icons ui-1_email-85"></i>
                   </n-button>
                 </form>
               </div>
             </div>
           </div>
-          <hr/>
+          <hr />
           <ul class="social-buttons">
             <li>
-              <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter btn-lg">
+              <a class="btn btn-icon btn-neutral btn-twitter btn-lg" href="#pablo">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook btn-lg">
+              <a class="btn btn-icon btn-neutral btn-facebook btn-lg" href="#pablo">
                 <i class="fab fa-facebook-square"></i>
               </a>
             </li>
             <li>
-              <a href="#pablo" class="btn btn-icon btn-neutral btn-dribbble btn-lg">
+              <a class="btn btn-icon btn-neutral btn-dribbble btn-lg" href="#pablo">
                 <i class="fab fa-dribbble"></i>
               </a>
             </li>
             <li>
-              <a href="#pablo" class="btn btn-icon btn-neutral btn-google btn-lg">
+              <a class="btn btn-icon btn-neutral btn-google btn-lg" href="#pablo">
                 <i class="fab fa-google-plus"></i>
               </a>
             </li>
             <li>
-              <a href="#pablo" class="btn btn-icon btn-neutral btn-youtube btn-lg">
+              <a class="btn btn-icon btn-neutral btn-youtube btn-lg" href="#pablo">
                 <i class="fab fa-youtube"></i>
               </a>
             </li>
@@ -513,7 +513,7 @@
   </div>
 </template>
 <script>
-  import { FormGroupInput, Button } from '@/components';
+  import { Button, FormGroupInput } from '@/components';
 
   export default {
     components: {

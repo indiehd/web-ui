@@ -13,7 +13,7 @@ export default new Vuex.Store({
     featured: {
       artists: [],
       albums: [],
-      songs: [],
+      songs: []
     }
   },
   getters: {
@@ -31,7 +31,7 @@ export default new Vuex.Store({
     },
     featured_songs (state) {
       return state.featured.songs;
-    },
+    }
   },
   mutations: {
     SET_USER (state, user) {
@@ -44,5 +44,5 @@ export default new Vuex.Store({
     },
     ...Mutations
   },
-  actions: Actions,
+  actions: Actions
 });

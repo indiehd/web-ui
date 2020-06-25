@@ -1,12 +1,12 @@
 <template>
-  <div class="choice"
-       :class="{active: checked}"
-       data-toggle="wizard-checkbox"
-       @click="updateValue">
-    <input type="checkbox"
-           :name="name"
+  <div :class="{active: checked}"
+       @click="updateValue"
+       class="choice"
+       data-toggle="wizard-checkbox">
+    <input :checked="checked"
            :disabled="disabled"
-           :checked="checked"/>
+           :name="name"
+           type="checkbox">
     <div class="icon">
       <slot name="icon">
         <i :class="icon"></i>

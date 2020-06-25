@@ -14,7 +14,7 @@
         </div>
         <div class="row">
           <div class="col-md-3">
-            <card type="pricing" plain>
+            <card plain type="pricing">
 
               <h6 class="category ">Bravo Pack</h6>
               <div class="icon icon-warning">
@@ -25,7 +25,7 @@
                 <li>Complete documentation</li>
                 <li>Working materials in Sketch</li>
               </ul>
-              <n-button type="warning" round class="btn-neutral">Add to Cart</n-button>
+              <n-button class="btn-neutral" round type="warning">Add to Cart</n-button>
 
             </card>
           </div>
@@ -40,11 +40,11 @@
                 <li>Working materials in EPS</li>
                 <li>6 months access to the library</li>
               </ul>
-              <n-button type="primary" round class="btn-primary">Add to Cart</n-button>
+              <n-button class="btn-primary" round type="primary">Add to Cart</n-button>
             </card>
           </div>
           <div class="col-md-3">
-            <card type="pricing" plain>
+            <card plain type="pricing">
 
               <h6 class="category ">Charlie Pack</h6>
               <div class="icon icon-success">
@@ -55,12 +55,12 @@
                 <li>Working materials in PSD</li>
                 <li>1 year access to the library</li>
               </ul>
-              <n-button type="success" round class="btn-neutral">Add to Cart</n-button>
+              <n-button class="btn-neutral" round type="success">Add to Cart</n-button>
 
             </card>
           </div>
           <div class="col-md-3">
-            <card type="pricing" plain>
+            <card plain type="pricing">
 
               <h6 class="category ">Extra Pack</h6>
               <div class="icon icon-danger">
@@ -71,7 +71,7 @@
                 <li>Complete documentation</li>
                 <li>2GB cloud storage</li>
               </ul>
-              <n-button type="danger" round class="btn-neutral">Add to Cart</n-button>
+              <n-button class="btn-neutral" round type="danger">Add to Cart</n-button>
             </card>
           </div>
         </div>
@@ -84,7 +84,7 @@
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto text-center">
             <h2 class="title">Pick the best plan for you</h2>
-            <tabs pills type="primary" centered>
+            <tabs centered pills type="primary">
               <tab-pane label="Legal Entity"></tab-pane>
               <tab-pane label="Individual"></tab-pane>
             </tabs>
@@ -92,7 +92,7 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <card type="pricing" plain>
+            <card plain type="pricing">
               <h6 class="category">Enterprise</h6>
               <h1 class="card-title">
                 <small>$</small>
@@ -112,16 +112,16 @@
                   <b>Unlimited</b> subdomains
                 </li>
               </ul>
-              <n-button type="primary" round>
+              <n-button round type="primary">
                 Sign Up
               </n-button>
             </card>
           </div>
           <div class="col-md-4">
-            <card type="pricing"
+            <card class="card-background"
                   raised
-                  class="card-background"
-                  style="background-image: url('img/pricing2.jpg')">
+                  style="background-image: url('img/pricing2.jpg')"
+                  type="pricing">
 
               <h6 class="category text-info">Professional</h6>
               <h1 class="card-title">
@@ -142,14 +142,14 @@
                   <b>Unlimited</b> subdomains
                 </li>
               </ul>
-              <a href="#pablo" class="btn btn-neutral btn-round">
+              <a class="btn btn-neutral btn-round" href="#pablo">
                 Sign Up
               </a>
 
             </card>
           </div>
           <div class="col-md-4">
-            <card type="pricing" plain>
+            <card plain type="pricing">
 
               <h6 class="category">Standard</h6>
               <h1 class="card-title">
@@ -170,7 +170,7 @@
                   <b>Unlimited</b> subdomains
                 </li>
               </ul>
-              <a href="#pablo" class="btn btn-primary btn-round">
+              <a class="btn btn-primary btn-round" href="#pablo">
                 Get Started
               </a>
 
@@ -181,7 +181,7 @@
     </div>
     <!--     *********    END PRICING 2      *********      -->
     <!--     *********    PRICING 3     *********      -->
-    <div class="pricing-3 section-image" style="background-image: url('img/pricing3.jpg')" id="pricing-3">
+    <div class="pricing-3 section-image" id="pricing-3" style="background-image: url('img/pricing3.jpg')">
       <div class="container">
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto text-center">
@@ -205,11 +205,11 @@
                 <li>Support at $25/hour</li>
                 <li>Limited cloud access</li>
               </ul>
-              <n-button type="primary" round>Get Started</n-button>
+              <n-button round type="primary">Get Started</n-button>
             </card>
           </div>
           <div class="col-md-4 mr-auto">
-            <card type="pricing" raised color="orange">
+            <card color="orange" raised type="pricing">
               <h6 class="category">Business</h6>
               <h1 class="card-title">
                 <small>$</small>
@@ -222,7 +222,7 @@
                 <li>Unlimited Downloads</li>
                 <li>Full cloud access</li>
               </ul>
-              <n-button type="neutral" round>Get Started</n-button>
+              <n-button round type="neutral">Get Started</n-button>
             </card>
           </div>
         </div>
@@ -242,7 +242,7 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <card type="pricing" plain>
+            <card plain type="pricing">
               <h6 class="category">Starter</h6>
               <div class="icon icon-danger">
                 <i class="now-ui-icons tech_headphones"></i>
@@ -256,11 +256,11 @@
                 <li>3 email</li>
                 <li>5 Databases</li>
               </ul>
-              <n-button type="danger" round>Get it Now</n-button>
+              <n-button round type="danger">Get it Now</n-button>
             </card>
           </div>
           <div class="col-md-4">
-            <card type="pricing" color="orange">
+            <card color="orange" type="pricing">
               <h6 class="category">Professional</h6>
               <div class="icon icon-primary">
                 <i class="now-ui-icons tech_headphones"></i>
@@ -274,13 +274,13 @@
                 <li>Unlimited emails</li>
                 <li>Full Support</li>
               </ul>
-              <a href="#pablo" class="btn btn-neutral btn-primary disabled btn-round">
+              <a class="btn btn-neutral btn-primary disabled btn-round" href="#pablo">
                 Current Plan
               </a>
             </card>
           </div>
           <div class="col-md-4">
-            <card type="pricing" plain>
+            <card plain type="pricing">
 
               <h6 class="category">Basic</h6>
               <div class="icon icon-warning">
@@ -295,7 +295,7 @@
                 <li>3 email</li>
                 <li>No Support</li>
               </ul>
-              <a href="#pablo" class="btn btn-warning btn-round">
+              <a class="btn btn-warning btn-round" href="#pablo">
                 Upgrade Plan
               </a>
 
@@ -312,7 +312,7 @@
         <div class="row">
           <div class="col-md-4">
             <h2 class="title">Choose a plan for your next project</h2>
-            <tabs v-model="pricing5Tab" pills type="primary" no-content-space>
+            <tabs no-content-space pills type="primary" v-model="pricing5Tab">
               <tab-pane label="Expensive"></tab-pane>
               <tab-pane label="Cheaper"></tab-pane>
             </tabs>
@@ -321,10 +321,10 @@
           </div>
           <div class="col-md-7 ml-auto mr-auto">
             <div class="tab-content tab-space">
-              <div v-if="pricing5Tab === 'Expensive'" class="tab-pane active" id="personal">
+              <div class="tab-pane active" id="personal" v-if="pricing5Tab === 'Expensive'">
                 <div class="row">
                   <div class="col-md-6">
-                    <card type="pricing" raised>
+                    <card raised type="pricing">
                       <h6 class="category">Plus</h6>
                       <h1 class="card-title">
                         <small>$</small>
@@ -344,13 +344,13 @@
                           <b>No time</b> tracking
                         </li>
                       </ul>
-                      <a href="#pablo" class="btn btn-primary btn-round">
+                      <a class="btn btn-primary btn-round" href="#pablo">
                         Buy Now!
                       </a>
                     </card>
                   </div>
                   <div class="col-md-6">
-                    <card type="pricing" plain>
+                    <card plain type="pricing">
                       <h6 class="category">Maximum</h6>
                       <h1 class="card-title">
                         <small>$</small>
@@ -370,17 +370,17 @@
                           <b>No time</b> tracking
                         </li>
                       </ul>
-                      <a href="#pablo" class="btn btn-primary btn-round">
+                      <a class="btn btn-primary btn-round" href="#pablo">
                         Buy Now!
                       </a>
                     </card>
                   </div>
                 </div>
               </div>
-              <div v-else class="tab-pane active" id="commercial">
+              <div class="tab-pane active" id="commercial" v-else>
                 <div class="row">
                   <div class="col-md-6">
-                    <card type="pricing" raised>
+                    <card raised type="pricing">
 
                       <h6 class="category">Standard</h6>
                       <h1 class="card-title">
@@ -401,14 +401,14 @@
                           <b>No time</b> tracking
                         </li>
                       </ul>
-                      <a href="#pablo" class="btn btn-primary btn-round">
+                      <a class="btn btn-primary btn-round" href="#pablo">
                         Buy Now!
                       </a>
 
                     </card>
                   </div>
                   <div class="col-md-6">
-                    <card type="pricing" plain>
+                    <card plain type="pricing">
                       <h6 class="category">Premium</h6>
                       <h1 class="card-title">
                         <small>$</small>
@@ -428,7 +428,7 @@
                           <b>No time</b> tracking
                         </li>
                       </ul>
-                      <a href="#pablo" class="btn btn-primary btn-round">
+                      <a class="btn btn-primary btn-round" href="#pablo">
                         Buy Now!
                       </a>
                     </card>
@@ -444,7 +444,7 @@
   </div>
 </template>
 <script>
-  import { Card, Button, Tabs, TabPane } from '@/components';
+  import { Button, Card, TabPane, Tabs } from '@/components';
 
   export default {
     components: {

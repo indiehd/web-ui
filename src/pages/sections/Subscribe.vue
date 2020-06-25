@@ -1,7 +1,7 @@
 <template>
   <div
-    class="subscribe-line subscribe-line-image"
-    :style="`background-image:url(${require('@/assets/img/bg-1-lg.jpg')})`"
+      :style="`background-image:url(${require('@/assets/img/bg-1-lg.jpg')})`"
+      class="subscribe-line subscribe-line-image"
   >
     <div class="container">
       <div class="row">
@@ -18,12 +18,12 @@
               <div class="row">
                 <div class="col-sm-8">
                   <fg-input
-                    placeholder="Your Email..."
-                    addon-left-icon="now-ui-icons ui-1_email-85">
+                      addon-left-icon="now-ui-icons ui-1_email-85"
+                      placeholder="Your Email...">
                   </fg-input>
                 </div>
                 <div class="col-sm-4">
-                  <Button type="primary" round block>
+                  <Button block round type="primary">
                     Subscribe
                   </Button>
                 </div>
@@ -36,16 +36,13 @@
   </div>
 </template>
 <script>
-  import {
-    FormGroupInput,
-    Button
-  } from '@/components';
+  import { Button, FormGroupInput } from '@/components';
 
   export default {
     name: 'subscribe',
     components: {
       Button,
-      'fg-input': FormGroupInput,
+      'fg-input': FormGroupInput
     }
   };
 </script>

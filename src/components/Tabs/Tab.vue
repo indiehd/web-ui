@@ -1,9 +1,9 @@
 <template>
-  <div class="tab-pane"
-       v-show="active"
-       :id="id || label"
+  <div :aria-expanded="active"
        :class="{active: active}"
-       :aria-expanded="active">
+       :id="id || label"
+       class="tab-pane"
+       v-show="active">
     <slot></slot>
   </div>
 </template>

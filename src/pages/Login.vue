@@ -1,53 +1,53 @@
 <template>
   <div class="login page-header header-filter" filter-color="secondary">
-    <div class="page-header-image"
-         :style="`background-image:url(${require('@/assets/img/header.jpg')})`">
+    <div :style="`background-image:url(${require('@/assets/img/header.jpg')})`"
+         class="page-header-image">
     </div>
     <div class="content">
       <div class="container">
         <div class="col-md-5 ml-auto mr-auto">
           <Card type="login">
-            <div slot="header" class="logo-container">
-              <img :src="require('@/assets/img/logo.svg')" alt=""/>
+            <div class="logo-container" slot="header">
+              <img :src="require('@/assets/img/logo.svg')" alt="" />
             </div>
 
             <fg-input
-              v-model="frmData.email"
-              class="no-border input-lg"
-              addon-left-icon="now-ui-icons users_circle-08"
-              placeholder="Email ..."
+                addon-left-icon="now-ui-icons users_circle-08"
+                class="no-border input-lg"
+                placeholder="Email ..."
+                v-model="frmData.email"
             />
 
             <fg-input
-              v-model="frmData.password"
-              class="no-border input-lg"
-              addon-left-icon="now-ui-icons text_caps-small"
-              placeholder="Password ..."
-              password
+                addon-left-icon="now-ui-icons text_caps-small"
+                class="no-border input-lg"
+                password
+                placeholder="Password ..."
+                v-model="frmData.password"
             />
 
             <template slot="raw-content">
               <div class="card-footer text-center">
                 <Button
-                  @click.native="submit()"
-                  type="primary"
-                  size="lg"
-                  :loading="loading"
-                  block
-                  round
-                  :disabled="loading"
+                    :disabled="loading"
+                    :loading="loading"
+                    @click.native="submit()"
+                    block
+                    round
+                    size="lg"
+                    type="primary"
                 >
                   {{ loading ? 'Loading ... ' : 'Login' }}
                 </Button>
               </div>
               <div class="pull-left">
                 <h6>
-                  <a href="#" class="link footer-link">Create Account</a>
+                  <a class="link footer-link" href="#">Create Account</a>
                 </h6>
               </div>
               <div class="pull-right">
                 <h6>
-                  <a href="#" class="link footer-link">Need Help?</a>
+                  <a class="link footer-link" href="#">Need Help?</a>
                 </h6>
               </div>
             </template>
@@ -58,11 +58,7 @@
   </div>
 </template>
 <script>
-  import {
-    Card,
-    Button,
-    FormGroupInput,
-  } from '@/components';
+  import { Button, Card, FormGroupInput } from '@/components';
 
   import { mapActions } from 'vuex';
 
@@ -71,17 +67,17 @@
     components: {
       Button,
       Card,
-      'fg-input': FormGroupInput,
+      'fg-input': FormGroupInput
     },
     data () {
       return {
         loading: false,
-        frmData: {},
+        frmData: {}
       };
     },
     methods: {
       ...mapActions([
-        'Login',
+        'Login'
       ]),
       submit () {
         this.loading = true;
@@ -92,8 +88,8 @@
           this.loading = false;
           console.log(err);
         });
-      },
-    },
+      }
+    }
   };
 </script>
 <style lang="scss" scoped>

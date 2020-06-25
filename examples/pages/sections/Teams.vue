@@ -12,8 +12,8 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 ml-1">
-            <card type="profile" plain>
-              <img slot="avatar" class="img img-raised" src="img/james.jpg"/>
+            <card plain type="profile">
+              <img class="img img-raised" slot="avatar" src="img/james.jpg" />
 
               <h3 class="card-title">Oliver Atticus</h3>
               <h6 class="category text-primary">Web Developer</h6>
@@ -22,16 +22,16 @@
                 not his equals.
               </p>
               <div class="card-footer">
-                <a href="#pablo" class="btn btn-icon btn-primary btn-round"><i
-                  class="fab fa-facebook-square"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-primary btn-round"><i
-                  class="fab fa-dribbble"></i></a>
+                <a class="btn btn-icon btn-primary btn-round" href="#pablo"><i
+                    class="fab fa-facebook-square"></i></a>
+                <a class="btn btn-icon btn-primary btn-round" href="#pablo"><i
+                    class="fab fa-dribbble"></i></a>
               </div>
             </card>
           </div>
           <div class="col-md-4 mr-1">
-            <card type="profile" plain>
-              <img slot="avatar" class="img img-raised" src="img/michael.jpg"/>
+            <card plain type="profile">
+              <img class="img img-raised" slot="avatar" src="img/michael.jpg" />
 
               <h3 class="card-title">Smith College</h3>
               <h6 class="category text-primary">CEO / Co-Founder</h6>
@@ -40,17 +40,17 @@
                 universe.
               </p>
               <div class="card-footer">
-                <a href="#pablo" class="btn btn-icon btn-primary btn-round"><i
-                  class="fab fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-primary btn-round"><i
-                  class="fab fa-facebook-square"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-primary btn-round"><i class="fab fa-google"></i></a>
+                <a class="btn btn-icon btn-primary btn-round" href="#pablo"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="btn btn-icon btn-primary btn-round" href="#pablo"><i
+                    class="fab fa-facebook-square"></i></a>
+                <a class="btn btn-icon btn-primary btn-round" href="#pablo"><i class="fab fa-google"></i></a>
               </div>
             </card>
           </div>
           <div class="col-md-4 ml-1 mt-4">
-            <card type="profile" plain>
-              <img slot="avatar" class="img img-raised" src="img/emily.jpg"/>
+            <card plain type="profile">
+              <img class="img img-raised" slot="avatar" src="img/emily.jpg" />
 
               <h3 class="card-title">Sophia Madison</h3>
               <h6 class="category text-primary">Entrepreneur</h6>
@@ -59,18 +59,18 @@
                 matter don't mind.
               </p>
               <div class="card-footer">
-                <a href="#pablo" class="btn btn-icon btn-primary btn-round"><i
-                  class="fab fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-primary btn-round"><i
-                  class="fab fa-dribbble"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-primary btn-round"><i
-                  class="fab fa-linkedin"></i></a>
+                <a class="btn btn-icon btn-primary btn-round" href="#pablo"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="btn btn-icon btn-primary btn-round" href="#pablo"><i
+                    class="fab fa-dribbble"></i></a>
+                <a class="btn btn-icon btn-primary btn-round" href="#pablo"><i
+                    class="fab fa-linkedin"></i></a>
               </div>
             </card>
           </div>
           <div class="col-md-4 mr-1 mt-4">
-            <card type="profile" plain>
-              <img slot="avatar" class="img img-raised" src="img/olivia.jpg"/>
+            <card plain type="profile">
+              <img class="img img-raised" slot="avatar" src="img/olivia.jpg" />
 
               <h3 class="card-title">Emily Chloe</h3>
               <h6 class="category text-primary">Entrepreneur</h6>
@@ -79,9 +79,9 @@
                 than your dreams.
               </p>
               <div class="card-footer">
-                <a href="#pablo" class="btn btn-icon btn-primary btn-round"><i class="fab fa-google"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-primary btn-round"><i
-                  class="fab fa-dribbble"></i></a>
+                <a class="btn btn-icon btn-primary btn-round" href="#pablo"><i class="fab fa-google"></i></a>
+                <a class="btn btn-icon btn-primary btn-round" href="#pablo"><i
+                    class="fab fa-dribbble"></i></a>
               </div>
             </card>
           </div>
@@ -101,53 +101,53 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <card type="profile" plain>
-              <img slot="image" class="img img-raised rounded"
-                   src="img/examples/card-profile1.jpg"/>
+            <card plain type="profile">
+              <img class="img img-raised rounded" slot="image"
+                   src="img/examples/card-profile1.jpg" />
 
               <h4 class="card-title">Sofia Scarlett</h4>
               <h6 class="category">Account Manager</h6>
               <div class="card-footer">
-                <a href="#pablo" class="btn btn-icon btn-twitter btn-round"><i
-                  class="fab fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-facebook btn-round"><i
-                  class="fab fa-facebook-square"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-dribbble btn-round"><i
-                  class="fab fa-dribbble"></i></a>
+                <a class="btn btn-icon btn-twitter btn-round" href="#pablo"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="btn btn-icon btn-facebook btn-round" href="#pablo"><i
+                    class="fab fa-facebook-square"></i></a>
+                <a class="btn btn-icon btn-dribbble btn-round" href="#pablo"><i
+                    class="fab fa-dribbble"></i></a>
               </div>
 
             </card>
           </div>
           <div class="col-md-4">
-            <card type="profile" plain>
-              <img slot="image" class="img img-raised rounded"
-                   src="img/examples/card-profile2.jpg"/>
+            <card plain type="profile">
+              <img class="img img-raised rounded" slot="image"
+                   src="img/examples/card-profile2.jpg" />
 
               <h4 class="card-title">Lucas Jacob</h4>
               <h6 class="category">Aerospace Engineer</h6>
               <div class="card-footer">
-                <a href="#pablo" class="btn btn-icon btn-dribbble btn-round"><i
-                  class="fab fa-dribbble"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-facebook btn-round"><i
-                  class="fab fa-facebook-square"></i></a>
+                <a class="btn btn-icon btn-dribbble btn-round" href="#pablo"><i
+                    class="fab fa-dribbble"></i></a>
+                <a class="btn btn-icon btn-facebook btn-round" href="#pablo"><i
+                    class="fab fa-facebook-square"></i></a>
               </div>
 
             </card>
           </div>
           <div class="col-md-4">
-            <card type="profile" plain>
-              <img slot="image" class="img img-raised rounded"
-                   src="img/examples/card-profile3.jpg"/>
+            <card plain type="profile">
+              <img class="img img-raised rounded" slot="image"
+                   src="img/examples/card-profile3.jpg" />
 
               <h4 class="card-title">Amelia Charlotte</h4>
               <h6 class="category">Photographer</h6>
               <div class="card-footer">
-                <a href="#pablo" class="btn btn-icon btn-linkedin btn-round"><i
-                  class="fab fa-linkedin"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-twitter btn-round"><i
-                  class="fab fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-dribbble btn-round"><i
-                  class="fab fa-dribbble"></i></a>
+                <a class="btn btn-icon btn-linkedin btn-round" href="#pablo"><i
+                    class="fab fa-linkedin"></i></a>
+                <a class="btn btn-icon btn-twitter btn-round" href="#pablo"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="btn btn-icon btn-dribbble btn-round" href="#pablo"><i
+                    class="fab fa-dribbble"></i></a>
               </div>
 
             </card>
@@ -169,11 +169,11 @@
         <div class="row">
           <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
             <card type="profile">
-              <div slot="raw-content" class="row">
+              <div class="row" slot="raw-content">
                 <div class="col-md-5">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img" src="img/olivia.jpg"/>
+                      <img class="img" src="img/olivia.jpg" />
                     </a>
                   </div>
                 </div>
@@ -192,11 +192,11 @@
           </div>
           <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
             <card type="profile">
-              <div slot="raw-content" class="row">
+              <div class="row" slot="raw-content">
                 <div class="col-md-5">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img" src="img/james.jpg"/>
+                      <img class="img" src="img/james.jpg" />
                     </a>
                   </div>
                 </div>
@@ -215,11 +215,11 @@
           </div>
           <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
             <card type="profile">
-              <div slot="raw-content" class="row">
+              <div class="row" slot="raw-content">
                 <div class="col-md-5">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img" src="img/michael.jpg"/>
+                      <img class="img" src="img/michael.jpg" />
                     </a>
                   </div>
                 </div>
@@ -238,11 +238,11 @@
           </div>
           <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
             <card type="profile">
-              <div slot="raw-content" class="row">
+              <div class="row" slot="raw-content">
                 <div class="col-md-5">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img" src="img/emily.jpg"/>
+                      <img class="img" src="img/emily.jpg" />
                     </a>
                   </div>
                 </div>
@@ -275,12 +275,12 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <card type="profile" plain>
-              <div slot="raw-content" class="row">
+            <card plain type="profile">
+              <div class="row" slot="raw-content">
                 <div class="col-md-5">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img img-raised rounded" src="img/olivia.jpg"/>
+                      <img class="img img-raised rounded" src="img/olivia.jpg" />
                     </a>
                   </div>
                 </div>
@@ -293,12 +293,12 @@
                       night......
                     </p>
                     <div class="card-footer">
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter"><i
-                        class="fab fa-twitter"></i></a>
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook"><i
-                        class="fab fa-facebook-square"></i></a>
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-google"><i
-                        class="fab fa-google"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-twitter" href="#pablo"><i
+                          class="fab fa-twitter"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-facebook" href="#pablo"><i
+                          class="fab fa-facebook-square"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-google" href="#pablo"><i
+                          class="fab fa-google"></i></a>
                     </div>
                   </div>
                 </div>
@@ -306,12 +306,12 @@
             </card>
           </div>
           <div class="col-md-6">
-            <card type="profile" plain>
-              <div slot="raw-content" class="row">
+            <card plain type="profile">
+              <div class="row" slot="raw-content">
                 <div class="col-md-5">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img img-raised rounded" src="img/emily.jpg"/>
+                      <img class="img img-raised rounded" src="img/emily.jpg" />
                     </a>
                   </div>
                 </div>
@@ -323,14 +323,14 @@
                       Love cures people - both the ones who give it and the ones who receive it...
                     </p>
                     <div class="card-footer">
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-linkedin"><i
-                        class="fab fa-linkedin"></i></a>
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook"><i
-                        class="fab fa-facebook-square"></i></a>
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-dribbble"><i
-                        class="fab fa-dribbble"></i></a>
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-google"><i
-                        class="fab fa-google"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-linkedin" href="#pablo"><i
+                          class="fab fa-linkedin"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-facebook" href="#pablo"><i
+                          class="fab fa-facebook-square"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-dribbble" href="#pablo"><i
+                          class="fab fa-dribbble"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-google" href="#pablo"><i
+                          class="fab fa-google"></i></a>
                     </div>
                   </div>
                 </div>
@@ -338,12 +338,12 @@
             </card>
           </div>
           <div class="col-md-6">
-            <card type="profile" plain>
-              <div slot="raw-content" class="row">
+            <card plain type="profile">
+              <div class="row" slot="raw-content">
                 <div class="col-md-5">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img img-raised rounded" src="img/james.jpg"/>
+                      <img class="img img-raised rounded" src="img/james.jpg" />
                     </a>
                   </div>
                 </div>
@@ -356,12 +356,12 @@
                       you...
                     </p>
                     <div class="card-footer">
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-youtube"><i
-                        class="fab fa-youtube"></i></a>
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter"><i
-                        class="fab fa-twitter"></i></a>
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-instagram"><i
-                        class="fab fa-instagram"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-youtube" href="#pablo"><i
+                          class="fab fa-youtube"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-twitter" href="#pablo"><i
+                          class="fab fa-twitter"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-instagram" href="#pablo"><i
+                          class="fab fa-instagram"></i></a>
                     </div>
                   </div>
                 </div>
@@ -369,12 +369,12 @@
             </card>
           </div>
           <div class="col-md-6">
-            <card type="profile" plain>
-              <div slot="raw-content" class="row">
+            <card plain type="profile">
+              <div class="row" slot="raw-content">
                 <div class="col-md-5">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img img-raised rounded" src="img/michael.jpg"/>
+                      <img class="img img-raised rounded" src="img/michael.jpg" />
                     </a>
                   </div>
                 </div>
@@ -387,12 +387,12 @@
                       and that's your own self...
                     </p>
                     <div class="card-footer">
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-linkedin"><i
-                        class="fab fa-linkedin"></i></a>
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook"><i
-                        class="fab fa-facebook-square"></i></a>
-                      <a href="#pablo" class="btn btn-icon btn-neutral btn-google"><i
-                        class="fab fa-google"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-linkedin" href="#pablo"><i
+                          class="fab fa-linkedin"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-facebook" href="#pablo"><i
+                          class="fab fa-facebook-square"></i></a>
+                      <a class="btn btn-icon btn-neutral btn-google" href="#pablo"><i
+                          class="fab fa-google"></i></a>
                     </div>
                   </div>
                 </div>
@@ -416,7 +416,7 @@
         <div class="row">
           <div class="col-md-4">
             <card type="profile">
-              <img slot="avatar" class="img img-raised" src="img/olivia.jpg"/>
+              <img class="img img-raised" slot="avatar" src="img/olivia.jpg" />
 
               <h3 class="card-title">Natalie Paisley</h3>
               <h6 class="category text-primary">Credit Analyst</h6>
@@ -425,19 +425,19 @@
                 of thinking...
               </p>
               <div class="card-footer">
-                <a href="#pablo" class="btn btn-icon btn-neutral btn-round"><i
-                  class="fab fa-linkedin"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-neutral btn-round"><i
-                  class="fab fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-neutral btn-round"><i
-                  class="fab fa-dribbble"></i></a>
+                <a class="btn btn-icon btn-neutral btn-round" href="#pablo"><i
+                    class="fab fa-linkedin"></i></a>
+                <a class="btn btn-icon btn-neutral btn-round" href="#pablo"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="btn btn-icon btn-neutral btn-round" href="#pablo"><i
+                    class="fab fa-dribbble"></i></a>
               </div>
 
             </card>
           </div>
           <div class="col-md-4">
             <card type="profile">
-              <img slot="avatar" class="img img-raised" src="img/james.jpg"/>
+              <img class="img img-raised" slot="avatar" src="img/james.jpg" />
 
               <h4 class="card-title">Anthony Jackson</h4>
               <h6 class="category text-primary">Desktop Publisher</h6>
@@ -446,17 +446,17 @@
                 make our souls blossom...
               </p>
               <div class="card-footer">
-                <a href="#pablo" class="btn btn-icon btn-neutral btn-round"><i
-                  class="fab fa-dribbble"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-neutral btn-round"><i
-                  class="fab fa-twitter"></i></a>
+                <a class="btn btn-icon btn-neutral btn-round" href="#pablo"><i
+                    class="fab fa-dribbble"></i></a>
+                <a class="btn btn-icon btn-neutral btn-round" href="#pablo"><i
+                    class="fab fa-twitter"></i></a>
               </div>
 
             </card>
           </div>
           <div class="col-md-4">
             <card type="profile">
-              <img slot="avatar" class="img img-raised" src="img/emily.jpg"/>
+              <img class="img img-raised" slot="avatar" src="img/emily.jpg" />
 
               <h4 class="card-title">Bella Audrey</h4>
               <h6 class="category text-primary">Economist</h6>
@@ -465,12 +465,12 @@
                 kissed, but my soul...
               </p>
               <div class="card-footer">
-                <a href="#pablo" class="btn btn-icon btn-neutral btn-round"><i
-                  class="fab fa-dribbble"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-neutral btn-round"><i
-                  class="fab fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-icon btn-neutral btn-round"><i
-                  class="fab fa-pinterest"></i></a>
+                <a class="btn btn-icon btn-neutral btn-round" href="#pablo"><i
+                    class="fab fa-dribbble"></i></a>
+                <a class="btn btn-icon btn-neutral btn-round" href="#pablo"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="btn btn-icon btn-neutral btn-round" href="#pablo"><i
+                    class="fab fa-pinterest"></i></a>
               </div>
 
             </card>

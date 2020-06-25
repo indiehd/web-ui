@@ -103,7 +103,6 @@ $light-danger: rgba($danger-color, .2);
 $dark-primary: #070129;
 
 
-
 //== Components
 //
 
@@ -294,10 +293,10 @@ $social-behance: #1769ff !default;
 $social-behance-state-color: lighten(#1769ff, 6%) !default;
 
 // spinners
-$spinner-width:         2rem !default;
-$spinner-height:        $spinner-width !default;
-$spinner-border-width:  .25em !default;
+$spinner-width: 2rem !default;
+$spinner-height: $spinner-width !default;
+$spinner-border-width: .25em !default;
 
-$spinner-width-sm:        1rem !default;
-$spinner-height-sm:       $spinner-width-sm !default;
+$spinner-width-sm: 1rem !default;
+$spinner-height-sm: $spinner-width-sm !default;
 $spinner-border-width-sm: .2em !default;

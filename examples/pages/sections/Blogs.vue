@@ -6,11 +6,11 @@
         <div class="row">
           <div class="col-md-10 ml-auto mr-auto">
             <h2 class="title">Latest Blogposts</h2>
-            <br/>
-            <card type="blog" plain>
+            <br />
+            <card plain type="blog">
               <div class="row" slot="image">
                 <div class="col-md-5">
-                  <img class="img img-raised rounded" src="img/examples/card-blog4.jpg"/>
+                  <img class="img img-raised rounded" src="img/examples/card-blog4.jpg" />
                 </div>
                 <div class="col-md-7">
                   <h6 class="category text-info">Enterprise</h6>
@@ -32,7 +32,7 @@
                 </div>
               </div>
             </card>
-            <card type="blog" plain>
+            <card plain type="blog">
               <div class="row">
                 <div class="col-md-7">
                   <h6 class="category text-danger">
@@ -58,7 +58,7 @@
                 <div class="col-md-5">
                   <div class="card-image">
                     <img class="img img-raised rounded
-                                " src="img/examples/card-blog6.jpg"/>
+                                " src="img/examples/card-blog6.jpg" />
                   </div>
                 </div>
               </div>
@@ -74,13 +74,13 @@
         <div class="row">
           <div class="col-md-10 ml-auto mr-auto">
             <h2 class="title">Latest Blogposts 2</h2>
-            <br/>
+            <br />
             <div class="row justify-content-center">
               <div class="col-md-5">
-                <card type="blog" plain>
+                <card plain type="blog">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img img-raised rounded" src="img/examples/card-blog7.jpg"/>
+                      <img class="img img-raised rounded" src="img/examples/card-blog7.jpg" />
                     </a>
                   </div>
                   <div class="card-body">
@@ -98,10 +98,10 @@
                 </card>
               </div>
               <div class="col-md-5">
-                <card type="blog" plain>
+                <card plain type="blog">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img img-raised rounded" src="img/examples/card-blog9.jpg"/>
+                      <img class="img img-raised rounded" src="img/examples/card-blog9.jpg" />
                     </a>
                   </div>
                   <div class="card-body">
@@ -123,10 +123,10 @@
             </div>
             <div class="row justify-content-center">
               <div class="col-md-5">
-                <card type="blog" plain>
+                <card plain type="blog">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img img-raised rounded" src="img/examples/card-blog16.jpg"/>
+                      <img class="img img-raised rounded" src="img/examples/card-blog16.jpg" />
                     </a>
                   </div>
                   <div class="card-body">
@@ -143,10 +143,10 @@
                 </card>
               </div>
               <div class="col-md-5">
-                <card type="blog" plain>
+                <card plain type="blog">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img img-raised rounded" src="img/examples/card-blog15.jpg"/>
+                      <img class="img img-raised rounded" src="img/examples/card-blog15.jpg" />
                     </a>
                   </div>
                   <div class="card-body">
@@ -176,12 +176,12 @@
         <div class="row">
           <div class="col-md-10 ml-auto mr-auto">
             <h2 class="title">Latest Blogposts 3</h2>
-            <br/>
-            <card type="blog" plain>
+            <br />
+            <card plain type="blog">
               <div class="row">
                 <div class="col-md-4">
                   <div class="card-image">
-                    <img class="img img-raised rounded" src="img/examples/card-blog10.jpg"/>
+                    <img class="img img-raised rounded" src="img/examples/card-blog10.jpg" />
                   </div>
                 </div>
                 <div class="col-md-8">
@@ -194,18 +194,18 @@
                     <a href="#pablo"> Read More </a>
                   </p>
                   <div class="author">
-                    <img v-lazy="'img/olivia.jpg'" alt="..." class="avatar img-raised">
+                    <img alt="..." class="avatar img-raised" v-lazy="'img/olivia.jpg'">
                     <span>Katie Roof</span>
                   </div>
                 </div>
               </div>
             </card>
-            <card type="blog" plain>
+            <card plain type="blog">
               <div class="row">
                 <div class="col-md-4">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img img-raised rounded" src="img/examples/card-blog11.jpg"/>
+                      <img class="img img-raised rounded" src="img/examples/card-blog11.jpg" />
                     </a>
                   </div>
                 </div>
@@ -219,18 +219,18 @@
                     <a href="#pablo"> Read More </a>
                   </p>
                   <div class="author">
-                    <img v-lazy="'img/james.jpg'" alt="..." class="avatar img-raised">
+                    <img alt="..." class="avatar img-raised" v-lazy="'img/james.jpg'">
                     <span>John Mannes</span>
                   </div>
                 </div>
               </div>
             </card>
-            <card type="blog" plain>
+            <card plain type="blog">
               <div class="row">
                 <div class="col-md-4">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img img-raised rounded" src="img/examples/card-blog12.jpg"/>
+                      <img class="img img-raised rounded" src="img/examples/card-blog12.jpg" />
                     </a>
                   </div>
                 </div>
@@ -244,7 +244,7 @@
                     <a href="#pablo"> Read More </a>
                   </p>
                   <div class="author">
-                    <img v-lazy="'img/michael.jpg'" alt="..." class="avatar img-raised">
+                    <img alt="..." class="avatar img-raised" v-lazy="'img/michael.jpg'">
                     <span>Devin Coldewey</span>
                   </div>
                 </div>
@@ -260,11 +260,11 @@
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="title">Latest Blogposts 4</h2>
-            <br/>
-            <card type="blog" plain>
+            <br />
+            <card plain type="blog">
               <div class="card-image">
                 <a href="#pablo">
-                  <img class="img img-raised rounded" src="img/examples/card-blog13.jpg"/>
+                  <img class="img img-raised rounded" src="img/examples/card-blog13.jpg" />
                 </a>
               </div>
               <h6 class="category text-info">Fashion</h6>
@@ -275,12 +275,12 @@
                 More acquisitions for Groupon to widen the net of consumers using its platform for more than daily
                 deals. Today it is announcing the acquisition of ideeli, a flash fashion retailer, for $43 million in...
               </h5>
-              <a href="#pablo" class="btn btn-primary btn-round">Read More</a>
+              <a class="btn btn-primary btn-round" href="#pablo">Read More</a>
             </card>
-            <card type="blog" plain>
+            <card plain type="blog">
               <div class="card-image">
                 <a href="#pablo">
-                  <img class="img img-raised rounded" src="img/examples/card-blog14.jpg"/>
+                  <img class="img img-raised rounded" src="img/examples/card-blog14.jpg" />
                 </a>
               </div>
               <h6 class="category text-success">Entertainment</h6>
@@ -292,7 +292,7 @@
                 beautiful marriage there — the music industry is evolving every day, and artists are embracing
                 technology in new and innovative ways...
               </h5>
-              <a href="#pablo" class="btn btn-primary btn-round"> Read More</a>
+              <a class="btn btn-primary btn-round" href="#pablo"> Read More</a>
             </card>
           </div>
         </div>
@@ -324,7 +324,7 @@
                     </p>
                     <div class="card-footer">
                       <div class="author">
-                        <img v-lazy="'img/julie.jpg'" alt="..." class="avatar img-raised">
+                        <img alt="..." class="avatar img-raised" v-lazy="'img/julie.jpg'">
                         <span>Mike John</span>
                       </div>
                       <div class="stats stats-right">
@@ -352,7 +352,7 @@
                     </p>
                     <div class="card-footer">
                       <div class="author">
-                        <img v-lazy="'img/julie.jpg'" alt="..." class="avatar img-raised">
+                        <img alt="..." class="avatar img-raised" v-lazy="'img/julie.jpg'">
                         <span>Mike John</span>
                       </div>
                       <div class="stats stats-right">
@@ -380,7 +380,7 @@
                     </p>
                     <div class="card-footer">
                       <div class="author">
-                        <img v-lazy="'img/olivia.jpg'" alt="..." class="avatar img-raised">
+                        <img alt="..." class="avatar img-raised" v-lazy="'img/olivia.jpg'">
                         <span>Johanna Zmud</span>
                       </div>
                       <div class="stats stats-right">

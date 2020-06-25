@@ -13,16 +13,16 @@
             <div class="col-md-12">
               <h4 class="title">Thank you for your support!</h4>
             </div>
-            <n-button round class="btn-twitter">
+            <n-button class="btn-twitter" round>
               <i class="fab fa-twitter"></i> Twitter · 2.5k
             </n-button>
-            <n-button round class="btn-facebook">
+            <n-button class="btn-facebook" round>
               <i class="fab fa-facebook-square"></i> Facebook · 3.2k
             </n-button>
-            <n-button round class="btn-google">
+            <n-button class="btn-google" round>
               <i class="fab fa-google-plus"></i> Google · 1.2k
             </n-button>
-            <n-button round class="btn-dribble">
+            <n-button class="btn-dribble" round>
               <i class="fab fa-dribbble"></i> Dribbble · 1.8k
             </n-button>
           </div>
@@ -36,32 +36,32 @@
         <div class="container">
           <div class="row">
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-neutral btn-icon btn-twitter btn-footer">
+              <a class="btn btn-neutral btn-icon btn-twitter btn-footer" href="#pablo">
                 <i class="fab fa-twitter"></i>
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-neutral btn-icon btn-facebook btn-footer">
+              <a class="btn btn-neutral btn-icon btn-facebook btn-footer" href="#pablo">
                 <i class="fab fa-facebook-square"></i>
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-neutral btn-icon btn-google btn-footer">
+              <a class="btn btn-neutral btn-icon btn-google btn-footer" href="#pablo">
                 <i class="fab fa-google-plus"></i>
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-neutral btn-icon btn-dribbble btn-footer">
+              <a class="btn btn-neutral btn-icon btn-dribbble btn-footer" href="#pablo">
                 <i class="fab fa-dribbble"></i>
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-neutral btn-icon btn-youtube btn-footer">
+              <a class="btn btn-neutral btn-icon btn-youtube btn-footer" href="#pablo">
                 <i class="fab fa-youtube"></i>
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-neutral btn-icon btn-instagram btn-footer">
+              <a class="btn btn-neutral btn-icon btn-instagram btn-footer" href="#pablo">
                 <i class="fab fa-instagram"></i>
               </a>
             </div>
@@ -76,32 +76,32 @@
         <div class="container">
           <div class="row">
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-simple btn-icon btn-footer">
+              <a class="btn btn-simple btn-icon btn-footer" href="#pablo">
                 <i class="fab fa-twitter"></i>
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-simple btn-icon btn-footer">
+              <a class="btn btn-simple btn-icon btn-footer" href="#pablo">
                 <i class="fab fa-facebook-square"></i>
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-simple btn-icon btn-footer">
+              <a class="btn btn-simple btn-icon btn-footer" href="#pablo">
                 <i class="fab fa-google-plus"></i>
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-simple btn-icon btn-footer">
+              <a class="btn btn-simple btn-icon btn-footer" href="#pablo">
                 <i class="fab fa-dribbble"></i>
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-simple btn-icon btn-footer">
+              <a class="btn btn-simple btn-icon btn-footer" href="#pablo">
                 <i class="fab fa-youtube"></i>
               </a>
             </div>
             <div class="col-md-2">
-              <a href="#pablo" class="btn btn-simple btn-icon btn-footer">
+              <a class="btn btn-simple btn-icon btn-footer" href="#pablo">
                 <i class="fab fa-instagram"></i>
               </a>
             </div>
@@ -127,16 +127,16 @@
             <div class="col-md-6">
               <div class="card card-plain card-form-horizontal">
                 <div class="card-body">
-                  <form method="" action="">
+                  <form action="" method="">
                     <div class="row">
                       <div class="col-sm-8">
                         <fg-input
-                          placeholder="Your Email..."
-                          addon-left-icon="now-ui-icons ui-1_email-85">
+                            addon-left-icon="now-ui-icons ui-1_email-85"
+                            placeholder="Your Email...">
                         </fg-input>
                       </div>
                       <div class="col-sm-4">
-                        <n-button type="primary" round block>
+                        <n-button block round type="primary">
                           Subscribe
                         </n-button>
                       </div>
@@ -165,16 +165,16 @@
               </div>
               <div class="card card-raised card-form-horizontal">
                 <div class="card-body">
-                  <form method="" action="">
+                  <form action="" method="">
                     <div class="row">
                       <div class="col-sm-8">
                         <fg-input
-                          placeholder="Your Email..."
-                          addon-left-icon="now-ui-icons ui-1_email-85">
+                            addon-left-icon="now-ui-icons ui-1_email-85"
+                            placeholder="Your Email...">
                         </fg-input>
                       </div>
                       <div class="col-sm-4">
-                        <n-button type="primary" round block>
+                        <n-button block round type="primary">
                           Subscribe
                         </n-button>
                       </div>
@@ -191,7 +191,7 @@
   </div>
 </template>
 <script>
-  import { FormGroupInput, Button } from '@/components';
+  import { Button, FormGroupInput } from '@/components';
 
   export default {
     components: {

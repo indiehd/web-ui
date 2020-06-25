@@ -1,15 +1,15 @@
 <template>
-  <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate" :class="switchClass">
-    <div class="bootstrap-switch-container" @click="triggerToggle()">
+  <div :class="switchClass" class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate">
+    <div @click="triggerToggle()" class="bootstrap-switch-container">
       <span class="bootstrap-switch-handle-on ">
         <slot name="on">
-            {{onText}}
+          {{onText}}
         </slot>
       </span>
       <span class="bootstrap-switch-label"></span>
       <span class="bootstrap-switch-handle-off bootstrap-switch-default">
         <slot name="off">
-            {{offText}}
+          {{offText}}
         </slot>
       </span>
     </div>
@@ -46,4 +46,8 @@
     }
   };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  @import "~@/assets/sass/indiehd/variables";
+  @import "~@/assets/sass/indiehd/plugins/plugin-bootstrap-switch";
+</style>
+

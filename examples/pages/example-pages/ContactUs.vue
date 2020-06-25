@@ -17,41 +17,41 @@
                 <br>
                 <br>
               </p>
-              <form role="form" id="contact-form" method="post">
+              <form id="contact-form" method="post" role="form">
                 <label>Your name</label>
                 <fg-input
-                  placeholder="Your Name..."
-                  v-model="form.firstName"
-                  addon-left-icon="now-ui-icons users_circle-08">
+                    addon-left-icon="now-ui-icons users_circle-08"
+                    placeholder="Your Name..."
+                    v-model="form.firstName">
                 </fg-input>
 
                 <label>Email address</label>
                 <fg-input
-                  placeholder="Email Here..."
-                  v-model="form.email"
-                  addon-left-icon="now-ui-icons users_circle-08">
+                    addon-left-icon="now-ui-icons users_circle-08"
+                    placeholder="Email Here..."
+                    v-model="form.email">
                 </fg-input>
                 <label>Phone</label>
 
                 <fg-input
-                  placeholder="Number Here..."
-                  v-model="form.phone"
-                  addon-left-icon="now-ui-icons tech_mobile">
+                    addon-left-icon="now-ui-icons tech_mobile"
+                    placeholder="Number Here..."
+                    v-model="form.phone">
                 </fg-input>
 
                 <div class="form-group">
                   <label>Your message</label>
-                  <textarea name="message" class="form-control" id="message" rows="6"></textarea>
+                  <textarea class="form-control" id="message" name="message" rows="6"></textarea>
                 </div>
                 <div class="submit text-center">
-                  <n-button type="primary" round>Contact Us</n-button>
+                  <n-button round type="primary">Contact Us</n-button>
                 </div>
               </form>
             </div>
             <div class="col-md-5 ml-auto mr-auto">
-              <info-section type="primary"
-                            class="mt-5"
-                            icon="now-ui-icons location_pin">
+              <info-section class="mt-5"
+                            icon="now-ui-icons location_pin"
+                            type="primary">
                 <h4 class="info-title">Find us at the office</h4>
                 <p> Bld Mihail Kogalniceanu, nr. 8,
                   <br> 7652 Bucharest,
@@ -59,8 +59,8 @@
                 </p>
               </info-section>
 
-              <info-section type="primary"
-                            icon="now-ui-icons tech_mobile">
+              <info-section icon="now-ui-icons tech_mobile"
+                            type="primary">
                 <h4 class="info-title">Give us a ring</h4>
                 <p> Michael Jordan
                   <br> +40 762 321 762
@@ -68,8 +68,8 @@
                 </p>
               </info-section>
 
-              <info-section type="primary"
-                            icon="business_briefcase-24 now-ui-icons">
+              <info-section icon="business_briefcase-24 now-ui-icons"
+                            type="primary">
                 <h4 class="info-title">Legal Information</h4>
                 <p> Creative Tim Ltd.
                   <br> VAT · EN2341241
@@ -83,19 +83,19 @@
       </div>
     </div>
     <gmap-map
-      id="map"
-      class="big-map"
-      :center="center"
-      :zoom="13"
-      :options="options"
-      map-type-id="terrain">
+        :center="center"
+        :options="options"
+        :zoom="13"
+        class="big-map"
+        id="map"
+        map-type-id="terrain">
       <gmap-marker :position="center">
       </gmap-marker>
     </gmap-map>
   </div>
 </template>
 <script>
-  import { Button, InfoSection, FormGroupInput } from '@/components';
+  import { Button, FormGroupInput, InfoSection } from '@/components';
   import { API_KEY } from '@/constants';
   import Vue from 'vue/types';
   import * as VueGoogleMaps from 'vue2-google-maps';
@@ -111,7 +111,7 @@
     components: {
       InfoSection,
       [Button.name]: Button,
-      [FormGroupInput.name]: FormGroupInput,
+      [FormGroupInput.name]: FormGroupInput
     },
     data () {
       return {

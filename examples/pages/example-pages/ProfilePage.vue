@@ -6,7 +6,7 @@
       </parallax>
       <div class="container">
         <div class="photo-container">
-          <img v-lazy="'img/ryan.jpg'" alt="">
+          <img alt="" v-lazy="'img/ryan.jpg'">
         </div>
         <h3 class="title">Ryan Scheinder</h3>
         <p class="category">Photographer</p>
@@ -30,12 +30,12 @@
     <div class="section">
       <div class="container">
         <div class="button-container">
-          <a href="#button" class="btn btn-primary btn-round btn-lg">Follow</a>
-          <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip"
+          <a class="btn btn-primary btn-round btn-lg" href="#button">Follow</a>
+          <a class="btn btn-default btn-round btn-lg btn-icon" href="#button" rel="tooltip"
              title="Follow me on Twitter">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip"
+          <a class="btn btn-default btn-round btn-lg btn-icon" href="#button" rel="tooltip"
              title="Follow me on Instagram">
             <i class="fab fa-instagram"></i>
           </a>
@@ -47,19 +47,19 @@
         <div class="row">
           <div class="col-md-12">
             <h4 class="title text-center">My Portfolio</h4>
-            <tabs pills
-                  type="primary"
-                  centered
-                  tab-nav-classes="nav-pills-just-icons">
+            <tabs centered
+                  pills
+                  tab-nav-classes="nav-pills-just-icons"
+                  type="primary">
               <tab-pane>
-                <i slot="label" class="now-ui-icons design_image"></i>
+                <i class="now-ui-icons design_image" slot="label"></i>
 
                 <div class="row">
                   <div class="col-md-5 ml-auto mr-auto">
-                    <card type="background"
+                    <card class="card-background-product"
                           raised
                           style="background-image: url('img/bg23.jpg')"
-                          class="card-background-product">
+                          type="background">
                       <h2 class="card-title">Chair remake.</h2>
                       <p class="card-description text-white">
                         Trello’s boards, lists, and cards enable you to organize and prioritize
@@ -71,31 +71,31 @@
                   </div>
                   <div class="col-md-5">
                     <info-section
-                      type="warning"
-                      icon="now-ui-icons users_single-02"
-                      title="Work With Any Team"
-                      description="Whether it’s for work or even the next family vacation, Trello helps your team."
+                        description="Whether it’s for work or even the next family vacation, Trello helps your team."
+                        icon="now-ui-icons users_single-02"
+                        title="Work With Any Team"
+                        type="warning"
                     />
 
                     <info-section
-                      type="warning"
-                      icon="now-ui-icons business_chart-bar-32"
-                      title="A Productivity Platform"
-                      description="Integrate the apps your team already uses directly into your workflow."
+                        description="Integrate the apps your team already uses directly into your workflow."
+                        icon="now-ui-icons business_chart-bar-32"
+                        title="A Productivity Platform"
+                        type="warning"
                     />
                   </div>
                 </div>
               </tab-pane>
 
               <tab-pane>
-                <i slot="label" class="now-ui-icons location_world"></i>
+                <i class="now-ui-icons location_world" slot="label"></i>
 
                 <div class="row">
                   <div class="col-md-5 ml-auto mr-auto">
-                    <card type="background"
+                    <card class="card-background-product"
                           raised
                           style="background-image: url('img/project8.jpg')"
-                          class="card-background-product">
+                          type="background">
                       <h2 class="card-title">Social Analytics</h2>
                       <p class="card-description text-white">
                         Insight to help you create, connect, and convert. Understand Your
@@ -107,31 +107,31 @@
                   </div>
                   <div class="col-md-5">
                     <info-section
-                      type="danger"
-                      icon="now-ui-icons ui-2_chat-round"
-                      title="Listen to Social Conversations"
-                      description="Gain access to the demographics, psychographics, and location of unique people who talk about your brand."
+                        description="Gain access to the demographics, psychographics, and location of unique people who talk about your brand."
+                        icon="now-ui-icons ui-2_chat-round"
+                        title="Listen to Social Conversations"
+                        type="danger"
                     />
 
                     <info-section
-                      type="danger"
-                      icon="now-ui-icons design-2_ruler-pencil"
-                      title="Social Conversions"
-                      description="Track actions taken on your website that originated from social, and understand the impact on your bottom line."
+                        description="Track actions taken on your website that originated from social, and understand the impact on your bottom line."
+                        icon="now-ui-icons design-2_ruler-pencil"
+                        title="Social Conversions"
+                        type="danger"
                     />
                   </div>
                 </div>
               </tab-pane>
 
               <tab-pane>
-                <i slot="label" class="now-ui-icons design-2_ruler-pencil"></i>
+                <i class="now-ui-icons design-2_ruler-pencil" slot="label"></i>
 
                 <div class="row">
                   <div class="col-md-5 ml-auto mr-auto">
-                    <card type="background"
+                    <card class="card-background-product"
                           raised
                           style="background-image: url('img/bg25.jpg')"
-                          class="card-background-product">
+                          type="background">
                       <h2 class="card-title">Interior Redesign</h2>
                       <p class="card-description text-white">
                         Insight to help you create, connect, and convert. Understand Your
@@ -143,17 +143,17 @@
                   </div>
                   <div class="col-md-5">
                     <info-section
-                      type="info"
-                      icon="now-ui-icons design_palette"
-                      title="Colors adjustments"
-                      description="Gain access to the demographics, psychographics, and location of unique people who talk about your brand."
+                        description="Gain access to the demographics, psychographics, and location of unique people who talk about your brand."
+                        icon="now-ui-icons design_palette"
+                        title="Colors adjustments"
+                        type="info"
                     />
 
                     <info-section
-                      type="info"
-                      icon="now-ui-icons design_scissors"
-                      title="Performance Clothing"
-                      description="Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports."
+                        description="Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports."
+                        icon="now-ui-icons design_scissors"
+                        title="Performance Clothing"
+                        type="info"
                     />
                   </div>
                 </div>
@@ -166,24 +166,24 @@
 
     <div class="contactus-2">
       <gmap-map
-        id="map"
-        class="map"
-        :center="center"
-        :zoom="13"
-        :options="options"
-        map-type-id="terrain">
+          :center="center"
+          :options="options"
+          :zoom="13"
+          class="map"
+          id="map"
+          map-type-id="terrain">
         <gmap-marker :position="center">
         </gmap-marker>
       </gmap-map>
       <div class="col-lg-6 col-md-10">
-        <card type="contact" raised header-classes="text-center">
-          <h4 slot="header" class="card-title">Contact Us</h4>
+        <card header-classes="text-center" raised type="contact">
+          <h4 class="card-title" slot="header">Contact Us</h4>
 
 
           <div class="row">
             <div class="col-md-6">
-              <info-section type="primary"
-                            icon="now-ui-icons tech_mobile">
+              <info-section icon="now-ui-icons tech_mobile"
+                            type="primary">
                 <h5 class="info-title">Give us a ring</h5>
                 <p> Michael Jordan
                   <br> +40 762 321 762
@@ -192,8 +192,8 @@
               </info-section>
             </div>
             <div class="col-md-6">
-              <info-section type="primary"
-                            icon="now-ui-icons location_pin">
+              <info-section icon="now-ui-icons location_pin"
+                            type="primary">
                 <h5 class="info-title">Find us at the office</h5>
                 <p> Bld Mihail Kogalniceanu, nr. 8,
                   <br> 7652 Bucharest,
@@ -206,17 +206,17 @@
             <div class="col-md-6 pr-2">
               <label>Full name</label>
               <fg-input
-                placeholder="First Name..."
-                v-model="form.firstName"
-                addon-left-icon="now-ui-icons users_circle-08">
+                  addon-left-icon="now-ui-icons users_circle-08"
+                  placeholder="First Name..."
+                  v-model="form.firstName">
               </fg-input>
             </div>
             <div class="col-md-6 pl-2">
               <label>Email address</label>
               <fg-input
-                placeholder="Email Here..."
-                v-model="form.email"
-                addon-left-icon="now-ui-icons users_circle-08">
+                  addon-left-icon="now-ui-icons users_circle-08"
+                  placeholder="Email Here..."
+                  v-model="form.email">
               </fg-input>
             </div>
           </div>
@@ -227,7 +227,7 @@
               </n-checkbox>
             </div>
             <div class="col-md-6">
-              <n-button type="primary" round class="pull-right">Send Message</n-button>
+              <n-button class="pull-right" round type="primary">Send Message</n-button>
             </div>
           </div>
 
@@ -237,7 +237,7 @@
   </div>
 </template>
 <script>
-  import { Badge, Button, InfoSection, FormGroupInput, Card, Tabs, TabPane, Checkbox } from '@/components';
+  import { Badge, Button, Card, Checkbox, FormGroupInput, InfoSection, TabPane, Tabs } from '@/components';
   import { API_KEY } from '@/constants';
   import Vue from 'vue/types';
   import * as VueGoogleMaps from 'vue2-google-maps';
@@ -258,7 +258,7 @@
       Badge,
       [Button.name]: Button,
       [Checkbox.name]: Checkbox,
-      [FormGroupInput.name]: FormGroupInput,
+      [FormGroupInput.name]: FormGroupInput
     },
     data () {
       return {

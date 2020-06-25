@@ -1,22 +1,22 @@
 <template>
-  <component class="dropdown"
-             :is="tag"
+  <component :aria-expanded="isOpen"
              :class="[{show: isOpen}, {'dropdown': direction === 'down'}, {'dropup': direction ==='up'}]"
-             aria-haspopup="true"
-             :aria-expanded="isOpen"
+             :is="tag"
              @click="toggleDropDown"
+             aria-haspopup="true"
+             class="dropdown"
              v-click-outside="closeDropDown">
 
     <slot name="title">
-      <a class="dropdown-toggle nav-link"
-         :class="{'no-caret': hideArrow}"
+      <a :class="{'no-caret': hideArrow}"
+         class="dropdown-toggle nav-link"
          data-toggle="dropdown">
         <i :class="icon"></i>
         <span class="no-icon">{{title}}</span>
       </a>
     </slot>
-    <ul class="dropdown-menu"
-        :class="[{'dropdown-menu-right': position === 'right'}, {show: isOpen}]">
+    <ul :class="[{'dropdown-menu-right': position === 'right'}, {show: isOpen}]"
+        class="dropdown-menu">
       <slot></slot>
     </ul>
   </component>

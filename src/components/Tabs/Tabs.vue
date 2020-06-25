@@ -4,10 +4,7 @@
         [{'col-md-4': vertical && !tabNavWrapperClasses},
         {'col-12': centered && !tabNavWrapperClasses},
         tabNavWrapperClasses]">
-      <ul class="nav"
-          role="tablist"
-          v-bind="$attrs"
-          :class="
+      <ul :class="
           [ tabTypeClass,
            {'nav-pills-icons': icons},
            {'nav-pills': pills},
@@ -15,22 +12,25 @@
            {'flex-column': vertical},
            {'justify-content-center': centered},
            tabNavClasses
-          ]">
+          ]"
+          class="nav"
+          role="tablist"
+          v-bind="$attrs">
 
-        <li v-for="tab in tabs"
+        <li :key="tab.id"
+            aria-expanded="true"
             class="nav-item active"
             data-toggle="tab"
             role="tablist"
-            aria-expanded="true"
-            :key="tab.id">
+            v-for="tab in tabs">
 
-          <a data-toggle="tab"
-             role="tablist"
+          <a :aria-expanded="tab.active"
+             :class="{active: tab.active}"
              :href="`#${tab.id}`"
              @click.prevent="activateTab(tab)"
-             :aria-expanded="tab.active"
              class="nav-link"
-             :class="{active: tab.active}">
+             data-toggle="tab"
+             role="tablist">
             <tab-item-content :tab="tab">
             </tab-item-content>
           </a>
@@ -39,8 +39,9 @@
 
       </ul>
     </div>
-    <div class="tab-content"
-         :class="[{'tab-space': !vertical && !noContentSpace}, 'text-left', {'col-md-8': vertical && !tabContentClasses}, tabContentClasses]">
+    <div
+        :class="[{'tab-space': !vertical && !noContentSpace}, 'text-left', {'col-md-8': vertical && !tabContentClasses}, tabContentClasses]"
+        class="tab-content">
       <slot></slot>
     </div>
   </div>
@@ -162,4 +163,7 @@
     }
   };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  @import "~@/assets/sass/indiehd/variables";
+  @import "~@/assets/sass/indiehd/tabs";
+</style>

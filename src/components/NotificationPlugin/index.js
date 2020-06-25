@@ -22,7 +22,7 @@ const NotificationStore = {
   },
   addNotification (notification) {
     if (typeof notification === 'string' || notification instanceof String) {
-      notification = {message: notification};
+      notification = { message: notification };
     }
     notification.timestamp = new Date();
     notification.timestamp.setMilliseconds(notification.timestamp.getMilliseconds() + this.state.length);
@@ -37,6 +37,7 @@ const NotificationStore = {
     } else {
       this.addNotification(notification);
     }
+
   }
 };
 

@@ -67,7 +67,7 @@
                       </button>
                     </h4>
                     <collapse>
-                      <collapse-item no-icon class="card-header">
+                      <collapse-item class="card-header" no-icon>
                         <h6 class="mb-0 text-primary" slot="title">
                           Price Range
                           <i class="now-ui-icons arrows-1_minimal-down"></i>
@@ -75,43 +75,43 @@
                         <span class="price-left pull-left">€{{filters.priceRange[0]}}</span>
                         <span class="price-right pull-right">€{{filters.priceRange[1]}}</span>
                         <div class="clearfix"></div>
-                        <slider id="slider-refine"
-                                class="slider-refine"
-                                v-model="filters.priceRange"
+                        <slider :connect="true"
                                 :range="{min: 0, max: 900}"
-                                :connect="true">
+                                class="slider-refine"
+                                id="slider-refine"
+                                v-model="filters.priceRange">
                         </slider>
                       </collapse-item>
-                      <collapse-item no-icon class="card-header">
+                      <collapse-item class="card-header" no-icon>
                         <h6 class="mb-0 text-primary" slot="title">
                           Clothing
                           <i class="now-ui-icons arrows-1_minimal-down"></i>
                         </h6>
-                        <n-checkbox v-for="clothing in filters.clothingTypes"
-                                    v-model="clothing.value"
-                                    :key="clothing.label">
+                        <n-checkbox :key="clothing.label"
+                                    v-for="clothing in filters.clothingTypes"
+                                    v-model="clothing.value">
                           {{clothing.label}}
                         </n-checkbox>
                       </collapse-item>
-                      <collapse-item no-icon class="card-header">
+                      <collapse-item class="card-header" no-icon>
                         <h6 class="mb-0 text-primary" slot="title">
                           Designer
                           <i class="now-ui-icons arrows-1_minimal-down"></i>
                         </h6>
-                        <n-checkbox v-for="desginer in filters.designerTypes"
-                                    v-model="desginer.value"
-                                    :key="desginer.label">
+                        <n-checkbox :key="desginer.label"
+                                    v-for="desginer in filters.designerTypes"
+                                    v-model="desginer.value">
                           {{desginer.label}}
                         </n-checkbox>
                       </collapse-item>
-                      <collapse-item no-icon class="card-header">
+                      <collapse-item class="card-header" no-icon>
                         <h6 class="mb-0 text-primary" slot="title">
                           Colour
                           <i class="now-ui-icons arrows-1_minimal-down"></i>
                         </h6>
-                        <n-checkbox v-for="color in filters.colourTypes"
-                                    v-model="color.value"
-                                    :key="color.label">
+                        <n-checkbox :key="color.label"
+                                    v-for="color in filters.colourTypes"
+                                    v-model="color.value">
                           {{color.label}}
                         </n-checkbox>
                       </collapse-item>
@@ -122,11 +122,11 @@
             </div>
             <div class="col-md-9">
               <div class="row">
-                <div class="col-lg-4 col-md-6"
-                     v-for="product in products"
-                     :key="product.title">
-                  <card type="product" plain>
-                    <img slot="image" :src="product.image" alt="">
+                <div :key="product.title"
+                     class="col-lg-4 col-md-6"
+                     v-for="product in products">
+                  <card plain type="product">
+                    <img :src="product.image" alt="" slot="image">
 
                     <a href="#">
                       <h4 class="card-title">{{product.title}}</h4>
@@ -138,8 +138,8 @@
                       <div class="price-container">
                         <span class="price"> &euro; 300</span>
                       </div>
-                      <el-tooltip effect="light" content="Remove from wishlist" placement="top">
-                        <n-button type="danger" icon round class="pull-right btn-neutral">
+                      <el-tooltip content="Remove from wishlist" effect="light" placement="top">
+                        <n-button class="pull-right btn-neutral" icon round type="danger">
                           <i class="now-ui-icons ui-2_favourite-28"></i>
                         </n-button>
                       </el-tooltip>
@@ -147,7 +147,7 @@
                   </card>
                 </div>
                 <div class="col-md-3 ml-auto mr-auto">
-                  <n-button type="primary" round>Load more...</n-button>
+                  <n-button round type="primary">Load more...</n-button>
                 </div>
               </div>
             </div>
@@ -162,7 +162,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 px-0">
-              <card type="background" class="card-fashion" style="background-image: url('img/bg35.jpg')">
+              <card class="card-fashion" style="background-image: url('img/bg35.jpg')" type="background">
                 <div class="card-title text-left">
                   <h2>
                     <a href="#pablo">
@@ -173,15 +173,15 @@
                 </div>
                 <div class="card-footer text-left">
                   <div class="stats">
-                                            <span>
-                                                <i class="now-ui-icons users_circle-08"></i>Emy Grace
-                                            </span>
                     <span>
-                                                <i class="now-ui-icons tech_watch-time"></i> June 6, 2017
-                                            </span>
+                      <i class="now-ui-icons users_circle-08"></i>Emy Grace
+                    </span>
+                    <span>
+                      <i class="now-ui-icons tech_watch-time"></i> June 6, 2017
+                    </span>
                   </div>
                   <div class="stats-link pull-right">
-                    <a href="#pablo" class="footer-link">Fashion Week</a>
+                    <a class="footer-link" href="#pablo">Fashion Week</a>
                   </div>
                 </div>
               </card>
@@ -203,17 +203,17 @@
                   <div class="card-body">
                     <div class="card-footer text-left">
                       <div class="stats">
-                                                <span>
-                                                    <i class="now-ui-icons users_circle-08"></i>Jerry McGregor
-                                                </span>
                         <span>
-                                                    <i class="now-ui-icons tech_watch-time"></i> June 10, 2017
-                                                </span>
+                          <i class="now-ui-icons users_circle-08"></i>Jerry McGregor
+                        </span>
+                        <span>
+                          <i class="now-ui-icons tech_watch-time"></i> June 10, 2017
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <card type="background" class="card-fashion" style="background-image: url('img/bg40.jpg')">
+                <card class="card-fashion" style="background-image: url('img/bg40.jpg')" type="background">
                 </card>
               </div>
             </div>
@@ -225,8 +225,8 @@
           <h2 class="section-title">Latest Offers</h2>
           <div class="row">
             <div class="col-md-4">
-              <card type="product" plain>
-                <img slot="image" src="img/saint-laurent1.jpg" alt="">
+              <card plain type="product">
+                <img alt="" slot="image" src="img/saint-laurent1.jpg">
                 <h4 class="card-title">
                   <a href="#pablo">Saint Laurent</a>
                 </h4>
@@ -239,7 +239,7 @@
                   </div>
                   <div class="stats stats-right">
                     <el-tooltip content="Saved to Wishlist" effect="light" placement="top">
-                      <n-button type="neutral" icon>
+                      <n-button icon type="neutral">
                         <i class="now-ui-icons ui-2_favourite-28"></i>
                       </n-button>
                     </el-tooltip>
@@ -248,8 +248,8 @@
               </card>
             </div>
             <div class="col-md-4">
-              <card type="product" plain>
-                <img slot="image" src="img/saint-laurent1.jpg" alt="">
+              <card plain type="product">
+                <img alt="" slot="image" src="img/saint-laurent1.jpg">
                 <h4 class="card-title">
                   <a href="#pablo">Saint Laurent</a>
                 </h4>
@@ -262,7 +262,7 @@
                   </div>
                   <div class="stats stats-right">
                     <el-tooltip content="Saved to Wishlist" effect="light" placement="top">
-                      <n-button type="neutral" icon>
+                      <n-button icon type="neutral">
                         <i class="now-ui-icons ui-2_favourite-28"></i>
                       </n-button>
                     </el-tooltip>
@@ -271,8 +271,8 @@
               </card>
             </div>
             <div class="col-md-4">
-              <card type="product" plain>
-                <img slot="image" src="img/gucci.jpg" alt="">
+              <card plain type="product">
+                <img alt="" slot="image" src="img/gucci.jpg">
                 <h4 class="card-title">
                   <a href="#pablo">Gucci</a>
                 </h4>
@@ -286,7 +286,7 @@
                   </div>
                   <div class="stats stats-right">
                     <el-tooltip content="Saved to Wishlist" effect="light" placement="top">
-                      <n-button type="neutral" icon>
+                      <n-button icon type="neutral">
                         <i class="now-ui-icons ui-2_favourite-28"></i>
                       </n-button>
                     </el-tooltip>
@@ -309,16 +309,16 @@
                   worries about this.
                 </p>
               </div>
-              <card type="raised" class="card-form-horizontal">
+              <card class="card-form-horizontal" type="raised">
                 <div class="row">
                   <div class="col-sm-8">
                     <fg-input
-                      placeholder="Your Email..."
-                      addon-left-icon="now-ui-icons ui-1_email-85">
+                        addon-left-icon="now-ui-icons ui-1_email-85"
+                        placeholder="Your Email...">
                     </fg-input>
                   </div>
                   <div class="col-sm-4">
-                    <n-button type="primary" round block>
+                    <n-button block round type="primary">
                       Subscribe
                     </n-button>
                   </div>
@@ -332,7 +332,7 @@
   </div>
 </template>
 <script>
-  import { Card, Button, InfoSection, FormGroupInput, Checkbox, Collapse, CollapseItem, Slider } from '@/components';
+  import { Button, Card, Checkbox, Collapse, CollapseItem, FormGroupInput, InfoSection, Slider } from '@/components';
   import { Carousel, CarouselItem, Tooltip } from 'element-ui/types';
 
   export default {
@@ -349,7 +349,7 @@
       [FormGroupInput.name]: FormGroupInput,
       [Carousel.name]: Carousel,
       [CarouselItem.name]: CarouselItem,
-      [Tooltip.name]: Tooltip,
+      [Tooltip.name]: Tooltip
     },
     data () {
       return {
@@ -384,72 +384,72 @@
             },
             {
               label: 'Polo Ralph Lauren',
-              value: false,
+              value: false
             },
             {
               label: 'Wooyoungmi',
-              value: false,
+              value: false
             },
             {
               label: 'Alexander McQueen',
-              value: false,
+              value: false
             },
             {
               label: 'Tom Ford',
-              value: false,
+              value: false
             },
             {
               label: 'AMI',
-              value: false,
+              value: false
             },
             {
               label: 'Berena',
-              value: false,
+              value: false
             },
             {
               label: 'Thom Sweeney',
-              value: false,
+              value: false
             },
             {
               label: 'Burberry Prorsum',
-              value: false,
+              value: false
             },
             {
               label: 'Calvin Klein',
-              value: false,
+              value: false
             },
             {
               label: 'Kingsman',
-              value: false,
+              value: false
             },
             {
               label: 'Club Monaco',
-              value: false,
+              value: false
             },
             {
               label: 'Dolce & Gabbana',
-              value: false,
+              value: false
             },
             {
               label: 'Gucci',
-              value: false,
+              value: false
             },
             {
               label: 'Biglioli',
-              value: false,
+              value: false
             },
             {
               label: 'Lanvin',
-              value: false,
+              value: false
             },
             {
               label: 'Loro Piana',
-              value: false,
+              value: false
             },
             {
               label: 'Massimo Alba',
-              value: false,
-            },
+              value: false
+            }
           ],
           colourTypes: [
             {

@@ -7,10 +7,10 @@
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">A Place for Entrepreneurs to Share and Discover New Stories</h2>
-            <a href="#button" class="btn btn-primary btn-round  btn-icon">
+            <a class="btn btn-primary btn-round  btn-icon" href="#button">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#button" class="btn btn-primary btn-round  btn-icon">
+            <a class="btn btn-primary btn-round  btn-icon" href="#button">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
@@ -21,8 +21,8 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 px-0">
-            <card type="background" class="card-fashion"
-                  style="background-image: url('img/project10.jpg')">
+            <card class="card-fashion" style="background-image: url('img/project10.jpg')"
+                  type="background">
               <div class="card-title text-left">
                 <h2>
                   <a href="#pablo">
@@ -32,15 +32,15 @@
               </div>
               <div class="card-footer text-left">
                 <div class="stats">
-                                        <span>
-                                            <i class="now-ui-icons users_circle-08"></i>Nicholas Deleon
-                                        </span>
                   <span>
-                                            <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
-                                        </span>
+                    <i class="now-ui-icons users_circle-08"></i>Nicholas Deleon
+                  </span>
+                  <span>
+                    <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
+                  </span>
                 </div>
                 <div class="stats-link pull-right">
-                  <a href="#pablo" class="footer-link">Yachts</a>
+                  <a class="footer-link" href="#pablo">Yachts</a>
                 </div>
               </div>
 
@@ -48,7 +48,7 @@
           </div>
           <div class="col-md-3 px-0">
             <card type="fashion">
-              <a slot="title" href="#pablo">
+              <a href="#pablo" slot="title">
                 <h4>
                   <a href="#pablo">
                     Why Early Sailors Were Stalled for Millennia in the...
@@ -57,12 +57,12 @@
               </a>
               <div class="card-footer">
                 <div class="stats">
-                                        <span>
-                                            <i class="now-ui-icons users_circle-08"></i>Jon Russell
-                                        </span>
                   <span>
-                                            <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
-                                        </span>
+                    <i class="now-ui-icons users_circle-08"></i>Jon Russell
+                  </span>
+                  <span>
+                    <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
+                  </span>
                 </div>
                 <div class="stats-link pull-right">
                   <a href="#pablo">Sea</a>&sbquo;
@@ -72,15 +72,15 @@
             </card>
           </div>
           <div class="col-md-3 px-0">
-            <card type="background" class="card-fashion"
-                  style="background-image: url('img/project11.jpg')">
+            <card class="card-fashion" style="background-image: url('img/project11.jpg')"
+                  type="background">
             </card>
           </div>
         </div>
         <div class="row">
           <div class="col-md-3 px-0">
-            <card type="background" class="card-fashion"
-                  style="background-image: url('img/project12.jpg')">
+            <card class="card-fashion" style="background-image: url('img/project12.jpg')"
+                  type="background">
             </card>
           </div>
           <div class="col-md-3 px-0">
@@ -95,12 +95,12 @@
               <div class="card-body">
                 <div class="card-footer">
                   <div class="stats">
-                                        <span>
-                                            <i class="now-ui-icons users_circle-08"></i>John Bruno
-                                        </span>
                     <span>
-                                            <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
-                                        </span>
+                      <i class="now-ui-icons users_circle-08"></i>John Bruno
+                    </span>
+                    <span>
+                      <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
+                    </span>
                   </div>
                   <div class="stats-link pull-right">
                     <a href="#pablo">Opinion</a>&sbquo;
@@ -111,8 +111,8 @@
             </div>
           </div>
           <div class="col-md-6 px-0">
-            <card type="background" class="card-fashion"
-                  style="background-image: url('img/project13.jpg')">
+            <card class="card-fashion" style="background-image: url('img/project13.jpg')"
+                  type="background">
               <div class="card-title text-left">
                 <h2>
                   <a href="#pablo">China Wants Fish, So Africa Goes Hungry</a>
@@ -120,15 +120,15 @@
               </div>
               <div class="card-footer text-left">
                 <div class="stats">
-                                        <span>
-                                            <i class="now-ui-icons users_circle-08"></i>Joanna Klein
-                                        </span>
                   <span>
-                                            <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
-                                        </span>
+                    <i class="now-ui-icons users_circle-08"></i>Joanna Klein
+                  </span>
+                  <span>
+                    <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
+                  </span>
                 </div>
                 <div class="stats-link pull-right">
-                  <a href="#pablo" class="footer-link">People</a>
+                  <a class="footer-link" href="#pablo">People</a>
                 </div>
               </div>
             </card>
@@ -140,11 +140,11 @@
       <div class="container">
         <div class="section">
           <h3 class="title text-center">You may also be interested in</h3>
-          <br/>
+          <br />
           <div class="row">
             <div class="col-md-4">
-              <card type="blog" plain>
-                <img slot="image" class="img rounded img-raised" src="img/bg5.jpg"/>
+              <card plain type="blog">
+                <img class="img rounded img-raised" slot="image" src="img/bg5.jpg" />
                 <h6 class="category text-info">Enterprise</h6>
                 <h4 class="card-title">
                   <a href="#pablo">Autodesk looks to future of 3D printing with Project Escher</a>
@@ -155,14 +155,14 @@
                   <a href="#pablo"> Read More </a>
                 </p>
                 <div class="author">
-                  <img v-lazy="'img/olivia.jpg'" alt="..." class="avatar img-raised">
+                  <img alt="..." class="avatar img-raised" v-lazy="'img/olivia.jpg'">
                   <span>Anna Spark</span>
                 </div>
               </card>
             </div>
             <div class="col-md-4">
-              <card type="blog" plain>
-                <img slot="image" class="img rounded img-raised" src="img/bg27.jpg"/>
+              <card plain type="blog">
+                <img class="img rounded img-raised" slot="image" src="img/bg27.jpg" />
                 <h6 class="category text-success">
                   Startups
                 </h6>
@@ -175,7 +175,7 @@
                   <a href="#pablo"> Read More </a>
                 </p>
                 <div class="author">
-                  <img v-lazy="'img/michael.jpg'" alt="..." class="avatar img-raised">
+                  <img alt="..." class="avatar img-raised" v-lazy="'img/michael.jpg'">
                   <span>John Black</span>
                 </div>
               </card>
@@ -184,7 +184,7 @@
               <div class="card card-plain card-blog">
                 <div class="card-image">
                   <a href="#pablo">
-                    <img class="img rounded img-raised" src="img/bg21.jpg"/>
+                    <img class="img rounded img-raised" src="img/bg21.jpg" />
                   </a>
                 </div>
                 <div class="card-body">
@@ -199,7 +199,7 @@
                     was until recently a traditional boxed software company selling licenses.
                     <a href="#pablo"> Read More </a>
                   <div class="author">
-                    <img v-lazy="'img/james.jpg'" alt="..." class="avatar img-raised">
+                  <img alt="..." class="avatar img-raised" v-lazy="'img/james.jpg'">
                     <span>James Newman</span>
                   </div>
                   </p>
@@ -222,7 +222,7 @@
               </div>
               <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
                 <card type="profile">
-                  <div slot="raw-content" class="row">
+                  <div class="row" slot="raw-content">
                     <div class="col-md-5">
                       <div class="card-image">
                         <a href="#pablo">
@@ -245,7 +245,7 @@
               </div>
               <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
                 <card type="profile">
-                  <div slot="raw-content" class="row">
+                  <div class="row" slot="raw-content">
                     <div class="col-md-5">
                       <div class="card-image">
                         <a href="#pablo">
@@ -281,7 +281,7 @@
               </p>
             </div>
             <div class="col-md-6">
-              <card plain class="card-form-horizontal">
+              <card class="card-form-horizontal" plain>
                 <div class="row">
                   <div class="col-sm-8">
                     <fg-input addon-left-icon="now-ui-icons ui-1_email-85"
@@ -289,7 +289,7 @@
                     </fg-input>
                   </div>
                   <div class="col-sm-4">
-                    <n-button type="primary" round block>Subscribe
+                    <n-button block round type="primary">Subscribe
                     </n-button>
                   </div>
                 </div>
@@ -307,22 +307,22 @@
               <h5>About Us</h5>
               <ul class="links-vertical">
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Presentation
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Contact Us
                   </a>
                 </li>
@@ -332,32 +332,32 @@
               <h5>Market</h5>
               <ul class="links-vertical">
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Sales FAQ
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     How to Register
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Sell Goods
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Receive Payment
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Transactions Issues
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Affiliates Program
                   </a>
                 </li>
@@ -384,31 +384,31 @@
               <h5>Follow Us</h5>
               <ul class="social-buttons">
                 <li>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter btn-round">
+                  <a class="btn btn-icon btn-neutral btn-twitter btn-round" href="#pablo">
                     <i class="fab fa-twitter"></i>
                   </a>
                   &nbsp;
                 </li>
                 <li>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook btn-round">
+                  <a class="btn btn-icon btn-neutral btn-facebook btn-round" href="#pablo">
                     <i class="fab fa-facebook-square"></i>
                   </a>
                   &nbsp;
                 </li>
                 <li>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-dribbble btn-round">
+                  <a class="btn btn-icon btn-neutral btn-dribbble btn-round" href="#pablo">
                     <i class="fab fa-dribbble"></i>
                   </a>
                   &nbsp;
                 </li>
                 <li>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-google btn-round">
+                  <a class="btn btn-icon btn-neutral btn-google btn-round" href="#pablo">
                     <i class="fab fa-google-plus"></i>
                   </a>
                   &nbsp;
                 </li>
                 <li>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-instagram btn-round">
+                  <a class="btn btn-icon btn-neutral btn-instagram btn-round" href="#pablo">
                     <i class="fab fa-instagram"></i>
                   </a>
                   &nbsp;
@@ -426,7 +426,7 @@
             </div>
           </div>
         </div>
-        <hr/>
+        <hr />
         <div class="copyright">
           Copyright &copy;
           {{year}} Creative Tim All Rights Reserved.
@@ -436,7 +436,7 @@
   </div>
 </template>
 <script>
-  import { Card, Button, FormGroupInput } from '@/components';
+  import { Button, Card, FormGroupInput } from '@/components';
 
   export default {
     name: 'blog-posts',
@@ -450,7 +450,7 @@
       return {
         year: new Date().getFullYear()
       };
-    },
+    }
   };
 </script>
 <style>

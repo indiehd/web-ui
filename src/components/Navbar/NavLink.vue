@@ -1,8 +1,8 @@
 <template>
   <component :is="componentType"
              :to="to"
-             class="dropdown-item"
-             @click.native.stop="closeNav">
+             @click.native.stop="closeNav"
+             class="dropdown-item">
     <slot></slot>
   </component>
 </template>
@@ -30,7 +30,7 @@
           this.closeDropDown();
         }
       }
-    },
+    }
   };
 </script>
 <style>

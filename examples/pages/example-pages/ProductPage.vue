@@ -10,13 +10,13 @@
           <div class="col-md-5">
             <el-carousel>
               <el-carousel-item>
-                <img class="d-block img-raised" src="img/pp-1.jpg" alt="First slide">
+                <img alt="First slide" class="d-block img-raised" src="img/pp-1.jpg">
               </el-carousel-item>
               <el-carousel-item>
-                <img class="d-block img-raised" src="img/pp-2.jpg" alt="Second slide">
+                <img alt="Second slide" class="d-block img-raised" src="img/pp-2.jpg">
               </el-carousel-item>
               <el-carousel-item>
-                <img class="d-block img-raised" src="img/pp-3.jpg" alt="Third slide">
+                <img alt="Third slide" class="d-block img-raised" src="img/pp-3.jpg">
               </el-carousel-item>
             </el-carousel>
             <p class="blockquote blockquote-primary">
@@ -61,24 +61,24 @@
               <div class="col-lg-6 col-md-8 col-sm-6">
                 <label>Select color</label>
                 <br>
-                <el-select v-model="filters.color" class="select-default">
-                  <el-option class="select-default" value="1" label="Black"></el-option>
-                  <el-option class="select-default" value="2" label="Gray"></el-option>
-                  <el-option class="select-default" value="3" label="White"></el-option>
+                <el-select class="select-default" v-model="filters.color">
+                  <el-option class="select-default" label="Black" value="1"></el-option>
+                  <el-option class="select-default" label="Gray" value="2"></el-option>
+                  <el-option class="select-default" label="White" value="3"></el-option>
                 </el-select>
               </div>
               <div class="col-lg-6 col-md-8 col-sm-6">
                 <label>Select size</label>
                 <br>
-                <el-select v-model="filters.size" class="select-default">
-                  <el-option class="select-default" value="1" label="Small"></el-option>
-                  <el-option class="select-default" value="2" label="Medium"></el-option>
-                  <el-option class="select-default" value="3" label="Large"></el-option>
+                <el-select class="select-default" v-model="filters.size">
+                  <el-option class="select-default" label="Small" value="1"></el-option>
+                  <el-option class="select-default" label="Medium" value="2"></el-option>
+                  <el-option class="select-default" label="Large" value="3"></el-option>
                 </el-select>
               </div>
             </div>
             <div class="row justify-content-end">
-              <n-button type="primary" class="mr-3">
+              <n-button class="mr-3" type="primary">
                 Add to Cart &nbsp;
                 <i class="now-ui-icons shopping_cart-simple"></i>
               </n-button>
@@ -152,7 +152,7 @@
                       <p>Divide details about your product or agency work into parts. Write a few
                         lines about each one. A paragraph describing a feature will be
                         enough.</p>
-                      <a href="#pablo" class="ml-3">Find more...</a>
+                      <a class="ml-3" href="#pablo">Find more...</a>
                     </div>
                   </div>
                 </div>
@@ -185,7 +185,7 @@
                       <p>Share a floor plan, and we'll create a visualization of your room. A
                         paragraph describing a feature will be enough. This is a popular item
                         for you.</p>
-                      <a href="#pablo" class="ml-3">Find more...</a>
+                      <a class="ml-3" href="#pablo">Find more...</a>
                     </div>
                   </div>
                 </div>
@@ -201,11 +201,11 @@
         <div class="row">
           <div class="col-sm-6 col-md-3">
             <card type="product">
-              <img slot="image" class="img rounded" src="img/saint-laurent.jpg"/>
+              <img class="img rounded" slot="image" src="img/saint-laurent.jpg" />
 
               <h6 class="category text-danger">Trending</h6>
               <h4 class="card-title">
-                <a href="#pablo" class="card-link">Dolce & Gabbana</a>
+                <a class="card-link" href="#pablo">Dolce & Gabbana</a>
               </h4>
               <div class="card-description">
                 Dolce & Gabbana's 'Greta' tote has been crafted in Italy from hard-wearing red
@@ -216,7 +216,7 @@
                   <span class="price">€1,459</span>
                 </div>
                 <el-tooltip content="Add to Wishlist" placement="left">
-                  <n-button type="neutral" icon round class="pull-right">
+                  <n-button class="pull-right" icon round type="neutral">
                     <i class="now-ui-icons ui-2_favourite-28"></i>
                   </n-button>
                 </el-tooltip>
@@ -225,11 +225,11 @@
           </div>
           <div class="col-sm-6 col-md-3">
             <card type="product">
-              <img slot="image" class="img rounded" src="img/gucci.jpg"/>
+              <img class="img rounded" slot="image" src="img/gucci.jpg" />
 
               <h6 class="category text-danger">Popular</h6>
               <h4 class="card-title">
-                <a href="#pablo" class="card-link">Balmain</a>
+                <a class="card-link" href="#pablo">Balmain</a>
               </h4>
               <div class="card-description">
                 Balmain's mid-rise skinny jeans are cut with stretch to ensure they retain their
@@ -240,7 +240,7 @@
                   <span class="price">€459</span>
                 </div>
                 <el-tooltip content="Add to Wishlist" placement="left">
-                  <n-button type="neutral" icon round class="pull-right">
+                  <n-button class="pull-right" icon round type="neutral">
                     <i class="now-ui-icons ui-2_favourite-28"></i>
                   </n-button>
                 </el-tooltip>
@@ -249,11 +249,11 @@
           </div>
           <div class="col-sm-6 col-md-3">
             <card type="product">
-              <img slot="image" class="img rounded" src="img/wooyoungmi.jpg"/>
+              <img class="img rounded" slot="image" src="img/wooyoungmi.jpg" />
 
               <h6 class="category text-danger">Popular</h6>
               <h4 class="card-title">
-                <a href="#pablo" class="card-link">Balenciaga</a>
+                <a class="card-link" href="#pablo">Balenciaga</a>
               </h4>
               <div class="card-description">
                 Balenciaga's black textured-leather wallet is finished with the label's iconic
@@ -264,7 +264,7 @@
                   <span class="price">€559</span>
                 </div>
                 <el-tooltip content="Add to Wishlist" placement="left">
-                  <n-button type="neutral" icon round class="pull-right">
+                  <n-button class="pull-right" icon round type="neutral">
                     <i class="now-ui-icons ui-2_favourite-28"></i>
                   </n-button>
                 </el-tooltip>
@@ -273,11 +273,11 @@
           </div>
           <div class="col-sm-6 col-md-3">
             <card type="product">
-              <img slot="image" class="img rounded" src="img/saint-laurent1.jpg"/>
+              <img class="img rounded" slot="image" src="img/saint-laurent1.jpg" />
 
               <h6 class="category text-danger">Trending</h6>
               <h4 class="card-title">
-                <a href="#pablo" class="card-link">Dolce & Gabbana</a>
+                <a class="card-link" href="#pablo">Dolce & Gabbana</a>
               </h4>
               <div class="card-description">
                 Dolce & Gabbana's 'Greta' tote has been crafted in Italy from hard-wearing red
@@ -288,7 +288,7 @@
                   <span class="price">€ 1,359</span>
                 </div>
                 <el-tooltip content="Add to Wishlist" placement="left">
-                  <n-button type="neutral" icon round class="pull-right">
+                  <n-button class="pull-right" icon round type="neutral">
                     <i class="now-ui-icons ui-2_favourite-28"></i>
                   </n-button>
                 </el-tooltip>
@@ -306,22 +306,22 @@
               <h5>About Us</h5>
               <ul class="links-vertical">
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Presentation
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Contact Us
                   </a>
                 </li>
@@ -331,32 +331,32 @@
               <h5>Market</h5>
               <ul class="links-vertical">
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Sales FAQ
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     How to Register
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Sell Goods
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Receive Payment
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Transactions Issues
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">
+                  <a class="text-muted" href="#pablo">
                     Affiliates Program
                   </a>
                 </li>
@@ -383,27 +383,27 @@
               <h5>Follow Us</h5>
               <ul class="social-buttons">
                 <li>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter btn-round">
+                  <a class="btn btn-icon btn-neutral btn-twitter btn-round" href="#pablo">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook btn-round">
+                  <a class="btn btn-icon btn-neutral btn-facebook btn-round" href="#pablo">
                     <i class="fab fa-facebook-square"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-dribbble btn-round">
+                  <a class="btn btn-icon btn-neutral btn-dribbble btn-round" href="#pablo">
                     <i class="fab fa-dribbble"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-google btn-round">
+                  <a class="btn btn-icon btn-neutral btn-google btn-round" href="#pablo">
                     <i class="fab fa-google-plus"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#pablo" class="btn btn-icon btn-neutral btn-instagram btn-round">
+                  <a class="btn btn-icon btn-neutral btn-instagram btn-round" href="#pablo">
                     <i class="fab fa-instagram"></i>
                   </a>
                 </li>
@@ -420,7 +420,7 @@
             </div>
           </div>
         </div>
-        <hr/>
+        <hr />
         <div class="copyright">
           Copyright &copy;
           {{year}} Creative Tim All Rights Reserved.
@@ -430,8 +430,8 @@
   </div>
 </template>
 <script>
-  import { Card, Button, Collapse, CollapseItem } from '@/components';
-  import { Carousel, CarouselItem, Select, Option, Tooltip } from 'element-ui/types';
+  import { Button, Card, Collapse, CollapseItem } from '@/components';
+  import { Carousel, CarouselItem, Option, Select, Tooltip } from 'element-ui/types';
 
   export default {
     name: 'product-page',
@@ -445,7 +445,7 @@
       [CarouselItem.name]: CarouselItem,
       [Select.name]: Select,
       [Option.name]: Option,
-      [Tooltip.name]: Tooltip,
+      [Tooltip.name]: Tooltip
     },
     data () {
       return {
@@ -455,7 +455,7 @@
         },
         year: new Date().getFullYear()
       };
-    },
+    }
   };
 </script>
 <style>

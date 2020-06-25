@@ -73,8 +73,8 @@
           </div>
           <div class="row">
             <div class="col-md-5 ml-auto">
-              <card type="background" raised class="card-background-product"
-                    style="background-image: url('img/project8.jpg')">
+              <card class="card-background-product" raised style="background-image: url('img/project8.jpg')"
+                    type="background">
                 <h2 class="card-title">Social Analytics</h2>
                 <p class="card-description">
                   Insight to help you create, connect, and convert. Understand Your Audience's
@@ -85,50 +85,54 @@
               </card>
             </div>
             <div class="col-md-5 mr-auto">
-              <info-section type="danger"
-                            icon="now-ui-icons ui-2_chat-round"
-                            title="Listen to Social Conversations"
-                            description="Gain access to the demographics, psychographics, and location of unique people who talk about your brand."
+              <info-section
+                  description="Gain access to the demographics, psychographics, and location of unique people who talk about your brand."
+                  icon="now-ui-icons ui-2_chat-round"
+                  title="Listen to Social Conversations"
+                  type="danger"
               />
 
-              <info-section type="danger"
-                            icon="now-ui-icons business_chart-pie-36"
-                            title="Performance Analyze"
-                            description="Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports."
+              <info-section
+                  description="Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports."
+                  icon="now-ui-icons business_chart-pie-36"
+                  title="Performance Analyze"
+                  type="danger"
               />
 
-              <info-section type="danger"
-                            icon="now-ui-icons design-2_ruler-pencil"
-                            title="Social Conversions"
-                            description="Track actions taken on your website that originated from social, and understand the impact on your bottom line."
+              <info-section
+                  description="Track actions taken on your website that originated from social, and understand the impact on your bottom line."
+                  icon="now-ui-icons design-2_ruler-pencil"
+                  title="Social Conversions"
+                  type="danger"
               />
             </div>
           </div>
-          <hr/>
+          <hr />
           <div class="row">
             <div class="col-md-5 ml-auto mt-5">
-              <info-section type="warning"
-                            icon="now-ui-icons users_single-02"
-                            title="Work With Any Team"
-                            description="Whether it’s for work or even the next family vacation, Trello helps your team."
+              <info-section
+                  description="Whether it’s for work or even the next family vacation, Trello helps your team."
+                  icon="now-ui-icons users_single-02"
+                  title="Work With Any Team"
+                  type="warning"
               />
 
-              <info-section type="warning"
+              <info-section description="Integrate the apps your team already uses directly into your workflow."
                             icon="now-ui-icons business_chart-bar-32"
                             title="A Productivity Platform"
-                            description="Integrate the apps your team already uses directly into your workflow."
+                            type="warning"
               />
 
-              <info-section type="warning"
+              <info-section description="No matter where you are, Trello stays in sync across all of your devices."
                             icon="now-ui-icons arrows-1_refresh-69"
                             title="Always In Sync"
-                            description="No matter where you are, Trello stays in sync across all of your devices."
+                            type="warning"
               />
 
             </div>
             <div class="col-md-5 mr-auto">
-              <card type="background" raised class="card-background-product"
-                    style="background-image: url('img/project9.jpg')">
+              <card class="card-background-product" raised style="background-image: url('img/project9.jpg')"
+                    type="background">
                 <h2 class="card-title">Trello lets you work.</h2>
                 <p class="card-description text-white">
                   Trello’s boards, lists, and cards enable you to organize and prioritize your
@@ -151,12 +155,12 @@
           </div>
           <div class="row">
             <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
-              <card type="profile" plain>
-                <div slot="raw-content" class="row">
+              <card plain type="profile">
+                <div class="row" slot="raw-content">
                   <div class="col-md-5">
                     <div class="card-image">
                       <a href="#pablo">
-                        <img class="img img-raised rounded" src="img/olivia.jpg"/>
+                        <img class="img img-raised rounded" src="img/olivia.jpg" />
                       </a>
                     </div>
                   </div>
@@ -169,12 +173,12 @@
                         the night......
                       </p>
                       <div class="card-footer">
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter"><i
-                          class="fab fa-twitter"></i></a>
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook"><i
-                          class="fab fa-facebook-square"></i></a>
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-google"><i
-                          class="fab fa-google"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-twitter" href="#pablo"><i
+                            class="fab fa-twitter"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-facebook" href="#pablo"><i
+                            class="fab fa-facebook-square"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-google" href="#pablo"><i
+                            class="fab fa-google"></i></a>
                       </div>
                     </div>
                   </div>
@@ -182,12 +186,12 @@
               </card>
             </div>
             <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
-              <card type="profile" plain>
-                <div slot="raw-content" class="row">
+              <card plain type="profile">
+                <div class="row" slot="raw-content">
                   <div class="col-md-5">
                     <div class="card-image">
                       <a href="#pablo">
-                        <img class="img img-raised rounded" src="img/emily.jpg"/>
+                        <img class="img img-raised rounded" src="img/emily.jpg" />
                       </a>
                     </div>
                   </div>
@@ -200,14 +204,14 @@
                         receive it...
                       </p>
                       <div class="card-footer">
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-linkedin"><i
-                          class="fab fa-linkedin"></i></a>
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook"><i
-                          class="fab fa-facebook-square"></i></a>
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-dribbble"><i
-                          class="fab fa-dribbble"></i></a>
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-google"><i
-                          class="fab fa-google"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-linkedin" href="#pablo"><i
+                            class="fab fa-linkedin"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-facebook" href="#pablo"><i
+                            class="fab fa-facebook-square"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-dribbble" href="#pablo"><i
+                            class="fab fa-dribbble"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-google" href="#pablo"><i
+                            class="fab fa-google"></i></a>
                       </div>
                     </div>
                   </div>
@@ -215,12 +219,12 @@
               </card>
             </div>
             <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
-              <card type="profile" plain>
-                <div slot="raw-content" class="row">
+              <card plain type="profile">
+                <div class="row" slot="raw-content">
                   <div class="col-md-5">
                     <div class="card-image">
                       <a href="#pablo">
-                        <img class="img img-raised rounded" src="img/james.jpg"/>
+                        <img class="img img-raised rounded" src="img/james.jpg" />
                       </a>
                     </div>
                   </div>
@@ -233,12 +237,12 @@
                         behind you...
                       </p>
                       <div class="card-footer">
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-youtube"><i
-                          class="fab fa-youtube"></i></a>
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-twitter"><i
-                          class="fab fa-twitter"></i></a>
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-instagram"><i
-                          class="fab fa-instagram"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-youtube" href="#pablo"><i
+                            class="fab fa-youtube"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-twitter" href="#pablo"><i
+                            class="fab fa-twitter"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-instagram" href="#pablo"><i
+                            class="fab fa-instagram"></i></a>
                       </div>
                     </div>
                   </div>
@@ -246,13 +250,13 @@
               </card>
             </div>
             <div class="col-xl-6 col-lg-7 ml-auto mr-auto">
-              <card type="profile" plain>
-                <div slot="raw-content" class="row">
+              <card plain type="profile">
+                <div class="row" slot="raw-content">
                   <div class="col-md-5">
                     <div class="card-image">
                       <a href="#pablo">
                         <img class="img img-raised rounded"
-                             src="img/michael.jpg"/>
+                             src="img/michael.jpg" />
                       </a>
                     </div>
                   </div>
@@ -265,12 +269,12 @@
                         improving, and that's your own self...
                       </p>
                       <div class="card-footer">
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-linkedin"><i
-                          class="fab fa-linkedin"></i></a>
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-facebook"><i
-                          class="fab fa-facebook-square"></i></a>
-                        <a href="#pablo" class="btn btn-icon btn-neutral btn-google"><i
-                          class="fab fa-google"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-linkedin" href="#pablo"><i
+                            class="fab fa-linkedin"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-facebook" href="#pablo"><i
+                            class="fab fa-facebook-square"></i></a>
+                        <a class="btn btn-icon btn-neutral btn-google" href="#pablo"><i
+                            class="fab fa-google"></i></a>
                       </div>
                     </div>
                   </div>
@@ -292,19 +296,19 @@
           </div>
           <div class="row">
             <div class="col-md-4">
-              <img class="rounded img-raised" alt="Raised Image" src="img/bg27.jpg">
+              <img alt="Raised Image" class="rounded img-raised" src="img/bg27.jpg">
             </div>
             <div class="col-md-4">
-              <img class="rounded img-raised" alt="Raised Image" src="img/bg24.jpg">
+              <img alt="Raised Image" class="rounded img-raised" src="img/bg24.jpg">
             </div>
             <div class="col-md-4">
-              <img class="rounded img-raised" alt="Raised Image" src="img/bg28.jpg">
+              <img alt="Raised Image" class="rounded img-raised" src="img/bg28.jpg">
             </div>
             <div class="col-md-6">
-              <img class="rounded img-raised" alt="Raised Image" src="img/project6.jpg">
+              <img alt="Raised Image" class="rounded img-raised" src="img/project6.jpg">
             </div>
             <div class="col-md-6">
-              <img class="rounded img-raised" alt="Raised Image" src="img/project14.jpg">
+              <img alt="Raised Image" class="rounded img-raised" src="img/project14.jpg">
             </div>
           </div>
         </div>
@@ -322,24 +326,24 @@
                   <div class="col-md-4">
                     <label>First name</label>
                     <fg-input addon-left-icon="now-ui-icons users_circle-08"
-                              v-model="form.firstName"
-                              placeholder="First Name...">
+                              placeholder="First Name..."
+                              v-model="form.firstName">
                     </fg-input>
                   </div>
                   <div class="col-md-4">
                     <label>Your email</label>
                     <fg-input addon-left-icon="now-ui-icons ui-1_email-85"
-                              v-model="form.email"
-                              placeholder="Email Here...">
+                              placeholder="Email Here..."
+                              v-model="form.email">
                     </fg-input>
                   </div>
                   <div class="col-md-4">
                     <label>Speciality</label>
                     <fg-input>
                       <el-select class="select-default" v-model="form.speciality">
-                        <el-option class="select-default" value="1" label="I'm a Designer"></el-option>
-                        <el-option class="select-default" value="2" label="I'm a Developer"></el-option>
-                        <el-option class="select-default" value="3" label="I'm a Hero"></el-option>
+                        <el-option class="select-default" label="I'm a Designer" value="1"></el-option>
+                        <el-option class="select-default" label="I'm a Developer" value="2"></el-option>
+                        <el-option class="select-default" label="I'm a Hero" value="3"></el-option>
                       </el-select>
                     </fg-input>
                   </div>
@@ -360,8 +364,8 @@
   </div>
 </template>
 <script>
-  import { Card, Button, Badge, InfoSection, FormGroupInput, Checkbox } from '@/components';
-  import { Select, Option } from 'element-ui/types';
+  import { Badge, Button, Card, Checkbox, FormGroupInput, InfoSection } from '@/components';
+  import { Option, Select } from 'element-ui/types';
 
   export default {
     name: 'about-us',
@@ -374,7 +378,7 @@
       [Checkbox.name]: Checkbox,
       [FormGroupInput.name]: FormGroupInput,
       [Select.name]: Select,
-      [Option.name]: Option,
+      [Option.name]: Option
     },
     data () {
       return {

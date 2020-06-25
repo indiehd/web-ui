@@ -24,7 +24,7 @@
           </div>
           <div class="row">
             <div class="col-md-4">
-              <card type="pricing" plain>
+              <card plain type="pricing">
                 <h6 class="category">Starter</h6>
                 <div class="icon icon-info">
                   <i class="now-ui-icons business_briefcase-24"></i>
@@ -38,11 +38,11 @@
                   <li>3 email</li>
                   <li>5 Databases</li>
                 </ul>
-                <n-button type="info" round>Get it Now</n-button>
+                <n-button round type="info">Get it Now</n-button>
               </card>
             </div>
             <div class="col-md-4">
-              <card type="pricing" color="black">
+              <card color="black" type="pricing">
                 <h6 class="category">Professional</h6>
                 <div class="icon icon-success">
                   <i class="now-ui-icons tech_headphones"></i>
@@ -56,13 +56,13 @@
                   <li>Unlimited emails</li>
                   <li>Full Support</li>
                 </ul>
-                <n-button type="default" round>
+                <n-button round type="default">
                   Current Plan
                 </n-button>
               </card>
             </div>
             <div class="col-md-4">
-              <card type="pricing" plain>
+              <card plain type="pricing">
                 <h6 class="category">Basic</h6>
                 <div class="icon icon-danger">
                   <i class="now-ui-icons design_palette"></i>
@@ -76,7 +76,7 @@
                   <li>3 email</li>
                   <li>No Support</li>
                 </ul>
-                <n-button type="danger" round>
+                <n-button round type="danger">
                   Upgrade Plan
                 </n-button>
               </card>
@@ -91,33 +91,35 @@
           </div>
           <div class="row">
             <div class="col-md-4 ml-auto">
-              <info-section type="info"
-                            icon="now-ui-icons shopping_credit-card"
-                            title="Can I cancel my subscription?"
-                            description="Yes, you can cancel and perform other actions on your subscriptions via the My Account page. "
+              <info-section
+                  description="Yes, you can cancel and perform other actions on your subscriptions via the My Account page. "
+                  icon="now-ui-icons shopping_credit-card"
+                  title="Can I cancel my subscription?"
+                  type="info"
               />
             </div>
             <div class="col-md-4 mr-auto">
-              <info-section type="success"
+              <info-section description="Yes, we offer a 40% discount if you choose annual subscription for any plan."
                             icon="now-ui-icons shopping_box"
                             title="Is there any discount for an annual subscription?"
-                            description="Yes, we offer a 40% discount if you choose annual subscription for any plan."
+                            type="success"
               />
             </div>
           </div>
           <div class="row">
             <div class="col-md-4 ml-auto">
-              <info-section type="success"
-                            icon="now-ui-icons business_money-coins"
-                            title="Which payment methods do you take?"
-                            description="WooCommerce comes bundled with PayPal (for accepting credit card and PayPal account). "
+              <info-section
+                  description="WooCommerce comes bundled with PayPal (for accepting credit card and PayPal account). "
+                  icon="now-ui-icons business_money-coins"
+                  title="Which payment methods do you take?"
+                  type="success"
               />
             </div>
             <div class="col-md-4 mr-auto">
-              <info-section type="primary"
+              <info-section description="We are happy to help you. Contact us."
                             icon="now-ui-icons business_bulb-63"
                             title="Any other questions we can answer?"
-                            description="We are happy to help you. Contact us."
+                            type="primary"
               />
             </div>
           </div>
@@ -131,8 +133,8 @@
               <h4 class="description">You need more information? Check what other persons are saying about
                 our
                 product. They are very happy with their purchase.</h4>
-              <info-section type="primary"
-                            icon="now-ui-icons location_pin">
+              <info-section icon="now-ui-icons location_pin"
+                            type="primary">
                 <h4 class="info-title">Find us at the office</h4>
                 <p class="description"> Bld Mihail Kogalniceanu, nr. 8,
                   <br> 7652 Bucharest,
@@ -140,8 +142,8 @@
                 </p>
               </info-section>
 
-              <info-section type="primary"
-                            icon="now-ui-icons tech_mobile">
+              <info-section icon="now-ui-icons tech_mobile"
+                            type="primary">
                 <h4 class="info-title">Give us a ring</h4>
                 <p class="description"> Michael Jordan
                   <br> +40 762 321 762
@@ -150,33 +152,33 @@
               </info-section>
             </div>
             <div class="col-md-5 ml-auto mr-auto">
-              <card type="contact" raised header-classes="text-center">
-                <h4 slot="header" class="card-title">Contact Us</h4>
+              <card header-classes="text-center" raised type="contact">
+                <h4 class="card-title" slot="header">Contact Us</h4>
 
 
                 <div class="row">
                   <div class="col-md-6 pr-2">
                     <label>First Name</label>
-                    <fg-input placeholder="First Name..."
-                              addon-left-icon="now-ui-icons users_circle-08">
+                    <fg-input addon-left-icon="now-ui-icons users_circle-08"
+                              placeholder="First Name...">
                     </fg-input>
                   </div>
                   <div class="col-md-6 pl-2">
                     <label>Last Name</label>
-                    <fg-input placeholder="Last Name..."
-                              addon-left-icon="now-ui-icons text_caps-small">
+                    <fg-input addon-left-icon="now-ui-icons text_caps-small"
+                              placeholder="Last Name...">
                     </fg-input>
                   </div>
                 </div>
                 <div class="form-group">
                   <label>Email address</label>
-                  <fg-input placeholder="Email Here..."
-                            addon-left-icon="now-ui-icons ui-1_email-85">
+                  <fg-input addon-left-icon="now-ui-icons ui-1_email-85"
+                            placeholder="Email Here...">
                   </fg-input>
                 </div>
                 <div class="form-group">
                   <label>Your message</label>
-                  <textarea name="message" class="form-control" id="message" rows="6"></textarea>
+                  <textarea class="form-control" id="message" name="message" rows="6"></textarea>
                 </div>
                 <div class="row">
                   <div class="col-md-6">
@@ -185,7 +187,7 @@
                     </n-checkbox>
                   </div>
                   <div class="col-md-6">
-                    <n-button type="primary" round class="pull-right">Send Message</n-button>
+                    <n-button class="pull-right" round type="primary">Send Message</n-button>
                   </div>
                 </div>
 
@@ -198,7 +200,7 @@
   </div>
 </template>
 <script>
-  import { Card, Button, InfoSection, FormGroupInput, Checkbox } from '@/components';
+  import { Button, Card, Checkbox, FormGroupInput, InfoSection } from '@/components';
 
   export default {
     name: 'pricing-page',

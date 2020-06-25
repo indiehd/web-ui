@@ -6,32 +6,32 @@
           <h4>Progress Bars</h4>
           <n-progress :value="25" label="Default" show-value>
           </n-progress>
-          <n-progress type="primary" :value="60" label="Default" show-value>
+          <n-progress :value="60" label="Default" show-value type="primary">
           </n-progress>
-          <n-progress type="danger" :value="60" label="Default" show-value>
+          <n-progress :value="60" label="Default" show-value type="danger">
           </n-progress>
-          <n-progress type="warning" :value="60" label="Default" show-value>
+          <n-progress :value="60" label="Default" show-value type="warning">
           </n-progress>
-          <n-progress type="success" :value="60" label="Default" show-value>
+          <n-progress :value="60" label="Default" show-value type="success">
           </n-progress>
-          <n-progress type="info" :value="60" label="Default" show-value>
+          <n-progress :value="60" label="Default" show-value type="info">
           </n-progress>
         </div>
         <div class="col-md-6">
           <h4>Pagination</h4>
-          <n-pagination type="primary" :page-count="10" v-model="pagination.simple">
+          <n-pagination :page-count="10" type="primary" v-model="pagination.simple">
 
           </n-pagination>
 
-          <n-pagination type="default" :page-count="10" v-model="pagination.default">
+          <n-pagination :page-count="10" type="default" v-model="pagination.default">
 
           </n-pagination>
 
           <div class="pagination-container justify-content-center">
-            <n-pagination type="primary"
-                          prev-item-classes="arrow-margin-left"
+            <n-pagination :page-count="10"
                           next-item-classes="arrow-margin-right"
-                          :page-count="10"
+                          prev-item-classes="arrow-margin-left"
+                          type="primary"
                           v-model="pagination.full">
 
             </n-pagination>
@@ -52,7 +52,7 @@
 
 </template>
 <script>
-  import { Progress, Pagination, Badge } from '@/components';
+  import { Badge, Pagination, Progress } from '@/components';
 
   export default {
     components: {

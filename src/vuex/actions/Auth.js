@@ -1,9 +1,9 @@
 import axios from './axios';
 
-function Login ({commit, state}, frmData) {
+function Login ({ commit, state }, frmData) {
   const data = {
     'email': frmData.email,
-    'password': frmData.password,
+    'password': frmData.password
   };
 
   return new Promise((resolve, reject) => {
@@ -20,7 +20,7 @@ function Login ({commit, state}, frmData) {
   });
 }
 
-function ValidateAuth ({commit, state}) {
+function ValidateAuth ({ commit, state }) {
   /* todo: Setup api route on web-api */
   let url = '/auth/validate';
 
@@ -39,5 +39,5 @@ function ValidateAuth ({commit, state}) {
 
 export default {
   Login,
-  ValidateAuth,
+  ValidateAuth
 };

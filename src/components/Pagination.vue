@@ -1,18 +1,18 @@
 <template>
-  <ul class="pagination" :class="paginationClass">
-    <li class="page-item prev-page" :class="[{disabled: value === 1}, prevItemClasses]">
-      <a class="page-link" aria-label="Previous" @click="prevPage">
+  <ul :class="paginationClass" class="pagination">
+    <li :class="[{disabled: value === 1}, prevItemClasses]" class="page-item prev-page">
+      <a @click="prevPage" aria-label="Previous" class="page-link">
         «
       </a>
     </li>
-    <li class="page-item"
-        v-for="item in range(minPage, maxPage)"
+    <li :class="[{active: value === item}, itemClasses]"
         :key="item"
-        :class="[{active: value === item}, itemClasses]">
-      <a class="page-link" @click="changePage(item)">{{item}}</a>
+        class="page-item"
+        v-for="item in range(minPage, maxPage)">
+      <a @click="changePage(item)" class="page-link">{{item}}</a>
     </li>
-    <li class="page-item page-pre next-page" :class="[{disabled: value === totalPages}, nextItemClasses]">
-      <a class="page-link" aria-label="Next" @click="nextPage">
+    <li :class="[{disabled: value === totalPages}, nextItemClasses]" class="page-item page-pre next-page">
+      <a @click="nextPage" aria-label="Next" class="page-link">
         »
       </a>
     </li>
@@ -129,4 +129,7 @@
     }
   };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  @import "~@/assets/sass/indiehd/variables";
+  @import "~@/assets/sass/indiehd/pagination";
+</style>
