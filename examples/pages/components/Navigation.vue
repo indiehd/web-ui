@@ -6,9 +6,9 @@
           <h4>Menu</h4>
           <navbar type="primary">
             <a class="navbar-brand" href="#">Menu</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#example-navbar" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-target="#example-navbar"
+                    data-toggle="collapse" type="button">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
               <span class="navbar-toggler-bar bar3"></span>
@@ -36,23 +36,23 @@
         </div>
         <div class="col-md-6">
           <h4>Menu with Icons</h4>
-          <navbar type="info" menu-classes="ml-auto">
+          <navbar menu-classes="ml-auto" type="info">
             <a class="navbar-brand" href="#">Icons</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#example-navbar-icons" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-target="#example-navbar-icons"
+                    data-toggle="collapse" type="button">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
               <span class="navbar-toggler-bar bar3"></span>
             </button>
             <template slot="navbar-menu">
               <li class="nav-item">
-                <a class="nav-link" href="#pablo"><i class="now-ui-icons ui-1_send"
-                                                     aria-hidden="true"></i></a>
+                <a class="nav-link" href="#pablo"><i aria-hidden="true"
+                                                     class="now-ui-icons ui-1_send"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pablo"><i class="now-ui-icons users_single-02"
-                                                     aria-hidden="true"></i></a>
+                <a class="nav-link" href="#pablo"><i aria-hidden="true"
+                                                     class="now-ui-icons users_single-02"></i></a>
               </li>
               <drop-down class="nav-item dropdown" icon="now-ui-icons ui-1_settings-gear-63">
                 <a class="dropdown-header">Dropdown header</a>
@@ -73,12 +73,12 @@
     <div id="navbar">
       <div class="navigation-example" style="background-image:url('img/bg7.jpg')">
         <!-- Navbar Primary  -->
-        <navbar type="primary" menu-classes="ml-auto">
+        <navbar menu-classes="ml-auto" type="primary">
           <div class="navbar-translate">
             <a class="navbar-brand" href="#pablo">Primary color</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#example-navbar-primary" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-target="#example-navbar-primary"
+                    data-toggle="collapse" type="button">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
               <span class="navbar-toggler-bar bar3"></span>
@@ -108,12 +108,12 @@
         </navbar>
         <!-- End Navbar Primary -->
         <!-- Navbar Info -->
-        <navbar type="info" menu-classes="ml-auto">
+        <navbar menu-classes="ml-auto" type="info">
           <div class="navbar-translate">
             <a class="navbar-brand" href="#pablo">Info Color</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#example-navbar-info" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-target="#example-navbar-info"
+                    data-toggle="collapse" type="button">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
               <span class="navbar-toggler-bar bar3"></span>
@@ -141,12 +141,12 @@
         </navbar>
         <!-- End Navbar Info -->
         <!-- Navbar Success -->
-        <navbar type="success" menu-classes="ml-auto">
+        <navbar menu-classes="ml-auto" type="success">
           <div class="navbar-translate">
             <a class="navbar-brand" href="#">Success Color</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#example-navbar-success" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-target="#example-navbar-success"
+                    data-toggle="collapse" type="button">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
               <span class="navbar-toggler-bar bar3"></span>
@@ -174,12 +174,12 @@
         </navbar>
         <!-- End Navbar Success -->
         <!-- Navbar Warning -->
-        <navbar type="warning" menu-classes="ml-auto">
+        <navbar menu-classes="ml-auto" type="warning">
           <div class="navbar-translate">
             <a class="navbar-brand" href="#">Success Color</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#example-navbar-success" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-target="#example-navbar-success"
+                    data-toggle="collapse" type="button">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
               <span class="navbar-toggler-bar bar3"></span>
@@ -212,12 +212,12 @@
         </navbar>
         <!-- End Navbar Warning -->
         <!-- Navbar Danger -->
-        <navbar type="danger" menu-classes="ml-auto">
+        <navbar menu-classes="ml-auto" type="danger">
           <div class="navbar-translate">
             <a class="navbar-brand" href="#pablo">Danger Color</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#example-navbar-danger" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-target="#example-navbar-danger"
+                    data-toggle="collapse" type="button">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
               <span class="navbar-toggler-bar bar3"></span>
@@ -246,12 +246,12 @@
         </navbar>
         <!-- End Navbar Danger -->
         <!-- Navbar Transparent -->
-        <navbar transparent menu-classes="ml-auto">
+        <navbar menu-classes="ml-auto" transparent>
           <div class="navbar-translate">
             <a class="navbar-brand" href="#pablo">Transparent</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#example-navbar-transparent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-target="#example-navbar-transparent"
+                    data-toggle="collapse" type="button">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
               <span class="navbar-toggler-bar bar3"></span>
@@ -284,7 +284,7 @@
   </div>
 </template>
 <script>
-  import { Navbar, DropDown } from '@/components';
+  import { DropDown, Navbar } from '@/components';
 
   export default {
     components: {

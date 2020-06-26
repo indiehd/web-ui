@@ -8,8 +8,8 @@
             <h2 class="title">Get in Touch</h2>
             <h4 class="description">You need more information? Check what other persons are saying about our
               product. They are very happy with their purchase.</h4>
-            <info-section type="primary"
-                          icon="now-ui-icons location_pin">
+            <info-section icon="now-ui-icons location_pin"
+                          type="primary">
               <h4 class="info-title">Find us at the office</h4>
               <p class="description"> Bld Mihail Kogalniceanu, nr. 8,
                 <br> 7652 Bucharest,
@@ -17,8 +17,8 @@
               </p>
             </info-section>
 
-            <info-section type="primary"
-                          icon="now-ui-icons tech_mobile">
+            <info-section icon="now-ui-icons tech_mobile"
+                          type="primary">
               <h4 class="info-title">Give us a ring</h4>
               <p class="description"> Michael Jordan
                 <br> +40 762 321 762
@@ -27,33 +27,33 @@
             </info-section>
           </div>
           <div class="col-md-5 ml-auto mr-auto">
-            <card type="contact" raised header-classes="text-center">
-              <h4 slot="header" class="card-title">Contact Us</h4>
+            <card header-classes="text-center" raised type="contact">
+              <h4 class="card-title" slot="header">Contact Us</h4>
 
 
               <div class="row">
                 <div class="col-md-6 pr-2">
                   <label>First Name</label>
-                  <fg-input placeholder="First Name..."
-                            addon-left-icon="now-ui-icons users_circle-08">
+                  <fg-input addon-left-icon="now-ui-icons users_circle-08"
+                            placeholder="First Name...">
                   </fg-input>
                 </div>
                 <div class="col-md-6 pl-2">
                   <label>Last Name</label>
-                  <fg-input placeholder="Last Name..."
-                            addon-left-icon="now-ui-icons text_caps-small">
+                  <fg-input addon-left-icon="now-ui-icons text_caps-small"
+                            placeholder="Last Name...">
                   </fg-input>
                 </div>
               </div>
               <div class="form-group">
                 <label>Email address</label>
-                <fg-input placeholder="Email Here..."
-                          addon-left-icon="now-ui-icons ui-1_email-85">
+                <fg-input addon-left-icon="now-ui-icons ui-1_email-85"
+                          placeholder="Email Here...">
                 </fg-input>
               </div>
               <div class="form-group">
                 <label>Your message</label>
-                <textarea name="message" class="form-control" id="message" rows="6"></textarea>
+                <textarea class="form-control" id="message" name="message" rows="6"></textarea>
               </div>
               <div class="row">
                 <div class="col-md-6">
@@ -62,7 +62,7 @@
                   </n-checkbox>
                 </div>
                 <div class="col-md-6">
-                  <n-button type="primary" round class="pull-right">Send Message</n-button>
+                  <n-button class="pull-right" round type="primary">Send Message</n-button>
                 </div>
               </div>
 
@@ -75,24 +75,24 @@
     <!--     *********    CONTACT US 2     *********      -->
     <div class="contactus-2">
       <gmap-map
-        id="map"
-        class="map"
-        :center="center"
-        :zoom="13"
-        :options="options"
-        map-type-id="terrain">
+          :center="center"
+          :options="options"
+          :zoom="13"
+          class="map"
+          id="map"
+          map-type-id="terrain">
         <gmap-marker :position="center">
         </gmap-marker>
       </gmap-map>
       <div class="col-lg-6 col-md-10">
-        <card type="contact" raised header-classes="text-center">
-          <h4 slot="header" class="card-title">Contact Us</h4>
+        <card header-classes="text-center" raised type="contact">
+          <h4 class="card-title" slot="header">Contact Us</h4>
 
 
           <div class="row">
             <div class="col-md-6">
-              <info-section type="primary"
-                            icon="now-ui-icons tech_mobile">
+              <info-section icon="now-ui-icons tech_mobile"
+                            type="primary">
                 <h5 class="info-title">Give us a ring</h5>
                 <p> Michael Jordan
                   <br> +40 762 321 762
@@ -101,8 +101,8 @@
               </info-section>
             </div>
             <div class="col-md-6">
-              <info-section type="primary"
-                            icon="now-ui-icons location_pin">
+              <info-section icon="now-ui-icons location_pin"
+                            type="primary">
                 <h5 class="info-title">Find us at the office</h5>
                 <p> Bld Mihail Kogalniceanu, nr. 8,
                   <br> 7652 Bucharest,
@@ -115,15 +115,15 @@
             <div class="col-md-6 pr-2">
               <label>Full name</label>
               <fg-input
-                placeholder="First Name..."
-                addon-left-icon="now-ui-icons users_circle-08">
+                  addon-left-icon="now-ui-icons users_circle-08"
+                  placeholder="First Name...">
               </fg-input>
             </div>
             <div class="col-md-6 pl-2">
               <label>Email address</label>
               <fg-input
-                placeholder="Email Here..."
-                addon-left-icon="now-ui-icons users_circle-08">
+                  addon-left-icon="now-ui-icons users_circle-08"
+                  placeholder="Email Here...">
               </fg-input>
             </div>
           </div>
@@ -134,7 +134,7 @@
               </n-checkbox>
             </div>
             <div class="col-md-6">
-              <n-button type="primary" round class="pull-right">Send Message</n-button>
+              <n-button class="pull-right" round type="primary">Send Message</n-button>
             </div>
           </div>
 
@@ -145,7 +145,7 @@
   </div>
 </template>
 <script>
-  import { Card, Button, InfoSection, FormGroupInput, Checkbox } from '@/components';
+  import { Button, Card, Checkbox, FormGroupInput, InfoSection } from '@/components';
   import { Carousel, CarouselItem } from 'element-ui/types';
   import { API_KEY } from '@/constants';
   import Vue from 'vue/types';
@@ -164,7 +164,7 @@
       [Checkbox.name]: Checkbox,
       [FormGroupInput.name]: FormGroupInput,
       [Carousel.name]: Carousel,
-      [CarouselItem.name]: CarouselItem,
+      [CarouselItem.name]: CarouselItem
     },
     data () {
       return {

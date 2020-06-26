@@ -1,13 +1,13 @@
 <template>
   <div class="page-header clear-filter" filter-color="secondary">
     <parallax
-      class="page-header-image"
-      :style="`background-image:url(${require('@/assets/img/header.jpg')})`"
+        :style="`background-image:url(${require('@/assets/img/header.jpg')})`"
+        class="page-header-image"
     >
     </parallax>
     <div class="container">
-      <FeaturedArtists/>
-      <Intro/>
+      <FeaturedArtists />
+      <Intro />
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@
     components: {
       Intro,
       FeaturedArtists
-    },
+    }
   };
 </script>
 

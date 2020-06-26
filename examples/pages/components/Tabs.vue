@@ -64,10 +64,10 @@
           <!-- Tabs with Background on Card -->
           <div class="card">
             <tabs centered
-                  type="neutral"
-                  tab-nav-wrapper-classes="card-header"
+                  data-background-color="orange"
                   tab-content-classes="card-body text-center"
-                  data-background-color="orange">
+                  tab-nav-wrapper-classes="card-header"
+                  type="neutral">
               <tab-pane>
                 <template slot="label">
                   <i class="now-ui-icons objects_umbrella-13"></i> Home
@@ -123,7 +123,7 @@
   </div>
 </template>
 <script>
-  import { Card, Tabs, TabPane } from '@/components';
+  import { Card, TabPane, Tabs } from '@/components';
 
   export default {
     components: {

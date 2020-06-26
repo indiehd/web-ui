@@ -7,13 +7,13 @@
       <div class="content-center">
         <h1 class="title">This is our great company.</h1>
         <div class="text-center">
-          <a href="#pablo" class="btn btn-primary btn-icon  btn-round">
+          <a class="btn btn-primary btn-icon  btn-round" href="#pablo">
             <i class="fab fa-facebook-square"></i>
           </a>
-          <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+          <a class="btn btn-primary btn-icon btn-round" href="#pablo">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+          <a class="btn btn-primary btn-icon btn-round" href="#pablo">
             <i class="fab fa-google-plus"></i>
           </a>
         </div>
@@ -91,7 +91,7 @@
         <div class="row">
           <div class="col-md-4">
             <card type="testimonial">
-              <img slot="avatar" class="img img-raised" src="img/michael.jpg">
+              <img class="img img-raised" slot="avatar" src="img/michael.jpg">
               <p class="card-description">
                 The networking at Web Summit is like no other European tech conference.
               </p>
@@ -108,7 +108,7 @@
           </div>
           <div class="col-md-4">
             <card type="testimonial">
-              <img slot="avatar" class="img img-raised" src="img/olivia.jpg">
+              <img class="img img-raised" slot="avatar" src="img/olivia.jpg">
               <p class="card-description">
                 The connections you make at Web Summit are unparalleled, we met users all over the
                 world.
@@ -126,7 +126,7 @@
           </div>
           <div class="col-md-4">
             <card type="testimonial">
-              <img slot="avatar" class="img img-raised" src="img/james.jpg">
+              <img class="img img-raised" slot="avatar" src="img/james.jpg">
               <p class="card-description">
                 Web Summit will increase your appetite, your inspiration, and your network.
               </p>
@@ -150,7 +150,7 @@
           <div class="row">
             <div class="col-md-6 ml-auto mr-auto text-center">
               <h2 class="title">Pick the best plan for you</h2>
-              <tabs pills type="primary" centered>
+              <tabs centered pills type="primary">
                 <tab-pane label="Legal Entity"></tab-pane>
                 <tab-pane label="Individual"></tab-pane>
               </tabs>
@@ -158,7 +158,7 @@
           </div>
           <div class="row">
             <div class="col-md-4">
-              <card type="pricing" plain>
+              <card plain type="pricing">
                 <h6 class="category">Enterprise</h6>
                 <h1 class="card-title">
                   <small>$</small>
@@ -178,16 +178,16 @@
                     <b>Unlimited</b> subdomains
                   </li>
                 </ul>
-                <n-button type="primary" round>
+                <n-button round type="primary">
                   Sign Up
                 </n-button>
               </card>
             </div>
             <div class="col-md-4">
-              <card type="pricing"
+              <card class="card-background"
                     raised
-                    class="card-background"
-                    style="background-image: url('img/pricing2.jpg')">
+                    style="background-image: url('img/pricing2.jpg')"
+                    type="pricing">
 
                 <h6 class="category text-info">Professional</h6>
                 <h1 class="card-title">
@@ -208,14 +208,14 @@
                     <b>Unlimited</b> subdomains
                   </li>
                 </ul>
-                <a href="#pablo" class="btn btn-neutral btn-round">
+                <a class="btn btn-neutral btn-round" href="#pablo">
                   Sign Up
                 </a>
 
               </card>
             </div>
             <div class="col-md-4">
-              <card type="pricing" plain>
+              <card plain type="pricing">
 
                 <h6 class="category">Standard</h6>
                 <h1 class="card-title">
@@ -236,7 +236,7 @@
                     <b>Unlimited</b> subdomains
                   </li>
                 </ul>
-                <a href="#pablo" class="btn btn-primary btn-round">
+                <a class="btn btn-primary btn-round" href="#pablo">
                   Get Started
                 </a>
 
@@ -253,25 +253,25 @@
         <div class="row">
           <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
             <fg-input
-              class="input-lg"
-              placeholder="First Name..."
-              v-model="form.firstName"
-              addon-left-icon="now-ui-icons users_circle-08">
+                addon-left-icon="now-ui-icons users_circle-08"
+                class="input-lg"
+                placeholder="First Name..."
+                v-model="form.firstName">
             </fg-input>
             <fg-input
-              class="input-lg"
-              placeholder="Email Here..."
-              v-model="form.email"
-              addon-left-icon="now-ui-icons ui-1_email-85">
+                addon-left-icon="now-ui-icons ui-1_email-85"
+                class="input-lg"
+                placeholder="Email Here..."
+                v-model="form.email">
             </fg-input>
             <div class="textarea-container">
                             <textarea class="form-control"
-                                      name="name" rows="4" cols="80"
-                                      v-model="form.message"
-                                      placeholder="Type a message..."></textarea>
+                                      cols="80" name="name" placeholder="Type a message..."
+                                      rows="4"
+                                      v-model="form.message"></textarea>
             </div>
             <div class="send-button">
-              <n-button type="primary" round block size="lg">Send Message</n-button>
+              <n-button block round size="lg" type="primary">Send Message</n-button>
             </div>
           </div>
         </div>
@@ -280,7 +280,7 @@
   </div>
 </template>
 <script>
-  import { Card, Button, FormGroupInput, Tabs, TabPane } from '@/components';
+  import { Button, Card, FormGroupInput, TabPane, Tabs } from '@/components';
 
   export default {
     name: 'landing-page',

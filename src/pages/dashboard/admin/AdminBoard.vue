@@ -5,7 +5,7 @@
 </template>
 <script>
   export default {
-    name: 'userboard',
+    name: 'userboard'
   };
 </script>
 <style lang="scss" scoped>

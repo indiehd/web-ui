@@ -20,7 +20,7 @@
               </p>
               <div class="card-footer">
                 <div class="author">
-                  <img v-lazy="'img/julie.jpg'" alt="..." class="avatar img-raised">
+                  <img alt="..." class="avatar img-raised" v-lazy="'img/julie.jpg'">
                   <span>Susan B. Anthony</span>
                 </div>
                 <div class="stats stats-right">
@@ -30,7 +30,7 @@
               </div>
             </card>
             <card type="blog">
-              <img slot="image" class="img rounded" src="img/project13.jpg">
+              <img class="img rounded" slot="image" src="img/project13.jpg">
               <h6 class="category text-warning">
                 <i class="now-ui-icons business_bulb-63"></i> Focus
               </h6>
@@ -55,7 +55,7 @@
               </p>
               <div class="card-footer">
                 <div class="author">
-                  <img v-lazy="'img/olivia.jpg'" alt="..." class="avatar img-raised">
+                  <img alt="..." class="avatar img-raised" v-lazy="'img/olivia.jpg'">
                   <span>Lord Alex</span>
                 </div>
                 <div class="stats stats-right">
@@ -78,13 +78,13 @@
                 FiftyThree called out Facebook publicly for using their brand name...
               </p>
               <div class="card-footer text-center">
-                <n-button type="default" round>
+                <n-button round type="default">
                   Read Article
                 </n-button>
               </div>
             </card>
             <card type="blog">
-              <img slot="image" class="img rounded" src="img/card-blog2.jpg">
+              <img class="img rounded" slot="image" src="img/card-blog2.jpg">
               <h6 class="category text-primary">Features</h6>
               <h5 class="card-title">
                 That’s One Way To Ditch Your Passenger
@@ -95,7 +95,7 @@
               </p>
               <div class="card-footer">
                 <div class="author">
-                  <img v-lazy="'img/julie.jpg'" alt="..." class="avatar img-raised">
+                  <img alt="..." class="avatar img-raised" v-lazy="'img/julie.jpg'">
                   <span>Mike John</span>
                 </div>
                 <div class="stats stats-right">
@@ -112,7 +112,7 @@
               </p>
               <div class="card-footer">
                 <div class="author">
-                  <img v-lazy="'img/james.jpg'" alt="..." class="avatar img-raised">
+                  <img alt="..." class="avatar img-raised" v-lazy="'img/james.jpg'">
                   <span>Tania Andrew</span>
                 </div>
                 <div class="stats stats-right">
@@ -123,8 +123,8 @@
             </card>
           </div>
           <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0">
-            <card type="blog" card-body-classes="text-center">
-              <img slot="image" class="img rounded" src="img/examples/card-blog6.jpg">
+            <card card-body-classes="text-center" type="blog">
+              <img class="img rounded" slot="image" src="img/examples/card-blog6.jpg">
               <h6 class="category text-danger">
                 <i class="now-ui-icons media-2_sound-wave"></i> Business
               </h6>
@@ -140,7 +140,7 @@
               </div>
             </card>
             <card type="blog">
-              <img slot="image" class="img rounded" src="img/card-blog3.jpg">
+              <img class="img rounded" slot="image" src="img/card-blog3.jpg">
               <h6 class="category text-warning">
                 <i class="now-ui-icons media-1_camera-compact"></i> Photo
               </h6>
@@ -153,7 +153,7 @@
                   <i class="now-ui-icons files_single-copy-04"></i> 45
                 </div>
                 <div class="author">
-                  <img v-lazy="'img/james.jpg'" alt="..." class="avatar img-raised">
+                  <img alt="..." class="avatar img-raised" v-lazy="'img/james.jpg'">
                   <span>Devin Coldewey</span>
                 </div>
               </div>
@@ -176,15 +176,15 @@
               </div>
               <div class="card-footer text-left">
                 <div class="stats">
-                                            <span>
-                                                <i class="now-ui-icons users_circle-08"></i>Author
-                                            </span>
                   <span>
-                                                <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
-                                            </span>
+                    <i class="now-ui-icons users_circle-08"></i>Author
+                  </span>
+                  <span>
+                    <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
+                  </span>
                 </div>
                 <div class="stats-link pull-right">
-                  <a href="#pablo" class="footer-link">People</a>
+                  <a class="footer-link" href="#pablo">People</a>
                 </div>
               </div>
             </div>
@@ -201,12 +201,12 @@
               <div class="card-body">
                 <div class="card-footer">
                   <div class="stats">
-                                                <span>
-                                                    <i class="now-ui-icons users_circle-08"></i>Author
-                                                </span>
                     <span>
-                                                    <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
-                                                </span>
+                      <i class="now-ui-icons users_circle-08"></i>Author
+                    </span>
+                    <span>
+                      <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
+                    </span>
                   </div>
                   <div class="stats-link pull-right">
                     <a href="#pablo">Mountains</a>&sbquo;
@@ -226,7 +226,7 @@
   </div>
 </template>
 <script>
-  import { Card, Button } from '@/components';
+  import { Button, Card } from '@/components';
 
   export default {
     components: {

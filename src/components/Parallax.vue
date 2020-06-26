@@ -4,6 +4,19 @@
   </div>
 </template>
 <script>
+  function debounce (func, wait, immediate) {
+    let timeout;
+    return function () {
+      const context = this,
+        args = arguments;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      }, wait);
+      if (immediate && !timeout) func.apply(context, args);
+    };
+  };
   export default {
     name: 'parallax',
     data () {
@@ -13,19 +26,6 @@
       };
     },
     methods: {
-      debounce (func, wait, immediate) {
-        let timeout;
-        return function () {
-          const context = this;
-          const args = arguments;
-          clearTimeout(timeout);
-          timeout = setTimeout(() => {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-          }, wait);
-          if (immediate && !timeout) func.apply(context, args);
-        };
-      },
       handleScroll (scrollVal) {
         let oVal = (scrollVal / 3);
         this.styles = {
@@ -33,14 +33,15 @@
         };
       },
       checkForParallax (scrollVal) {
-        let fn = this.debounce(() => this.handleScroll(scrollVal), this.debounceTimeout);
+        let fn = debounce(() => this.handleScroll(scrollVal), this.debounceTimeout);
         fn();
       }
     },
     mounted () {
       let self = this;
       window.addEventListener('scroll', function () {
-        self.checkForParallax(this.scrollY);
+        let scrollVal = this.scrollY;
+        self.checkForParallax(scrollVal);
       });
     }
   };

@@ -1,41 +1,40 @@
 <template>
-  <div class="form-group"
-       :class="[
+  <div :class="[
        {'input-group': hasIcon},
        {'has-danger': error},
        {'input-group-focus': focused},
-       {'has-label': label || $slots.label}]">
+       {'has-label': label || $slots.label}]"
+       class="form-group">
     <slot name="label">
-      <label v-if="label" :class="labelClasses">
+      <label :class="labelClasses" v-if="label">
         {{label}}
         <span v-if="required">*</span>
       </label>
     </slot>
 
     <slot name="addonLeft">
-      <div v-if="addonLeftIcon" class="input-group-prepend">
-        <i class="input-group-text" :class="addonLeftIcon"></i>
+      <div class="input-group-prepend" v-if="addonLeftIcon">
+        <i :class="addonLeftIcon" class="input-group-text"></i>
       </div>
     </slot>
     <slot>
       <input
-        :type="password ? 'password' : 'text'"
-        :value="value"
-        v-on="listeners"
-        v-bind="$attrs"
-        class="form-control"
-        :class="[{valid: value && !error}, inputClasses]"
-        aria-describedby="addon-right addon-left"/>
+          :class="[{valid: value && !error}, inputClasses]"
+          :value="value"
+          aria-describedby="addon-right addon-left"
+          class="form-control"
+          v-bind="$attrs"
+          v-on="listeners">
     </slot>
     <slot name="addonRight">
-        <span v-if="addonRightIcon" class="input-group-addon input-group-append">
-          <i class="input-group-text" :class="addonRightIcon"></i>
-        </span>
+      <span class="input-group-addon input-group-append" v-if="addonRightIcon">
+        <i :class="addonRightIcon" class="input-group-text"></i>
+      </span>
     </slot>
 
     <slot name="infoBlock"></slot>
     <slot name="helpBlock">
-      <div class="text-danger invalid-feedback" style="display: block;" :class="{'mt-2': hasIcon}" v-if="error">
+      <div :class="{'mt-2': hasIcon}" class="text-danger invalid-feedback" style="display: block;" v-if="error">
         {{ error }}
       </div>
     </slot>
@@ -46,10 +45,6 @@
     inheritAttrs: false,
     name: 'fg-input',
     props: {
-      password: {
-        type: Boolean,
-        default: false
-      },
       required: Boolean,
       label: String,
       error: String,
@@ -77,7 +72,7 @@
         };
       },
       hasIcon () {
-        const {addonRight, addonLeft} = this.$slots;
+        const { addonRight, addonLeft } = this.$slots;
         return addonRight !== undefined || addonLeft !== undefined || this.addonRightIcon !== undefined || this.addonLeftIcon !== undefined;
       }
     },

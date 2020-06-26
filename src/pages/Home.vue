@@ -1,11 +1,11 @@
 <template>
   <div class="index-page">
 
-    <Header/>
+    <Header />
 
-    <Intro/>
+    <Intro />
 
-    <Subscribe/>
+    <Subscribe />
 
   </div>
 </template>
@@ -21,7 +21,7 @@
     components: {
       Intro,
       Header,
-      Subscribe,
+      Subscribe
     }
   };
 </script>

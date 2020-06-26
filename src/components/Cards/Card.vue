@@ -1,11 +1,11 @@
 <template>
-  <div class="card"
-       :class="[
+  <div :class="[
          {'card-plain': plain},
          {'card-raised': raised},
          {[`card-${type}`]: type}
        ]"
-       :data-background-color="color">
+       :data-background-color="color"
+       class="card">
     <h6 class="card-category" v-if="$slots.category || category">{{category}}</h6>
     <div class="card-image" v-if="$slots.image">
       <slot name="image"></slot>
@@ -19,20 +19,20 @@
       <slot name="info"></slot>
     </div>
 
-    <div class="card-header" :class="headerClasses" v-if="$slots.header || title">
+    <div :class="headerClasses" class="card-header" v-if="$slots.header || title">
       <slot name="header">
-        <h1 v-if="title" class="card-title">{{title}}</h1>
-        <h3 v-if="subTitle" class="card-category">{{subTitle}}</h3>
-        <p v-if="description" class="card-description">{{description}}</p>
+        <h1 class="card-title" v-if="title">{{title}}</h1>
+        <h3 class="card-category" v-if="subTitle">{{subTitle}}</h3>
+        <p class="card-description" v-if="description">{{description}}</p>
       </slot>
     </div>
-    <div v-if="$slots.default" class="card-body" :class="cardBodyClasses">
+    <div :class="cardBodyClasses" class="card-body" v-if="$slots.default">
       <slot></slot>
     </div>
 
     <slot name="raw-content"></slot>
 
-    <hr v-if="$slots.footer && !noFooterLine"/>
+    <hr v-if="$slots.footer && !noFooterLine">
     <div class="card-footer" v-if="$slots.footer">
       <slot name="footer"></slot>
     </div>

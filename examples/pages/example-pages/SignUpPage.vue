@@ -48,30 +48,30 @@
               <div class="card-body">
                 <h4 class="card-title text-center">Register</h4>
                 <div class="social text-center">
-                  <n-button round icon class="btn-twitter">
+                  <n-button class="btn-twitter" icon round>
                     <i class="fab fa-twitter"></i>
                   </n-button>
-                  <n-button round icon class="btn-dribbble">
+                  <n-button class="btn-dribbble" icon round>
                     <i class="fab fa-dribbble"></i>
                   </n-button>
-                  <n-button round icon class="btn-facebook">
+                  <n-button class="btn-facebook" icon round>
                     <i class="fab fa-facebook"> </i>
                   </n-button>
                   <h5 class="card-description"> or be classical </h5>
                 </div>
                 <fg-input addon-left-icon="now-ui-icons users_circle-08"
-                          v-model="form.firstName"
-                          placeholder="First Name...">
+                          placeholder="First Name..."
+                          v-model="form.firstName">
                 </fg-input>
 
                 <fg-input addon-left-icon="now-ui-icons text_caps-small"
-                          v-model="form.lastName"
-                          placeholder="Last Name...">
+                          placeholder="Last Name..."
+                          v-model="form.lastName">
                 </fg-input>
 
                 <fg-input addon-left-icon="now-ui-icons ui-1_email-85"
-                          v-model="form.email"
-                          placeholder="Your Email...">
+                          placeholder="Your Email..."
+                          v-model="form.email">
                 </fg-input>
 
                 <n-checkbox v-model="form.agree">
@@ -79,7 +79,7 @@
                   <a href="#something">conditions</a>.
                 </n-checkbox>
                 <div class="card-footer text-center">
-                  <n-button type="primary" round size="lg">Get Started</n-button>
+                  <n-button round size="lg" type="primary">Get Started</n-button>
                 </div>
               </div>
             </div>
@@ -91,7 +91,7 @@
   </div>
 </template>
 <script>
-  import { Card, Button, FormGroupInput, Checkbox } from '@/components';
+  import { Button, Card, Checkbox, FormGroupInput } from '@/components';
   import MainFooter from '@/layout/MainFooter';
 
   export default {

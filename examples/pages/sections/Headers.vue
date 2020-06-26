@@ -5,9 +5,9 @@
       <nav class="navbar navbar-expand-lg navbar-transparent bg-primary navbar-absolute">
         <div class="container">
           <div class="navbar-translate">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#example-navbar-primary" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-target="#example-navbar-primary"
+                    data-toggle="collapse" type="button">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
               <span class="navbar-toggler-bar bar3"></span>
@@ -63,18 +63,18 @@
                   swimming in the ocean. In this sense, bodysurfing is the oldest type of
                   wave-catching. Standing up on what is now called a surfboard is a relatively recent
                   innovation developed by the Polynesians.</h4>
-                <br/>
+                <br />
                 <div class="buttons">
-                  <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">
+                  <a class="btn btn-icon btn-link btn-neutral btn-lg" href="#pablo">
                     <i class="fab fa-twitter"></i>
                   </a>
-                  <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">
+                  <a class="btn btn-icon btn-link btn-neutral btn-lg" href="#pablo">
                     <i class="fab fa-facebook-square"></i>
                   </a>
-                  <a href="#pablo" class="btn btn-icon btn-link btn-neutral btn-lg">
+                  <a class="btn btn-icon btn-link btn-neutral btn-lg" href="#pablo">
                     <i class="fab fa-get-pocket"></i>
                   </a>
-                  <a href="#pablo" class="btn btn-info btn-lg mr-3">
+                  <a class="btn btn-info btn-lg mr-3" href="#pablo">
                     Read More
                   </a>
                 </div>
@@ -90,9 +90,9 @@
       <nav class="navbar navbar-expand-lg navbar-transparent bg-primary navbar-absolute">
         <div class="container">
           <div class="navbar-translate">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#example-navbar-primary" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-target="#example-navbar-primary"
+                    data-toggle="collapse" type="button">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
               <span class="navbar-toggler-bar bar3"></span>
@@ -156,19 +156,19 @@
               <div class="col-md-10 ml-auto mr-auto">
                 <div class="card card-raised card-form-horizontal card-plain" data-background-color>
                   <div class="card-body">
-                    <form method="" action="">
+                    <form action="" method="">
                       <div class="row">
                         <div class="col-md-3">
-                          <fg-input value="" placeholder="Full Name"></fg-input>
+                          <fg-input placeholder="Full Name" value=""></fg-input>
                         </div>
                         <div class="col-md-3">
-                          <fg-input value="" placeholder="Your Email"></fg-input>
+                          <fg-input placeholder="Your Email" value=""></fg-input>
                         </div>
                         <div class="col-md-3">
-                          <fg-input value="" placeholder="Password"></fg-input>
+                          <fg-input placeholder="Password" value=""></fg-input>
                         </div>
                         <div class="col-md-3">
-                          <n-button type="primary" round block>Join Us</n-button>
+                          <n-button block round type="primary">Join Us</n-button>
                         </div>
                       </div>
                     </form>
@@ -186,9 +186,9 @@
       <nav class="navbar navbar-expand-lg navbar-transparent bg-primary navbar-absolute">
         <div class="container">
           <div class="navbar-translate">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#example-navbar-primary" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-target="#example-navbar-primary"
+                    data-toggle="collapse" type="button">
               <span class="navbar-toggler-bar bar1"></span>
               <span class="navbar-toggler-bar bar2"></span>
               <span class="navbar-toggler-bar bar3"></span>
@@ -228,9 +228,10 @@
                   <div class="row">
                     <div class="col-md-5">
                       <div class="iframe-container">
-                        <iframe height="250"
-                                src="https://www.youtube.com/embed/rmfmdKOLzVI?rel=0&amp;controls=0&amp;showinfo=0"
-                                frameborder="0" allowfullscreen></iframe>
+                        <iframe allowfullscreen
+                                frameborder="0"
+                                height="250"
+                                src="https://www.youtube.com/embed/rmfmdKOLzVI?rel=0&amp;controls=0&amp;showinfo=0"></iframe>
                       </div>
                     </div>
                     <div class="col-md-6 ml-auto mr-auto text-right">
@@ -261,23 +262,23 @@
                         a family holiday, packed with fun places to visit whatever your
                         children’s ages. The islands’ small size means everywhere is within
                         easy reach.</h4>
-                      <br/>
+                      <br />
                       <h5>Connect with us on:</h5>
                       <div class="buttons">
-                        <a href="#pablo"
-                           class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
+                        <a class="btn btn-icon btn-neutral btn-danger btn-round mt-2"
+                           href="#pablo">
                           <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#pablo"
-                           class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
+                        <a class="btn btn-icon btn-neutral btn-danger btn-round mt-2"
+                           href="#pablo">
                           <i class="fab fa-facebook-square"></i>
                         </a>
-                        <a href="#pablo"
-                           class="btn btn-icon btn-neutral btn-danger btn-round mt-2">
+                        <a class="btn btn-icon btn-neutral btn-danger btn-round mt-2"
+                           href="#pablo">
                           <i class="fab fa-google-plus"></i>
                         </a>
-                        <a href="#pablo"
-                           class="btn btn-icon btn-neutral btn-danger btn-round  mt-2">
+                        <a class="btn btn-icon btn-neutral btn-danger btn-round  mt-2"
+                           href="#pablo">
                           <i class="fab fa-instagram"></i>
                         </a>
                       </div>
@@ -304,12 +305,12 @@
                         the potentially record low maximum sea ice extent this year down to
                         low ice extent in the Pacific and a late drop in ice extent in the
                         Barents Sea.</h4>
-                      <br/>
+                      <br />
                       <div class="buttons">
-                        <a href="#pablo" class="btn btn-neutral btn-primary btn-lg mr-1">
+                        <a class="btn btn-neutral btn-primary btn-lg mr-1" href="#pablo">
                           <i class="now-ui-icons files_single-copy-04"></i> Read More..
                         </a>
-                        <a href="#pablo" class="btn btn-primary btn-lg">
+                        <a class="btn btn-primary btn-lg" href="#pablo">
                           <i class="now-ui-icons arrows-1_share-66"></i> Subscribe
                         </a>
                       </div>
@@ -326,7 +327,7 @@
   </div>
 </template>
 <script>
-  import { FormGroupInput, Button } from '@/components';
+  import { Button, FormGroupInput } from '@/components';
   import { Carousel, CarouselItem } from 'element-ui/types';
 
   export default {

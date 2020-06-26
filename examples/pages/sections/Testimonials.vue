@@ -12,12 +12,12 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <card type="testimonial" no-footer-line>
-              <img slot="avatar" class="img img-raised" src="img/michael.jpg"/>
+            <card no-footer-line type="testimonial">
+              <img class="img img-raised" slot="avatar" src="img/michael.jpg" />
               <p class="card-description">
                 The networking at Web Summit is like no other European tech conference.
               </p>
-              <div slot="raw-content" class="icon icon-primary">
+              <div class="icon icon-primary" slot="raw-content">
                 <i class="fas fa-quote-right"></i>
               </div>
               <template slot="footer">
@@ -27,13 +27,13 @@
             </card>
           </div>
           <div class="col-md-4">
-            <card type="testimonial" no-footer-line>
-              <img slot="avatar" class="img img-raised" src="img/olivia.jpg"/>
+            <card no-footer-line type="testimonial">
+              <img class="img img-raised" slot="avatar" src="img/olivia.jpg" />
               <p class="card-description">
                 The connections you make at Web Summit are unparalleled, we met users all over the
                 world.
               </p>
-              <div slot="raw-content" class="icon icon-primary">
+              <div class="icon icon-primary" slot="raw-content">
                 <i class="fas fa-quote-right"></i>
               </div>
               <template slot="footer">
@@ -43,12 +43,12 @@
             </card>
           </div>
           <div class="col-md-4">
-            <card type="testimonial" no-footer-line>
-              <img slot="avatar" class="img img-raised" src="img/james.jpg"/>
+            <card no-footer-line type="testimonial">
+              <img class="img img-raised" slot="avatar" src="img/james.jpg" />
               <p class="card-description">
                 Web Summit will increase your appetite, your inspiration, and your network.
               </p>
-              <div slot="raw-content" class="icon icon-primary">
+              <div class="icon icon-primary" slot="raw-content">
                 <i class="fas fa-quote-right"></i>
               </div>
               <template slot="footer">
@@ -66,10 +66,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 justify-content-center">
-            <el-carousel height="500px" class="carousel-centered">
+            <el-carousel class="carousel-centered" height="500px">
               <el-carousel-item>
-                <card type="testimonial" plain>
-                  <img slot="avatar" class="img img-raised rounded" src="img/james.jpg"/>
+                <card plain type="testimonial">
+                  <img class="img img-raised rounded" slot="avatar" src="img/james.jpg" />
                   <h5 class="card-description">"Take up one idea. Make that one idea your life
                     - think of it, dream of it, live on that idea. Let the brain, muscles,
                     nerves, every part of your body, be full of that idea, and just leave
@@ -83,8 +83,8 @@
                 </card>
               </el-carousel-item>
               <el-carousel-item>
-                <card type="testimonial" plain>
-                  <img slot="avatar" class="img img-raised rounded" src="img/olivia.jpg"/>
+                <card plain type="testimonial">
+                  <img class="img img-raised rounded" slot="avatar" src="img/olivia.jpg" />
 
                   <h5 class="card-description">"When we are no longer able to change a
                     situation - we are challenged to change ourselves. Spread love
@@ -115,8 +115,8 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <card type="testimonial" plain>
-              <img slot="avatar" class="img img-raised rounded" src="img/michael.jpg"/>
+            <card plain type="testimonial">
+              <img class="img img-raised rounded" slot="avatar" src="img/michael.jpg" />
 
               <h3 class="card-title">Andrew John</h3>
               <h6 class="category text-primary">Loan Counselor</h6>
@@ -126,8 +126,8 @@
             </card>
           </div>
           <div class="col-md-4">
-            <card type="testimonial" plain>
-              <img slot="avatar" class="img img-raised rounded" src="img/olivia.jpg"/>
+            <card plain type="testimonial">
+              <img class="img img-raised rounded" slot="avatar" src="img/olivia.jpg" />
 
               <h4 class="card-title">Zoe Gabriella</h4>
               <h6 class="category text-primary">Interpreter OR Translator</h6>
@@ -137,8 +137,8 @@
             </card>
           </div>
           <div class="col-md-4">
-            <card type="testimonial" plain>
-              <img slot="avatar" class="img img-raised rounded" src="img/james.jpg"/>
+            <card plain type="testimonial">
+              <img class="img img-raised rounded" slot="avatar" src="img/james.jpg" />
 
               <h4 class="card-title">Joshiah Luke</h4>
               <h6 class="category text-primary">HR Specialist</h6>
@@ -155,7 +155,7 @@
 
 </template>
 <script>
-  import { Card, Button } from '@/components';
+  import { Button, Card } from '@/components';
   import { Carousel, CarouselItem } from 'element-ui/types';
 
   export default {
@@ -163,7 +163,7 @@
       Card,
       [Button.name]: Button,
       [Carousel.name]: Carousel,
-      [CarouselItem.name]: CarouselItem,
+      [CarouselItem.name]: CarouselItem
     }
   };
 </script>

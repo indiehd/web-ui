@@ -1,26 +1,26 @@
 <template>
   <div class="card card-plain">
-    <div role="tab" id="headingOne" class="card-header">
-      <a data-toggle="collapse"
-         data-parent="#accordion"
+    <div class="card-header" id="headingOne" role="tab">
+      <a :aria-controls="`content-${itemId}`"
+         :aria-expanded="active"
          :href="`#${itemId}`"
          @click.prevent="activate"
-         :aria-expanded="active"
-         :aria-controls="`content-${itemId}`">
+         data-parent="#accordion"
+         data-toggle="collapse">
         <slot name="title">
           {{title}}
         </slot>
         <slot name="icon">
-          <i v-if="!noIcon" class="now-ui-icons arrows-1_minimal-down"></i>
+          <i class="now-ui-icons arrows-1_minimal-down" v-if="!noIcon"></i>
         </slot>
       </a>
     </div>
     <collapse-transition :duration="animationDuration">
-      <div v-show="active"
+      <div :aria-labelledby="title"
            :id="`content-${itemId}`"
+           class="collapsed"
            role="tabpanel"
-           :aria-labelledby="title"
-           class="collapsed">
+           v-show="active">
         <div class="card-body">
           <slot></slot>
         </div>

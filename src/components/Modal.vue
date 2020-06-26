@@ -1,36 +1,36 @@
 <template>
   <SlideYUpTransition :duration="animationDuration">
-    <div class="modal fade"
-         @click.self="closeModal"
+    <div :aria-hidden="!show"
          :class="[{'show d-block': show}, {'d-none': !show}, {'modal-mini': type === 'mini'}]"
-         v-show="show"
-         tabindex="-1"
+         @click.self="closeModal"
+         class="modal fade"
          role="dialog"
-         :aria-hidden="!show">
+         tabindex="-1"
+         v-show="show">
 
-      <div class="modal-dialog"
-           :class="[{'modal-notice': type === 'notice'}, modalClasses]">
+      <div :class="[{'modal-notice': type === 'notice'}, modalClasses]"
+           class="modal-dialog">
         <div class="modal-content">
           <slot name="base-content">
-            <div class="modal-header" :class="headerClasses">
+            <div :class="headerClasses" class="modal-header">
               <slot name="close-button">
-                <button type="button"
-                        v-if="showClose"
+                <button :aria-hidden="!show"
                         @click="closeModal"
                         class="close"
                         data-dismiss="modal"
-                        :aria-hidden="!show">
+                        type="button"
+                        v-if="showClose">
                   <i class="now-ui-icons ui-1_simple-remove"></i>
                 </button>
               </slot>
               <slot name="header"></slot>
             </div>
 
-            <div class="modal-body" :class="bodyClasses">
+            <div :class="bodyClasses" class="modal-body">
               <slot></slot>
             </div>
 
-            <div class="modal-footer" :class="footerClasses">
+            <div :class="footerClasses" class="modal-footer">
               <slot name="footer"></slot>
             </div>
           </slot>
@@ -94,4 +94,8 @@
     background-color: rgba(0, 0, 0, 0.3)
   }
 </style>
-<style lang="scss" scoped></style>
+<style lang="scss">
+  @import "~@/assets/sass/indiehd/variables";
+  @import "~@/assets/sass/indiehd/mixins";
+  @import "~@/assets/sass/indiehd/modals";
+</style>

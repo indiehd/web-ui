@@ -16,16 +16,16 @@
         <div class="row">
           <div class="col-md-12">
             <div class="button-container">
-              <a href="#pablo" class="btn btn-primary btn-round btn-lg">
+              <a class="btn btn-primary btn-round btn-lg" href="#pablo">
                 <i class="now-ui-icons text_align-left"></i> Read Article
               </a>
-              <a href="#pablo" class="btn btn-icon btn-lg btn-twitter btn-round">
+              <a class="btn btn-icon btn-lg btn-twitter btn-round" href="#pablo">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="#pablo" class="btn btn-icon btn-lg btn-facebook btn-round">
+              <a class="btn btn-icon btn-lg btn-facebook btn-round" href="#pablo">
                 <i class="fab fa-facebook-square"></i>
               </a>
-              <a href="#pablo" class="btn btn-icon btn-lg btn-google btn-round">
+              <a class="btn btn-icon btn-lg btn-google btn-round" href="#pablo">
                 <i class="fab fa-google"></i>
               </a>
             </div>
@@ -41,8 +41,8 @@
                 engaged by providing meaningful information. Remember that by this time, the user is
                 curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to
                 see more. We are here to make life better.
-                <br/>
-                <br/> And now I look and look around and there’s so many Kanyes I've been trying to
+                <br />
+                <br /> And now I look and look around and there’s so many Kanyes I've been trying to
                 figure out the bed design for the master bedroom at our Hidden Hills compound... and
                 thank you for turning my personal jean jacket into a couture piece.</p>
               <p class="blockquote blockquote-primary">
@@ -116,7 +116,7 @@
                 Kanyes I've been trying to figure out the bed design for the master bedroom at our
                 Hidden Hills compound... and thank you for turning my personal jean jacket into a
                 couture piece.
-                <br/> I speak yell scream directly at the old guard on behalf of the future. daytime All
+                <br /> I speak yell scream directly at the old guard on behalf of the future. daytime All
                 respect prayers and love to Phife’s family Thank you for so much inspiration. </p>
               <p> Thank you Anna for the invite thank you to the whole Vogue team And I love you like
                 Kanye loves Kanye Pand Pand Panda I've been trying to figure out the bed design for the
@@ -147,19 +147,19 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <a href="#pablo" class="btn btn-google btn-round pull-right">
+                  <a class="btn btn-google btn-round pull-right" href="#pablo">
                     <i class="fab fa-google"></i> 232
                   </a>
-                  <a href="#pablo" class="btn btn-twitter btn-round pull-right">
+                  <a class="btn btn-twitter btn-round pull-right" href="#pablo">
                     <i class="fab fa-twitter"></i> 910
                   </a>
-                  <a href="#pablo" class="btn btn-facebook btn-round pull-right">
+                  <a class="btn btn-facebook btn-round pull-right" href="#pablo">
                     <i class="fab fa-facebook-square"></i> 872
                   </a>
                 </div>
               </div>
-              <hr/>
-              <card type="profile" plain>
+              <hr />
+              <card plain type="profile">
                 <template slot="raw-content">
                   <div class="row">
                     <div class="col-md-2">
@@ -177,7 +177,7 @@
                         Youtube.</p>
                     </div>
                     <div class="col-md-2">
-                      <button type="button" class="btn btn-default pull-right btn-round">Follow
+                      <button class="btn btn-default pull-right btn-round" type="button">Follow
                       </button>
                     </div>
                   </div>
@@ -193,27 +193,27 @@
             <div class="col-md-8 ml-auto mr-auto">
               <div class="media-area">
                 <h3 class="title text-center">3 Comments</h3>
-                <comment v-for="comment in comments"
+                <comment :author="comment.author"
                          :avatar="comment.avatar"
-                         :author="comment.author"
-                         :date="comment.date"
                          :comment="comment.comment"
+                         :date="comment.date"
+                         :key="comment.id"
                          :replies="comment.replies"
-                         :key="comment.id">
+                         v-for="comment in comments">
                 </comment>
               </div>
               <h3 class="title text-center">Post your comment</h3>
               <div class="media media-post">
                 <a class="pull-left author" href="#pablo">
                   <div class="avatar">
-                    <img class="media-object img-raised" alt="64x64" src="img/olivia.jpg">
+                    <img alt="64x64" class="media-object img-raised" src="img/olivia.jpg">
                   </div>
                 </a>
                 <div class="media-body">
-                                    <textarea class="form-control" v-model="form.comment"
-                                              placeholder="Write a nice reply or go home..." rows="4"></textarea>
+                                    <textarea class="form-control" placeholder="Write a nice reply or go home..."
+                                              rows="4" v-model="form.comment"></textarea>
                   <div class="media-footer">
-                    <a href="#pablo" class="btn btn-primary pull-right">
+                    <a class="btn btn-primary pull-right" href="#pablo">
                       <i class="now-ui-icons ui-1_send"></i> Reply
                     </a>
                   </div>
@@ -228,17 +228,17 @@
         <div class="container">
           <div class="col-md-12">
             <h2 class="title text-center">Similar Stories</h2>
-            <br/>
+            <br />
             <div class="blogs-1" id="blogs-1">
               <div class="row">
                 <div class="col-md-10 ml-auto mr-auto">
-                  <card type="blog" plain>
+                  <card plain type="blog">
                     <template slot="raw-content">
                       <div class="row">
                         <div class="col-md-5">
                           <div class="card-image">
-                            <img class="img img-raised rounded"
-                                 src="img/examples/card-blog4.jpg" alt="">
+                            <img alt=""
+                                 class="img img-raised rounded" src="img/examples/card-blog4.jpg">
                           </div>
                         </div>
                         <div class="col-md-7">
@@ -262,7 +262,7 @@
                       </div>
                     </template>
                   </card>
-                  <card type="blog" plain>
+                  <card plain type="blog">
                     <div class="row">
                       <div class="col-md-7">
                         <h6 class="category text-danger">
@@ -301,7 +301,7 @@
   </div>
 </template>
 <script>
-  import { Card, Button, Comment, Badge, InfoSection, Checkbox } from '@/components';
+  import { Badge, Button, Card, Checkbox, Comment, InfoSection } from '@/components';
 
   export default {
     name: 'blog-post',
@@ -324,7 +324,7 @@
           author: 'Tina Andrew',
           date: '7 minutes ago',
           comment: `<p>Chance too good. God level bars. I'm so proud of @LifeOfDesiigner #1 song in the country. Panda! Don't be scared of the truth because we need to restart the human foundation in truth I stand with the most humility. We are so blessed!</p>
-                            <p>All praises and blessings to the families of people who never gave up on dreams. Don't forget, You're Awesome!</p>`,
+                            <p>All praises and blessings to the families of people who never gave up on dreams. Don't forget, You're Awesome!</p>`
         }, {
           avatar: 'img/michael.jpg',
           author: 'John Camber',
@@ -340,7 +340,7 @@
             liked: true,
             likes: 25
           }]
-        },
+        }
         ]
       };
     }

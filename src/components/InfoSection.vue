@@ -1,6 +1,6 @@
 <template>
-  <div class="info" :class="`info-${direction}`">
-    <div class="icon" :class="[`icon-${type}`, iconClasses]" v-if="$slots.icon || icon">
+  <div :class="`info-${direction}`" class="info">
+    <div :class="[`icon-${type}`, iconClasses]" class="icon" v-if="$slots.icon || icon">
       <slot name="icon">
         <i :class="icon"></i>
       </slot>
@@ -44,4 +44,8 @@
     }
   };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss">
+  @import "~@/assets/sass/indiehd/variables";
+  @import "~@/assets/sass/indiehd/mixins";
+  @import "~@/assets/sass/indiehd/info-areas";
+</style>

@@ -4,7 +4,7 @@
       <div class="info info-horizontal">
         <div class="row">
           <div class="col-5" v-if="$slots.icon || icon">
-            <div class="icon icon-circle" :class="`icon-${type}`">
+            <div :class="`icon-${type}`" class="icon icon-circle">
               <slot name="icon">
                 <i :class="icon"></i>
               </slot>
@@ -12,8 +12,8 @@
           </div>
           <div class="col-7 text-right" v-if="$slots.content || title">
             <slot>
-              <h3 v-if="title" class="info-title">{{title}}</h3>
-              <h6 v-if="subTitle" class="stats-title">{{subTitle}}</h6>
+              <h3 class="info-title" v-if="title">{{title}}</h3>
+              <h6 class="stats-title" v-if="subTitle">{{subTitle}}</h6>
             </slot>
           </div>
         </div>

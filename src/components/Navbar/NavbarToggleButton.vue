@@ -1,10 +1,10 @@
 <template>
-  <button type="button"
+  <button :class="{toggled: toggled}"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
           class="navbar-toggler"
-          :class="{toggled: toggled}"
-          data-toggle="collapse"
-          data-target="#navbar"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          data-target="#navbar" data-toggle="collapse" type="button">
     <span class="navbar-toggler-bar top-bar"></span>
     <span class="navbar-toggler-bar middle-bar"></span>
     <span class="navbar-toggler-bar bottom-bar"></span>

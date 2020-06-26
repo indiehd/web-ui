@@ -1,8 +1,8 @@
 <template>
-  <div id="accordion"
-       role="tablist"
-       aria-multiselectable="true"
-       class="card-collapse">
+  <div aria-multiselectable="true"
+       class="card-collapse"
+       id="accordion"
+       role="tablist">
     <slot></slot>
   </div>
 </template>

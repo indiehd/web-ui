@@ -3,5 +3,5 @@ import Featured from './Featured';
 
 export default {
   ...Auth,
-  ...Featured,
+  ...Featured
 };

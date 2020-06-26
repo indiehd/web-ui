@@ -5,19 +5,19 @@
         <div class="col-8">
           <el-carousel height="500px">
             <el-carousel-item class="carousel-item">
-              <img class="d-block" src="img/bg1.jpg" alt="First slide">
+              <img alt="First slide" class="d-block" src="img/bg1.jpg">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Nature, United States</h5>
               </div>
             </el-carousel-item>
             <el-carousel-item class="carousel-item">
-              <img class="d-block" src="img/bg3.jpg" alt="Second slide">
+              <img alt="Second slide" class="d-block" src="img/bg3.jpg">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Somewhere Beyond, United States</h5>
               </div>
             </el-carousel-item>
             <el-carousel-item class="carousel-item">
-              <img class="d-block" src="img/bg4.jpg" alt="Third slide">
+              <img alt="Third slide" class="d-block" src="img/bg4.jpg">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Yellowstone National Park, United States</h5>
               </div>

@@ -1,26 +1,26 @@
 <template>
-  <div @click="tryClose"
-       data-notify="container"
-       class="alert open"
-       :class="[{'alert-with-icon': icon}, verticalAlign, horizontalAlign, alertType]"
-       role="alert"
+  <div :class="[{'alert-with-icon': icon}, verticalAlign, horizontalAlign, alertType]"
        :style="customPosition"
-       data-notify-position="top-center">
+       @click="tryClose"
+       class="alert open"
+       data-notify="container"
+       data-notify-position="top-center"
+       role="alert">
     <button
-      v-if="showClose"
-      type="button"
-      aria-hidden="true"
-      class="close col-xs-1"
-      data-notify="dismiss"
-      @click="close">
+        @click="close"
+        aria-hidden="true"
+        class="close col-xs-1"
+        data-notify="dismiss"
+        type="button"
+        v-if="showClose">
       <i class="now-ui-icons ui-1_simple-remove"></i>
     </button>
 
-    <span v-if="icon" data-notify="icon" :class="['alert-icon', icon]"></span>
+    <span :class="['alert-icon', icon]" data-notify="icon" v-if="icon"></span>
     <span data-notify="message">
-      <span v-if="title" class="title"><b>{{title}}<br/></b></span>
-      <span v-if="message" v-html="message"></span>
-      <content-render v-if="!message && component" :component="component"></content-render>
+      <span class="title" v-if="title"><b>{{title}}<br /></b></span>
+      <span v-html="message" v-if="message"></span>
+      <content-render :component="component" v-if="!message && component"></content-render>
     </span>
   </div>
 </template>
@@ -83,7 +83,7 @@
         type: Boolean,
         default: true
       },
-      clickHandler: Function,
+      clickHandler: Function
     },
     data () {
       return {
@@ -134,7 +134,7 @@
       if (this.timeout) {
         setTimeout(this.close, this.timeout);
       }
-    },
+    }
   };
 </script>
 <style lang="scss">

@@ -3,9 +3,9 @@
     <a class="pull-left" href="#pablo">
       <div class="avatar">
         <slot name="avatar">
-          <img class="media-object img-raised"
+          <img :src="avatar"
                alt="Tim Picture"
-               :src="avatar"/>
+               class="media-object img-raised">
         </slot>
       </div>
     </a>
@@ -29,22 +29,22 @@
       </div>
       <div>
         <slot name="replies">
-          <comment v-for="comment in replies"
-                   :key="comment.author"
-                   :author="comment.author"
+          <comment :author="comment.author"
                    :avatar="comment.avatar"
-                   :date="comment.date"
                    :comment="comment.comment"
+                   :date="comment.date"
+                   :key="comment.author"
                    :replies="comment.replies"
+                   v-for="comment in replies"
           >
             <template slot="actions">
               <el-tooltip content="Reply To Comment" placement="top">
-                <a href="#pablo" class="btn btn-primary btn-neutral pull-right">
+                <a class="btn btn-primary btn-neutral pull-right" href="#pablo">
                   <i class="now-ui-icons ui-1_send"></i> Reply
                 </a>
               </el-tooltip>
-              <a href="#pablo" :class="{'btn-default': !comment.liked}"
-                 class="btn btn-neutral pull-right">
+              <a :class="{'btn-default': !comment.liked}" class="btn btn-neutral pull-right"
+                 href="#pablo">
                 <i class="now-ui-icons ui-2_favourite-28"></i>
                 {{comment.likes}}
               </a>

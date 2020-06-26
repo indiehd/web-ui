@@ -1,11 +1,11 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
+    node: true
   },
   extends: [
     'plugin:vue/essential',
-    '@vue/standard',
+    '@vue/standard'
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
@@ -37,38 +37,38 @@ module.exports = {
     'vue/script-indent': ['error', 2, {
       'baseIndent': 1,
       'switchCase': 1,
-      'ignores': [],
+      'ignores': []
     }],
 
     'vue/html-self-closing': ['error', {
       'html': {
         'void': 'always',
         'normal': 'any',
-        'component': 'any',
-      },
+        'component': 'any'
+      }
     }],
 
     // allow optionalDependencies
     'import/no-extraneous-dependencies': [
       'error', {
-        'optionalDependencies': ['test/unit/index.js'],
-      }],
+        'optionalDependencies': ['test/unit/index.js']
+      }]
   },
   'overrides': [
     {
       'files': ['*.vue'],
       'rules': {
-        'indent': 'off',
-      },
+        'indent': 'off'
+      }
     },
     {
       'files': ['*.js'],
       'rules': {
-        'vue/script-indent': 'off',
-      },
-    },
+        'vue/script-indent': 'off'
+      }
+    }
   ],
   'parserOptions': {
-    'parser': 'babel-eslint',
-  },
+    'parser': 'babel-eslint'
+  }
 };

@@ -18,10 +18,10 @@
         Kit.</h3>
       <h6 class="category category-absolute rellax-text" data-rellax-speed="-2">Designed by
         <a href="https:///invisionapp.com/" target="_blank">
-          <img v-lazy="'img/invision-white-slim.png'" class="invision-logo"/>
+          <img class="invision-logo" v-lazy="'img/invision-white-slim.png'" />
         </a>. Coded by
         <a href="https://www.creative-tim.com" target="_blank">
-          <img v-lazy="'img/creative-tim-white-slim2.png'" class="creative-tim-logo" alt=""/>
+          <img alt="" class="creative-tim-logo" v-lazy="'img/creative-tim-white-slim2.png'" />
         </a>.</h6>
     </div>
     <div class="main">
@@ -56,10 +56,10 @@
   import FooterAreas from './components/Footers';
   import TypographyTables from './components/TypographyTables';
   import CardsSection from './components/Cards';
-
-  const JavascriptComponents = () => import('./components/JavascriptComponents');
   import CarouselSection from './components/CarouselSection';
   import NucleoIconsSection from './components/NucleoIconsSection';
+
+  const JavascriptComponents = () => import('./components/JavascriptComponents');
 
   export default {
     name: 'home',

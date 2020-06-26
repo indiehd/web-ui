@@ -1,12 +1,12 @@
 <template>
-  <div class="form-check form-check-radio" :class="[inlineClass, {disabled: disabled}]">
+  <div :class="[inlineClass, {disabled: disabled}]" class="form-check form-check-radio">
     <label :for="cbId" class="form-check-label">
-      <input :id="cbId"
+      <input :disabled="disabled"
+             :id="cbId"
+             :value="label"
              class="form-check-input"
              type="radio"
-             :disabled="disabled"
-             :value="label"
-             v-model="model"/>
+             v-model="model" />
       <span class="form-check-sign">
       </span>
       <slot></slot>
@@ -48,4 +48,7 @@
     }
   };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  @import "~@/assets/sass/indiehd/variables";
+  @import "~@/assets/sass/indiehd/checkboxes-radio";
+</style>

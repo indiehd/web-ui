@@ -11,11 +11,11 @@
       </div>
       <div class="row">
         <div
-          v-for="artist in artists"
-          class="col-md-4"
-          :key="artist.id"
+            :key="artist.id"
+            class="col-md-4"
+            v-for="artist in artists"
         >
-          <ArtistCard :artist="artist" plain/>
+          <ArtistCard :artist="artist" plain />
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@
   export default {
     name: 'featured-artists',
     components: {
-      ArtistCard,
+      ArtistCard
     },
     data () {
       return {
@@ -39,7 +39,7 @@
     methods: {
       ...mapActions([
         'FetchFeaturedArtists'
-      ]),
+      ])
     },
     mounted () {
       this.FetchFeaturedArtists()

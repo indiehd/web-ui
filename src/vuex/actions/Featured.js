@@ -1,6 +1,6 @@
 import axios from './axios';
 
-function FetchFeaturedArtists ({commit}) {
+function FetchFeaturedArtists ({ commit }) {
   return new Promise((resolve, reject) => {
     axios.get('/featured/artists')
       .then(resp => {
@@ -14,5 +14,5 @@ function FetchFeaturedArtists ({commit}) {
 }
 
 export default {
-  FetchFeaturedArtists,
+  FetchFeaturedArtists
 };

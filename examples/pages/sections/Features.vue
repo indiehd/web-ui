@@ -140,7 +140,7 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <card type="background" raised color="transparent" style="background-image: url('img/bg24.jpg')">
+            <card color="transparent" raised style="background-image: url('img/bg24.jpg')" type="background">
               <template slot="info">
                 <div class="icon icon-white">
                   <i class="now-ui-icons business_bulb-63"></i>
@@ -148,13 +148,13 @@
                 <div class="description">
                   <h4 class="info-title">Collaborate on ideas</h4>
                   <p>Your designer will come back to you with an initial set of ideas.</p>
-                  <a href="#pablo" class="ml-3">Find more...</a>
+                  <a class="ml-3" href="#pablo">Find more...</a>
                 </div>
               </template>
             </card>
           </div>
           <div class="col-md-4">
-            <card type="background" raised color="transparent" style="background-image: url('img/bg23.jpg')">
+            <card color="transparent" raised style="background-image: url('img/bg23.jpg')" type="background">
               <template slot="info">
                 <div class="icon icon-white">
                   <i class="now-ui-icons business_badge"></i>
@@ -168,7 +168,7 @@
             </card>
           </div>
           <div class="col-md-4">
-            <card type="background" raised color="transparenr" style="background-image: url('img/bg25.jpg')">
+            <card color="transparenr" raised style="background-image: url('img/bg25.jpg')" type="background">
               <template slot="info">
                 <div class="icon icon-white">
                   <i class="now-ui-icons location_map-big"></i>
@@ -176,7 +176,7 @@
                 <div class="description">
                   <h4 class="info-title">Visualize your room</h4>
                   <p>Share a floor plan, and we'll create a visualization of your room.</p>
-                  <a href="#pablo" class="ml-3">Find more...</a>
+                  <a class="ml-3" href="#pablo">Find more...</a>
                 </div>
               </template>
             </card>
@@ -224,7 +224,7 @@
           </div>
           <div class="col-md-7">
             <div class="tablet-container">
-              <img v-lazy="'img/ipad2-inverted.png'"/>
+              <img v-lazy="'img/ipad2-inverted.png'" />
             </div>
           </div>
         </div>
@@ -266,7 +266,7 @@
           </div>
           <div class="col-md-4">
             <div class="phone-container">
-              <img v-lazy="'img/iphone2.png'"/>
+              <img v-lazy="'img/iphone2.png'" />
             </div>
           </div>
           <div class="col-md-4">
@@ -340,7 +340,7 @@
           </div>
           <div class="col-md-6">
             <div class="image-container">
-              <img v-lazy="'img/ipad3.png'" alt="">
+              <img alt="" v-lazy="'img/ipad3.png'">
             </div>
           </div>
         </div>
@@ -359,7 +359,7 @@
         <div class="row">
           <div class="col-md-3">
             <card>
-              <img slot="image" src="img/bg28.jpg" class="rounded" alt="">
+              <img alt="" class="rounded" slot="image" src="img/bg28.jpg">
               <div class="info text-center">
                 <div class="icon">
                   <i class="now-ui-icons ui-1_email-85"></i>
@@ -371,7 +371,7 @@
           </div>
           <div class="col-md-3">
             <card>
-              <img slot="image" src="img/bg26.jpg" class="rounded" alt="">
+              <img alt="" class="rounded" slot="image" src="img/bg26.jpg">
               <div class="info text-center">
                 <div class="icon">
                   <i class="now-ui-icons ui-1_calendar-60"></i>
@@ -383,7 +383,7 @@
           </div>
           <div class="col-md-3">
             <card>
-              <img slot="image" src="img/bg27.jpg" class="rounded" alt="">
+              <img alt="" class="rounded" slot="image" src="img/bg27.jpg">
               <div class="info text-center">
                 <div class="icon">
                   <i class="now-ui-icons ui-1_send"></i>
@@ -395,7 +395,7 @@
           </div>
           <div class="col-md-3">
             <card>
-              <img slot="image" src="img/bg29.jpg" class="rounded" alt="">
+              <img alt="" class="rounded" slot="image" src="img/bg29.jpg">
               <div class="info text-center">
                 <div class="icon">
                   <i class="now-ui-icons ui-2_like"></i>

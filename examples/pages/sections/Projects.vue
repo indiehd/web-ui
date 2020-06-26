@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">Some of Our Awesome Products - 1</h2>
-            <tabs type="danger" centered pills>
+            <tabs centered pills type="danger">
               <tab-pane label="All"></tab-pane>
               <tab-pane label="History"></tab-pane>
               <tab-pane label="Satire"></tab-pane>
@@ -16,8 +16,8 @@
         </div>
         <div class="row">
           <div class="col-md-6 px-0">
-            <card type="background" class="card-background-product card-no-shadow"
-                  style="background-image: url('img/project1.jpg')">
+            <card class="card-background-product card-no-shadow" style="background-image: url('img/project1.jpg')"
+                  type="background">
 
               <h6 class="category">History</h6>
               <h3 class="card-title">
@@ -27,51 +27,52 @@
                 Developed on the occasion of an exhibition of the same name, The City Lost & Found:
                 Capturing New York...
               </p>
-              <n-button type="danger" round>
+              <n-button round type="danger">
                 <i class="now-ui-icons ui-1_send"></i> View Book
               </n-button>
             </card>
           </div>
           <div class="col-md-6 px-0">
-            <card type="background" raised class="card-background-product card-no-shadow"
-                  style="background-image: url('img/project18.jpg')">
+            <card class="card-background-product card-no-shadow" raised
+                  style="background-image: url('img/project18.jpg')"
+                  type="background">
               <h6 class="category">Satire</h6>
               <h3 class="card-title">A Confederacy of Dunces</h3>
               <p class="card-description">
                 Satires, in the most basic definition, are works making fun of some sort of person or
                 institution...
               </p>
-              <n-button type="neutral" round>
+              <n-button round type="neutral">
                 <i class="now-ui-icons ui-1_send"></i> View more
               </n-button>
             </card>
           </div>
           <div class="col-md-6 px-0">
-            <card type="background"
-                  class="card-background-product card-no-shadow"
-                  style="background-image: url('img/project20.jpg')">
+            <card class="card-background-product card-no-shadow"
+                  style="background-image: url('img/project20.jpg')"
+                  type="background">
               <h6 class="category">Fiction</h6>
               <h3 class="card-title">The Sun Also Rises</h3>
               <p class="card-description">
                 The most commonly read works are works of fiction. Fiction books are ones that have been
                 made up...
               </p>
-              <n-button type="neutral" round>
+              <n-button round type="neutral">
                 <i class="now-ui-icons ui-1_send"></i> Read Now
               </n-button>
             </card>
           </div>
           <div class="col-md-6 px-0">
-            <card type="background"
-                  class="card-background-product card-no-shadow"
-                  style="background-image: url('img/project19.jpg')">
+            <card class="card-background-product card-no-shadow"
+                  style="background-image: url('img/project19.jpg')"
+                  type="background">
               <h6 class="category">Basic Civitas</h6>
               <h3 class="card-title">The Right Mistake</h3>
               <p class="card-description">
                 Living in South Central L.A., Socrates Fortlow is a sixty-year-old ex-convict, still
                 strong enough to kill men with...
               </p>
-              <n-button type="danger" round>
+              <n-button round type="danger">
                 <i class="now-ui-icons ui-1_send"></i> Read Now
               </n-button>
             </card>
@@ -95,9 +96,9 @@
         <div class="row">
           <div class="col-md-4">
             <card plain>
-              <a slot="image" href="https:///www.creative-tim.com/product/now-ui-kit" target="_blank">
+              <a href="https:///www.creative-tim.com/product/now-ui-kit" slot="image" target="_blank">
                 <img class="img-raised rounded"
-                     src="https:///s3.amazonaws.com/creativetim_bucket/products/38/original/opt_mk_thumbnail.jpg?1458052306"/>
+                     src="https:///s3.amazonaws.com/creativetim_bucket/products/38/original/opt_mk_thumbnail.jpg?1458052306" />
               </a>
 
 
@@ -115,10 +116,10 @@
           </div>
           <div class="col-md-4">
             <card plain>
-              <a slot="image" href="https:///www.creative-tim.com/product/light-bootstrap-dashboard-pro"
+              <a href="https:///www.creative-tim.com/product/light-bootstrap-dashboard-pro" slot="image"
                  target="_blank">
                 <img class="img-raised rounded"
-                     src="https:///s3.amazonaws.com/creativetim_bucket/products/34/original/opt_lbd_pro_thumbnail.jpg?1449352503"/>
+                     src="https:///s3.amazonaws.com/creativetim_bucket/products/34/original/opt_lbd_pro_thumbnail.jpg?1449352503" />
               </a>
 
 
@@ -137,10 +138,10 @@
           </div>
           <div class="col-md-4">
             <card plain>
-              <a slot="image" href="https:///www.creative-tim.com/product/get-shit-done-pro"
+              <a href="https:///www.creative-tim.com/product/get-shit-done-pro" slot="image"
                  target="_blank">
                 <img class="img-raised rounded"
-                     src="https:///s3.amazonaws.com/creativetim_bucket/products/26/original/opt_gsdk_new_thumbnail.jpg"/>
+                     src="https:///s3.amazonaws.com/creativetim_bucket/products/26/original/opt_gsdk_new_thumbnail.jpg" />
               </a>
 
 
@@ -235,8 +236,8 @@
         </div>
         <div class="row">
           <div class="col-md-6 px-0">
-            <card type="background" class="card-fashion"
-                  style="background-image: url('img/project14.jpg')">
+            <card class="card-fashion" style="background-image: url('img/project14.jpg')"
+                  type="background">
               <div class="card-body">
                 <div class="card-title text-left">
                   <h2>
@@ -247,9 +248,9 @@
                 </div>
                 <div class="card-footer text-left">
                   <div class="stats">
-                                            <span>
-                                                <i class="now-ui-icons objects_globe"></i>The “Crazy idea” project
-                                            </span>
+                    <span>
+                      <i class="now-ui-icons objects_globe"></i>The “Crazy idea” project
+                    </span>
                   </div>
                 </div>
               </div>
@@ -271,15 +272,15 @@
                 <div class="card-body">
                   <div class="card-footer">
                     <div class="stats">
-                                                <span>
-                                                    <i class="now-ui-icons education_paper"></i> The “I’m on vacation” project
-                                                </span>
+                      <span>
+                        <i class="now-ui-icons education_paper"></i> The “I’m on vacation” project
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <card type="background" class="card-fashion"
-                    style="background-image: url('img/project15.jpg')">
+              <card class="card-fashion" style="background-image: url('img/project15.jpg')"
+                    type="background">
               </card>
             </div>
           </div>
@@ -287,8 +288,8 @@
         <div class="row">
           <div class="col-md-6 px-0">
             <div class="card-container">
-              <card type="background" class="card-fashion"
-                    style="background-image: url('img/project17.jpg')">
+              <card class="card-fashion" style="background-image: url('img/project17.jpg')"
+                    type="background">
               </card>
               <div class="card card-fashion arrow-left">
                 <div class="card-title">
@@ -301,9 +302,9 @@
                 <div class="card-body">
                   <div class="card-footer">
                     <div class="stats">
-                                                <span>
-                                                    <i class="now-ui-icons design_app"></i>The "Agile Project" project
-                                                </span>
+                      <span>
+                        <i class="now-ui-icons design_app"></i>The "Agile Project" project
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -311,8 +312,8 @@
             </div>
           </div>
           <div class="col-md-6 px-0">
-            <card type="background" class="card-fashion"
-                  style="background-image: url('img/project16.jpg')">
+            <card class="card-fashion" style="background-image: url('img/project16.jpg')"
+                  type="background">
               <div class="card-title text-left">
                 <h2>
                   <a href="#pablo">Performing a Project Premortem</a>
@@ -320,9 +321,9 @@
               </div>
               <div class="card-footer text-left">
                 <div class="stats">
-                                    <span>
-                                        <i class="now-ui-icons media-2_sound-wave"></i>The "Premortem" project
-                                    </span>
+                  <span>
+                    <i class="now-ui-icons media-2_sound-wave"></i>The "Premortem" project
+                  </span>
                 </div>
               </div>
             </card>
@@ -344,8 +345,8 @@
         </div>
         <div class="row">
           <div class="col-md-5 ml-auto">
-            <card type="background" raised class="card-background-product"
-                  style="background-image: url('img/project8.jpg')">
+            <card class="card-background-product" raised style="background-image: url('img/project8.jpg')"
+                  type="background">
               <h2 class="card-title">Social Analytics</h2>
               <p class="card-description">
                 Insight to help you create, connect, and convert. Understand Your Audience's
@@ -356,50 +357,53 @@
             </card>
           </div>
           <div class="col-md-5 mr-auto">
-            <info-section type="danger"
-                          icon="now-ui-icons ui-2_chat-round"
-                          title="Listen to Social Conversations"
-                          description="Gain access to the demographics, psychographics, and location of unique people who talk about your brand."
+            <info-section
+                description="Gain access to the demographics, psychographics, and location of unique people who talk about your brand."
+                icon="now-ui-icons ui-2_chat-round"
+                title="Listen to Social Conversations"
+                type="danger"
             />
 
-            <info-section type="danger"
-                          icon="now-ui-icons business_chart-pie-36"
-                          title="Performance Analyze"
-                          description="Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports."
+            <info-section
+                description="Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports."
+                icon="now-ui-icons business_chart-pie-36"
+                title="Performance Analyze"
+                type="danger"
             />
 
-            <info-section type="danger"
-                          icon="now-ui-icons design-2_ruler-pencil"
-                          title="Social Conversions"
-                          description="Track actions taken on your website that originated from social, and understand the impact on your bottom line."
+            <info-section
+                description="Track actions taken on your website that originated from social, and understand the impact on your bottom line."
+                icon="now-ui-icons design-2_ruler-pencil"
+                title="Social Conversions"
+                type="danger"
             />
 
           </div>
         </div>
-        <hr/>
+        <hr />
         <div class="row">
           <div class="col-md-5 ml-auto mt-5">
-            <info-section type="warning"
+            <info-section description="Whether it’s for work or even the next family vacation, Trello helps your team."
                           icon="now-ui-icons users_single-02"
                           title="Work With Any Team"
-                          description="Whether it’s for work or even the next family vacation, Trello helps your team."
+                          type="warning"
             />
 
-            <info-section type="warning"
+            <info-section description="Integrate the apps your team already uses directly into your workflow."
                           icon="now-ui-icons business_chart-bar-32"
                           title="A Productivity Platform"
-                          description="Integrate the apps your team already uses directly into your workflow."
+                          type="warning"
             />
 
-            <info-section type="warning"
+            <info-section description="No matter where you are, Trello stays in sync across all of your devices."
                           icon="now-ui-icons arrows-1_refresh-69"
                           title="Always In Sync"
-                          description="No matter where you are, Trello stays in sync across all of your devices."
+                          type="warning"
             />
           </div>
           <div class="col-md-5 mr-auto">
-            <card type="background" raised class="card-background-product"
-                  style="background-image: url('img/project9.jpg')">
+            <card class="card-background-product" raised style="background-image: url('img/project9.jpg')"
+                  type="background">
               <h2 class="card-title">Trello lets you work.</h2>
               <p class="card-description ">
                 Trello’s boards, lists, and cards enable you to organize and prioritize your
@@ -415,7 +419,7 @@
   </div>
 </template>
 <script>
-  import { Card, InfoSection, Badge, Button, Tabs, TabPane } from '@/components';
+  import { Badge, Button, Card, InfoSection, TabPane, Tabs } from '@/components';
 
   export default {
     components: {

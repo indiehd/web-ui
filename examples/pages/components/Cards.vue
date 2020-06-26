@@ -1,5 +1,5 @@
 <template>
-  <div id="cards" class="section section-cards" data-background-color="gray">
+  <div class="section section-cards" data-background-color="gray" id="cards">
     <blog-cards></blog-cards>
     <profile-cards></profile-cards>
     <full-background-cards></full-background-cards>

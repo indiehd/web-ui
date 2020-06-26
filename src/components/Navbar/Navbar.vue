@@ -6,10 +6,10 @@
         <navbar-toggle-button :toggled="showMenu" @click.native.stop="toggle"></navbar-toggle-button>
       </div>
       <div class="collapse navbar-collapse show"
-           v-if="$slots['navbar-menu'] || $scopedSlots['navbar-menu']"
            data-color="orange"
-           id="navigation">
-        <ul class="navbar-nav" :class="menuClasses" v-click-outside="close">
+           id="navigation"
+           v-if="$slots['navbar-menu'] || $scopedSlots['navbar-menu']">
+        <ul :class="menuClasses" class="navbar-nav" v-click-outside="close">
           <slot name="navbar-menu" v-bind="slotData"></slot>
         </ul>
       </div>
@@ -58,7 +58,7 @@
         validator (value) {
           return ['white', 'default', 'primary', 'danger', 'success', 'warning', 'info'].includes(value);
         }
-      },
+      }
     },
     provide () {
       return {
@@ -95,8 +95,8 @@
         }
 
         return [
-          {'navbar-transparent': (this.transparent || colorOnScrollTransparent)},
-          {[color]: (!this.transparent && this.colorOnScroll === 0)},
+          { 'navbar-transparent': (this.transparent || colorOnScrollTransparent) },
+          { [color]: (!this.transparent && this.colorOnScroll === 0) },
           navPosition, this.extraNavClasses];
       }
     },
